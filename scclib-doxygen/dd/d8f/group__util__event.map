@@ -1,0 +1,4 @@
+<map id="Signaling kernel event counter" name="Signaling kernel event counter">
+<area shape="rect" id="node1" title="A wrapper for Linux eventfd (man eventfd). Provides a signallable event counter, which is readable an..." alt="" coords="180,5,347,45"/>
+<area shape="rect" id="node2" href="$d4/d3a/group__util.html" title=" " alt="" coords="5,13,132,38"/>
+</map>

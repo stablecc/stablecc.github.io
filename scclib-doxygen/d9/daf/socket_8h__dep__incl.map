@@ -1,0 +1,10 @@
+<map id="net/pub/net/socket.h" name="net/pub/net/socket.h">
+<area shape="rect" id="node1" title="Low&#45;level tcp and udp sockets." alt="" coords="270,5,425,32"/>
+<area shape="rect" id="node2" href="$d6/d4a/inet_8h.html" title="Internet tcp and udp networking." alt="" coords="119,80,256,107"/>
+<area shape="rect" id="node5" href="$dc/d52/inet_8cc_source.html" title=" " alt="" coords="237,155,327,181"/>
+<area shape="rect" id="node6" href="$d6/dea/unix_8h.html" title="Unix domain tcp and udp networking." alt="" coords="332,80,472,107"/>
+<area shape="rect" id="node8" href="$d2/d88/socket_8cc_source.html" title=" " alt="" coords="497,80,603,107"/>
+<area shape="rect" id="node3" href="$d7/d39/net__if_8h.html" title="Internet network interface utility." alt="" coords="5,155,153,181"/>
+<area shape="rect" id="node4" href="$da/d64/net__if_8cc_source.html" title=" " alt="" coords="85,229,186,256"/>
+<area shape="rect" id="node7" href="$de/d2a/unix_8cc_source.html" title=" " alt="" coords="355,155,449,181"/>
+</map>

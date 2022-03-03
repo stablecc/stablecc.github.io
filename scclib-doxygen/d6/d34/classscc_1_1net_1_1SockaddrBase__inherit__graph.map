@@ -1,0 +1,6 @@
+<map id="scc::net::SockaddrBase" name="scc::net::SockaddrBase">
+<area shape="rect" id="node1" title="Socket address base class." alt="" coords="71,5,242,32"/>
+<area shape="rect" id="node2" href="$da/d56/classscc_1_1net_1_1InetAddr.html" title="Network address." alt="" coords="9,80,144,107"/>
+<area shape="rect" id="node4" href="$d9/d6e/classscc_1_1net_1_1UnixAddr.html" title="A unix domain address, which is a file of type &quot;socket.&quot;." alt="" coords="168,80,308,107"/>
+<area shape="rect" id="node3" href="$d6/d0e/classscc_1_1net_1_1NetIfAddr.html" title="Named address within an interface." alt="" coords="5,155,148,181"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="scc::net::UnixAddr" name="scc::net::UnixAddr">
+<area shape="rect" id="node1" title="A unix domain address, which is a file of type &quot;socket.&quot;." alt="" coords="21,80,161,107"/>
+<area shape="rect" id="node2" href="$d5/d33/classscc_1_1net_1_1SockaddrBase.html" title="Socket address base class." alt="" coords="5,5,176,32"/>
+</map>

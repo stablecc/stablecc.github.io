@@ -1,0 +1,5 @@
+<map id="scc::util::InChain" name="scc::util::InChain">
+<area shape="rect" id="node1" title="Chain of readers base class." alt="" coords="97,5,226,32"/>
+<area shape="rect" id="node2" href="$dd/d80/structscc_1_1util_1_1InPipeline.html" title="InStream with pipeline of readers." alt="" coords="5,80,149,107"/>
+<area shape="rect" id="node3" href="$d1/db8/structscc_1_1util_1_1IoPipeline.html" title="IoStream with pipeline of readers and writers." alt="" coords="173,80,317,107"/>
+</map>

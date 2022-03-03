@@ -1,0 +1,9 @@
+<map id="scc::util::PipelineReader" name="scc::util::PipelineReader">
+<area shape="rect" id="node1" title="Pipeline reader to carry out processing in a pipeline (chain of readers)." alt="" coords="239,80,417,107"/>
+<area shape="rect" id="node3" href="$df/d35/structscc_1_1util_1_1FlowThroughPipelineReader.html" title=" " alt="" coords="5,155,221,196"/>
+<area shape="rect" id="node4" href="$de/ddd/classscc_1_1util_1_1ReadCounter.html" title="Adds byte count to a read stream." alt="" coords="246,162,410,189"/>
+<area shape="rect" id="node6" href="$d7/d9e/classscc_1_1util_1_1ReadTimer.html" title="Adds timer to a read stream." alt="" coords="434,162,585,189"/>
+<area shape="rect" id="node2" href="$d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="265,5,391,32"/>
+<area shape="rect" id="node5" href="$d2/dc0/classscc_1_1util_1_1RwCounter.html" title="Adds byte count to a read/write stream." alt="" coords="253,244,403,271"/>
+<area shape="rect" id="node7" href="$d5/d17/classscc_1_1util_1_1RwTimer.html" title="Adds byte count to a read/write stream." alt="" coords="440,244,579,271"/>
+</map>

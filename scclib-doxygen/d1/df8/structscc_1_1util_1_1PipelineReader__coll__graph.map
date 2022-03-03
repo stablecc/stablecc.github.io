@@ -1,0 +1,4 @@
+<map id="scc::util::PipelineReader" name="scc::util::PipelineReader">
+<area shape="rect" id="node1" title="Pipeline reader to carry out processing in a pipeline (chain of readers)." alt="" coords="5,80,184,107"/>
+<area shape="rect" id="node2" href="$d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="31,5,158,32"/>
+</map>

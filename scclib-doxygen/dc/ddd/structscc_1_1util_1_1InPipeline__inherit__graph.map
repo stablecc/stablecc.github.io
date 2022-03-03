@@ -1,0 +1,9 @@
+<map id="scc::util::InPipeline" name="scc::util::InPipeline">
+<area shape="rect" id="node1" title="InStream with pipeline of readers." alt="" coords="77,393,221,420"/>
+<area shape="rect" id="node2" href="$d5/dd1/structscc_1_1util_1_1InChain.html" title="Chain of readers base class." alt="" coords="5,319,135,345"/>
+<area shape="rect" id="node3" href="$d2/d63/classscc_1_1util_1_1InStream.html" title="Input stream wrapper for reader." alt="" coords="159,319,298,345"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="179,244,279,271"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="158,155,299,196"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="143,80,314,107"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="175,5,282,32"/>
+</map>

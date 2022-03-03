@@ -1,0 +1,14 @@
+<map id="scc::util::OutPipeline" name="scc::util::OutPipeline">
+<area shape="rect" id="node1" title="OutPipeline with pipeline of writers." alt="" coords="1404,98,1559,125"/>
+<area shape="rect" id="node2" href="$d5/db8/structscc_1_1util_1_1OutChain.html" title="Chain of writers base class." alt="" coords="1209,70,1349,97"/>
+<area shape="rect" id="node3" title=" " alt="" coords="392,5,547,47"/>
+<area shape="rect" id="node4" href="$dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="5,37,125,63"/>
+<area shape="rect" id="node7" href="$d5/dea/structscc_1_1util_1_1PipelineWriter.html" title="Pipeline writer to carry out processing in a pipeline (chain of writers)." alt="" coords="196,66,368,93"/>
+<area shape="rect" id="node5" title=" " alt="" coords="851,63,1093,104"/>
+<area shape="rect" id="node6" title=" " alt="" coords="571,63,737,104"/>
+<area shape="rect" id="node8" href="$d6/dbd/classscc_1_1util_1_1OutStream.html" title="Output stream wrapper for writer." alt="" coords="1204,122,1355,149"/>
+<area shape="rect" id="node9" title="STL class." alt="" coords="920,130,1024,157"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="581,128,727,169"/>
+<area shape="rect" id="node11" title="STL class." alt="" coords="197,135,367,162"/>
+<area shape="rect" id="node12" title="STL class." alt="" coords="12,135,119,162"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="net/pub/net/net_if.h" name="net/pub/net/net_if.h">
+<area shape="rect" id="node1" title="Internet network interface utility." alt="" coords="32,5,180,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,68,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="77,229,135,256"/>
+<area shape="rect" id="node4" href="$d6/d4a/inet_8h.html" title="Internet tcp and udp networking." alt="" coords="203,80,287,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="319,155,386,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="329,304,406,331"/>
+<area shape="rect" id="node7" href="$da/ddd/socket_8h.html" title="Low&#45;level tcp and udp sockets." alt="" coords="194,155,295,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="287,229,395,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="419,229,486,256"/>
+<area shape="rect" id="node10" href="$d6/d65/iobase_8h.html" title="I/O stream base reader/writer interface classes." alt="" coords="160,229,263,256"/>
+</map>
