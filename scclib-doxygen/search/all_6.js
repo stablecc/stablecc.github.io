@@ -4,5 +4,6 @@ var searchData=
   ['get_5fcurrent_5fdir_55',['get_current_dir',['../df/df9/classscc_1_1util_1_1Filesystem.html#a01371ec986f45bd7df354cb2c19af132',1,'scc::util::Filesystem']]],
   ['gid_56',['gid',['../d2/dfc/structscc_1_1util_1_1FileStat.html#a2742a71e7a4d3f955e36806db5d534fd',1,'scc::util::FileStat']]],
   ['global_57',['global',['../d6/d5e/group__net__inet.html#ggad09c529846f2804e903604f6df2c31b7a292ba9559b4326562ffd2aa7a8307d88',1,'scc::net']]],
-  ['general_20utilities_58',['General utilities',['../d4/d3a/group__util.html',1,'']]]
+  ['gnu_20make_58',['GNU make',['../d8/df5/md_make_README.html',1,'']]],
+  ['general_20utilities_59',['General utilities',['../d4/d3a/group__util.html',1,'']]]
 ];

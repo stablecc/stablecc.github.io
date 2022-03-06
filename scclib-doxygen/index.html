@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>scclib: Main Page</title>
+<title>scclib: scclib Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,11 +61,35 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">scclib Documentation</div>  </div>
+<div class="title">scclib Documentation </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1>Stable Cloud Computing library (scclib)</h1>
+<p>Standalone C++ general purpose library which designed to work in any system with the following:</p><ul>
+<li><a href="https://www.linux.org/">Linux</a></li>
+<li><a href="https://bazel.build/">The Bazel build system</a>.</li>
+<li>A GCC compiler with support for Standard C++ 17. See <a href="https://en.cppreference.com/w/cpp/17">cppreference</a>.</li>
+</ul>
+<p>The library should be compatible with many POSIX emulation environments such as <a href="https://www.cygwin.com/">cygwin</a>, but it was developed and tested primarily on Linux using GCC 9+. It was developed using Bazel 4.2+, but should be compatible with older versions of Bazel.</p>
+<p>An alternative <a href="make/">build system</a> using GNU make is available, for systems without Bazel.</p>
+<h2>Installation</h2>
+<ol type="1">
+<li><a class="el" href="de/d58/md_install_bazel.html">Install bazel</a> on your local system.</li>
+<li>Set up a workspace, either <a class="el" href="df/dfd/md_workspace_remote.html">remotely</a> or <a class="el" href="db/dbc/md_workspace_local.html">locally</a>.</li>
+<li>Run sanity tests to make sure things are working: <div class="fragment"><div class="line">bazel test @com_stablecc_scclib//util/unittest:sccutilunit # unit tests for util module</div>
+<div class="line">bazel test @com_stablecc_scclib//net/unittest:sccnetunit # unit tests for net module</div>
+<div class="line">bazel build @com_stablecc_scclib//examples/net:ntest # network test example executable</div>
+</div><!-- fragment --></li>
+</ol>
+<h2>Documentation</h2>
+<p>Scclib code is fully documented using <a href="https://www.doxygen.nl/index.html">doxygen</a>.</p>
+<p>When you have doxygen available, run the following command line after downloading the source code: </p><div class="fragment"><div class="line">$ doxygen doxygen.conf</div>
+</div><!-- fragment --><p>The docs will be created in the docs/ directory: </p><div class="fragment"><div class="line">$ ls docs/html/index.html </div>
+<div class="line">docs/html/index.html</div>
+</div><!-- fragment --><p>Current documentation is available on <a href="https://stablecc.github.io/scclib-doxygen/">stablecc.github.io</a>. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
