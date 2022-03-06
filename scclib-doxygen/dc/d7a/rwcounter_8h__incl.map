@@ -2,5 +2,5 @@
 <area shape="rect" id="node1" title="Read/write counter." alt="" coords="21,5,197,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,72,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="115,155,192,181"/>
-<area shape="rect" id="node4" href="$d6/d65/iobase_8h.html" title="I/O stream base reader/writer interface classes." alt="" coords="147,80,250,107"/>
+<area shape="rect" id="node4" href="$d6/d65/iobase_8h.html" title="Input/output stream base reader/writer interface classes." alt="" coords="147,80,250,107"/>
 </map>

@@ -1,4 +1,4 @@
-<map id="Kernel i/o event notification poller" name="Kernel i/o event notification poller">
+<map id="Kernel file descriptor event notification poller" name="Kernel file descriptor event notification poller">
 <area shape="rect" id="node1" href="$d4/d3a/group__util.html" title=" " alt="" coords="5,13,132,38"/>
-<area shape="rect" id="node2" title="Wrapper for Linux kernel i/o event notification." alt="" coords="180,5,381,45"/>
+<area shape="rect" id="node2" title="Linux kernel file descriptor event notification, using Linux epoll." alt="" coords="180,5,361,45"/>
 </map>

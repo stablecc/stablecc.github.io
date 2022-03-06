@@ -74,13 +74,18 @@ $(function() {
 <div class="title">scc::net::TcpSocket Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="../../d9/dd2/group__net.html">Networking utilities</a> &raquo; <a class="el" href="../../dd/d15/group__net__sock.html">Low-level tcp and udp sockets</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Tcp socket base class.  
+ <a href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/ddd/socket_8h_source.html">socket.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for scc::net::TcpSocket:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d24/classscc_1_1net_1_1TcpSocket__inherit__graph.png" border="0" usemap="#scc_1_1net_1_1TcpSocket_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1net_1_1TcpSocket_inherit__map" id="scc_1_1net_1_1TcpSocket_inherit__map">
-<area shape="rect" title=" " alt="" coords="176,80,320,107"/>
-<area shape="rect" href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html" title="Transmission Control Protocol socket (TCP/IP)." alt="" coords="77,155,235,181"/>
+<area shape="rect" title="Tcp socket base class." alt="" coords="176,80,320,107"/>
+<area shape="rect" href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html" title="Internet transmission control protocol (tcp) socket." alt="" coords="77,155,235,181"/>
 <area shape="rect" href="../../df/d37/classscc_1_1net_1_1UnixTcpSock.html" title="Unix domain tcp (stream) socket." alt="" coords="259,155,421,181"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="5,5,160,32"/>
 <area shape="rect" href="../../d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="185,5,311,32"/>
@@ -92,7 +97,7 @@ Collaboration diagram for scc::net::TcpSocket:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d82/classscc_1_1net_1_1TcpSocket__coll__graph.png" border="0" usemap="#scc_1_1net_1_1TcpSocket_coll__map" alt="Collaboration graph"/></div>
 <map name="scc_1_1net_1_1TcpSocket_coll__map" id="scc_1_1net_1_1TcpSocket_coll__map">
-<area shape="rect" title=" " alt="" coords="176,80,320,107"/>
+<area shape="rect" title="Tcp socket base class." alt="" coords="176,80,320,107"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="5,5,160,32"/>
 <area shape="rect" href="../../d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="185,5,311,32"/>
 <area shape="rect" href="../../dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="336,5,456,32"/>
@@ -221,7 +226,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <tr class="separator:a98a53e1e618f58be8fcfe559f4736178 inherit pro_methods_classscc_1_1net_1_1SocketBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
+<div class="textblock"><p>Tcp socket base class. </p>
+
 <p class="definition">Definition at line <a class="el" href="../../da/ddd/socket_8h_source.html#l00290">290</a> of file <a class="el" href="../../da/ddd/socket_8h_source.html">socket.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="adf0755459c444cba9d77dcc677b9e079"></a>
@@ -268,7 +274,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Returns a file descriptor for the new socket, or return an error code on failure. Sets the exception error code for the call.</p>
 <p>If the sockaddr pointer is set, sets it to the address of the connected peer. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00339">339</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00344">344</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -292,7 +298,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Make a connection to this address.</p>
 <p>Throw an exception on error. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00392">392</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00397">397</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -333,7 +339,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Connect to a socket address. </p>
 <p>Set the error code for the call. Caller must check code(), which is 0 on success. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00371">371</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00376">376</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -356,7 +362,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Set to accept connections. </p>
 <p>After maximum connection backlog is reached (of unaccepted connections), system may refuse new connections on the socket. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00329">329</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00334">334</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -422,7 +428,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Shutdown the connection; no further reads or writes will be allowed. </p>
 <p>If the socket is shared (for example, via a fork) then communication will be stopped, even if all references to the socket have not been closed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00410">410</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00415">415</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>

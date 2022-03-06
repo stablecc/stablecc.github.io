@@ -1,0 +1,12 @@
+<map id="util/poller.cc" name="util/poller.cc">
+<area shape="rect" id="node1" title="Kernel file descriptor event notification poller implementation" alt="" coords="263,5,364,32"/>
+<area shape="rect" id="node2" href="$d4/db0/poller_8h.html" title="Linux kernel i/o event notification (poller)." alt="" coords="25,80,119,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="143,80,235,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="259,80,367,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="392,80,467,107"/>
+<area shape="rect" id="node8" href="$d3/d76/safe__clib_8h.html" title="Signal&#45;safe C library wrapper." alt="" coords="491,80,608,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,56,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="80,155,147,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="467,155,528,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="552,155,648,181"/>
+</map>

@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Kernel event counter.  
+<p>Signaling kernel event counter.  
  <a href="../../db/d7d/classscc_1_1util_1_1Event.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../dd/d20/event_8h_source.html">event.h</a>&gt;</code></p>
@@ -85,7 +85,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:af745de611ee08f671beb83cfe02eabd8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8">EventFlag</a> { <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a7951b75035fe0c7d11b860464b0738be">nonblocking</a> = 1, 
 <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a1d5ff527110ed7b7c98b721259430609">semaphore</a> = 2
  }</td></tr>
-<tr class="memdesc:af745de611ee08f671beb83cfe02eabd8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Kernel event counter.">Event</a> flags.  <a href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8">More...</a><br /></td></tr>
+<tr class="memdesc:af745de611ee08f671beb83cfe02eabd8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Signaling kernel event counter.">Event</a> flags.  <a href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8">More...</a><br /></td></tr>
 <tr class="separator:af745de611ee08f671beb83cfe02eabd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -127,10 +127,12 @@ const <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html">Event</a>
 <tr class="separator:aea69066c6a9da69b9ce19a28d5d77ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Kernel event counter. </p>
+<div class="textblock"><p>Signaling kernel event counter. </p>
 <p>Writes increment the event counter.</p>
 <p>Sempahore mode means reads will decrement the counter by 1. Otherwise, reads reset the counter to 0.</p>
-<p>Non-blocking mode means the event can throw an exception (EAGAIN) if called when not signalled. The event should probably be polled in this case. See: <a class="el" href="../../d5/d5f/group__util__poller.html">Kernel i/o event notification poller</a> </p>
+<p>Non-blocking mode means the event can throw an exception (EAGAIN) if called when not signalled. The event should probably be polled in this case. See: <a class="el" href="../../d5/d5f/group__util__poller.html">Kernel file descriptor event notification poller</a> </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d7/d4a/examples_2net_2netmain_8cc-example.html#_a1">examples/net/netmain.cc</a>, <a class="el" href="../../d4/dc4/net_2unittest_2inet_8cc-example.html#_a2">net/unittest/inet.cc</a>, <a class="el" href="../../dc/df3/net_2unittest_2inet_stream_8cc-example.html#_a2">net/unittest/inet_stream.cc</a>, <a class="el" href="../../d4/dba/net_2unittest_2unix_8cc-example.html#_a2">net/unittest/unix.cc</a>, <a class="el" href="../../d2/d5c/util_2unittest_2event_8cc-example.html#_a0">util/unittest/event.cc</a>, and <a class="el" href="../../d4/d6e/util_2unittest_2poller_8cc-example.html#_a0">util/unittest/poller.cc</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d20/event_8h_source.html#l00078">78</a> of file <a class="el" href="../../dd/d20/event_8h_source.html">event.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -146,11 +148,11 @@ const <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html">Event</a>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Kernel event counter.">Event</a> flags. </p>
+<p><a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Signaling kernel event counter.">Event</a> flags. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af745de611ee08f671beb83cfe02eabd8a7951b75035fe0c7d11b860464b0738be"></a>nonblocking&#160;</td><td class="fielddoc"><p>Non-blocking mode. If an event is read while unsignalled, throws and exception. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af745de611ee08f671beb83cfe02eabd8a1d5ff527110ed7b7c98b721259430609"></a>semaphore&#160;</td><td class="fielddoc"><p>Semaphore mode. <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Kernel event counter.">Event</a> reads decrement the counter by 1. Otherwise, reads set the counter to 0. </p>
+<tr><td class="fieldname"><a id="af745de611ee08f671beb83cfe02eabd8a1d5ff527110ed7b7c98b721259430609"></a>semaphore&#160;</td><td class="fielddoc"><p>Semaphore mode. <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Signaling kernel event counter.">Event</a> reads decrement the counter by 1. Otherwise, reads set the counter to 0. </p>
 </td></tr>
 </table>
 
@@ -178,12 +180,12 @@ const <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html">Event</a>
 <p>Construct an event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flags</td><td><a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Kernel event counter.">Event</a> flags, see: <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8">EventFlag</a> </td></tr>
+    <tr><td class="paramname">flags</td><td><a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Signaling kernel event counter.">Event</a> flags, see: <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8">EventFlag</a> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d1c/event_8cc_source.html#l00040">40</a> of file <a class="el" href="../../d0/d1c/event_8cc_source.html">event.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d1c/event_8cc_source.html#l00045">45</a> of file <a class="el" href="../../d0/d1c/event_8cc_source.html">event.cc</a>.</p>
 
 </div>
 </div>
@@ -236,8 +238,10 @@ const <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html">Event</a>
 <p>Read from (decrement) the event counter. </p>
 <p>For blocking event, blocks until counter becomes signalled (non-zero). For a non-blocking event, throws an exception if the counter is not signalled.</p>
 <p>For a semaphore, returns 1 and decrements counter by 1. Otherwise, returns the counter value and sets counter to 0. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/dc4/net_2unittest_2inet_8cc-example.html#a13">net/unittest/inet.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d1c/event_8cc_source.html#l00077">77</a> of file <a class="el" href="../../d0/d1c/event_8cc_source.html">event.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d1c/event_8cc_source.html#l00082">82</a> of file <a class="el" href="../../d0/d1c/event_8cc_source.html">event.cc</a>.</p>
 
 </div>
 </div>
@@ -265,8 +269,10 @@ const <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html">Event</a>
   </table>
   </dd>
 </dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/dc4/net_2unittest_2inet_8cc-example.html#a12">net/unittest/inet.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d1c/event_8cc_source.html#l00058">58</a> of file <a class="el" href="../../d0/d1c/event_8cc_source.html">event.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d1c/event_8cc_source.html#l00063">63</a> of file <a class="el" href="../../d0/d1c/event_8cc_source.html">event.cc</a>.</p>
 
 </div>
 </div>
@@ -293,8 +299,10 @@ const <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html">Event</a>
   </table>
   </dd>
 </dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/dc4/net_2unittest_2inet_8cc-example.html#a14">net/unittest/inet.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d1c/event_8cc_source.html#l00089">89</a> of file <a class="el" href="../../d0/d1c/event_8cc_source.html">event.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d1c/event_8cc_source.html#l00094">94</a> of file <a class="el" href="../../d0/d1c/event_8cc_source.html">event.cc</a>.</p>
 
 </div>
 </div>

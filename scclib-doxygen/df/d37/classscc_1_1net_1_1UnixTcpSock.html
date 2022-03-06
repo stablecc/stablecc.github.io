@@ -84,7 +84,7 @@ Inheritance diagram for scc::net::UnixTcpSock:</div>
 <div class="center"><img src="../../de/d5e/classscc_1_1net_1_1UnixTcpSock__inherit__graph.png" border="0" usemap="#scc_1_1net_1_1UnixTcpSock_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1net_1_1UnixTcpSock_inherit__map" id="scc_1_1net_1_1UnixTcpSock_inherit__map">
 <area shape="rect" title="Unix domain tcp (stream) socket." alt="" coords="167,155,329,181"/>
-<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title=" " alt="" coords="176,80,320,107"/>
+<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title="Tcp socket base class." alt="" coords="176,80,320,107"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="5,5,160,32"/>
 <area shape="rect" href="../../d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="185,5,311,32"/>
 <area shape="rect" href="../../dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="336,5,456,32"/>
@@ -96,7 +96,7 @@ Collaboration diagram for scc::net::UnixTcpSock:</div>
 <div class="center"><img src="../../d2/db4/classscc_1_1net_1_1UnixTcpSock__coll__graph.png" border="0" usemap="#scc_1_1net_1_1UnixTcpSock_coll__map" alt="Collaboration graph"/></div>
 <map name="scc_1_1net_1_1UnixTcpSock_coll__map" id="scc_1_1net_1_1UnixTcpSock_coll__map">
 <area shape="rect" title="Unix domain tcp (stream) socket." alt="" coords="167,155,329,181"/>
-<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title=" " alt="" coords="176,80,320,107"/>
+<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title="Tcp socket base class." alt="" coords="176,80,320,107"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="5,5,160,32"/>
 <area shape="rect" href="../../d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="185,5,311,32"/>
 <area shape="rect" href="../../dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="336,5,456,32"/>
@@ -239,8 +239,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Unix domain tcp (stream) socket. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/dba/net_2unittest_2unix_8cc-example.html#_a5">net/unittest/unix.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dea/unix_8h_source.html#l00098">98</a> of file <a class="el" href="../../d6/dea/unix_8h_source.html">unix.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dea/unix_8h_source.html#l00096">96</a> of file <a class="el" href="../../d6/dea/unix_8h_source.html">unix.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3f0cdae2cc682c05aaa03d44ed5aded3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f0cdae2cc682c05aaa03d44ed5aded3">&#9670;&nbsp;</a></span>accept() <span class="overload">[1/2]</span></h2>
@@ -261,7 +263,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Returns a new socket connected to the peer, or throws an exception on error.</p>
 <p>The socket can be polled for Poller::PollFlag::input events, to wait for incoming connections without blocking. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2a/unix_8cc_source.html#l00164">164</a> of file <a class="el" href="../../de/d2a/unix_8cc_source.html">unix.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d2a/unix_8cc_source.html#l00169">169</a> of file <a class="el" href="../../de/d2a/unix_8cc_source.html">unix.cc</a>.</p>
 
 </div>
 </div>
@@ -285,7 +287,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Returns a new socket connected to the peer and sets the peer address, or throws an exception on error.</p>
 <p>The socket can be polled for Poller::PollFlag::input events, to wait for incoming connections without blocking. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2a/unix_8cc_source.html#l00177">177</a> of file <a class="el" href="../../de/d2a/unix_8cc_source.html">unix.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d2a/unix_8cc_source.html#l00182">182</a> of file <a class="el" href="../../de/d2a/unix_8cc_source.html">unix.cc</a>.</p>
 
 </div>
 </div>

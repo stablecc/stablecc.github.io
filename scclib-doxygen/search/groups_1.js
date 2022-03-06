@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['general_20utilities_570',['General utilities',['../d4/d3a/group__util.html',1,'']]]
+  ['examples_605',['Examples',['../d7/d83/group__examples.html',1,'']]]
 ];

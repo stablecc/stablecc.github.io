@@ -87,6 +87,12 @@ Files</h2></td></tr>
 <tr class="memitem:d3/d76/safe__clib_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/safe__clib_8h.html">safe_clib.h</a></td></tr>
 <tr class="memdesc:d3/d76/safe__clib_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal-safe C library wrapper. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dd/df5/safe__clib_8cc"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df5/safe__clib_8cc.html">safe_clib.cc</a></td></tr>
+<tr class="memdesc:dd/df5/safe__clib_8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d2/dff/group__util__safeclib.html">Signal-safe C library wrapper</a> implementation <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d5/d0a/unittest_2safe__clib_8cc"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d0a/unittest_2safe__clib_8cc.html">safe_clib.cc</a></td></tr>
+<tr class="memdesc:d5/d0a/unittest_2safe__clib_8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests for <a class="el" href="../../d2/dff/group__util__safeclib.html">Signal-safe C library wrapper</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -214,15 +220,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provides signal safe wrapper for commonly used C library APIs. </p>
 <p>Generally, APIs which are capable of EINTR error when interrupted a signal are included.</p>
-<p>An example which uses safe clib apis to write into a sparse file, from scclib/util/unittest/fs.cc </p><div class="fragment"><div class="line">TEST(FsExampleTest, sparse_and_trunc)</div>
+<p>See <a href="https://man7.org/linux/man-pages/man7/signal.7.html">https://man7.org/linux/man-pages/man7/signal.7.html</a></p>
+<p>An example which uses safe clib apis to write into a sparse file, from <a class="el" href="../../d9/d2e/unittest_2fs_8cc.html">scclib/util/unittest/fs.cc</a> </p><div class="fragment"><div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(FsExampleTest, sparse_and_trunc)</div>
 <div class="line">{</div>
 <div class="line">    system_error err;</div>
 <div class="line">    fs::remove_all(<span class="stringliteral">&quot;sandbox&quot;</span>, &amp;err);</div>
-<div class="line">    fs::create_dir(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
-<div class="line">    <span class="keyword">auto</span> curdir = fs::get_current_dir();</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ae9f80534d1d1150d33023f8162f7e097">fs::create_dir</a>(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> curdir = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a01371ec986f45bd7df354cb2c19af132">fs::get_current_dir</a>();</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;curdir: &quot;</span> &lt;&lt; curdir &lt;&lt; endl;</div>
 <div class="line"> </div>
-<div class="line">    fs::change_dir(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ac8d1bfd313fff264e32a55c71a666e25">fs::change_dir</a>(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">string</span> s(<span class="stringliteral">&quot;this is a test of the emergency sizing system\n&quot;</span>);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;sparse test with string len=&quot;</span> &lt;&lt; s.size() &lt;&lt; endl;</div>
@@ -243,16 +250,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;wrote &quot;</span> &lt;&lt; s.size() &lt;&lt; <span class="stringliteral">&quot; bytes at loc &quot;</span> &lt;&lt; loc &lt;&lt; endl;</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    fs::create_reg(fn);</div>
-<div class="line">    fs::set_size(fn, 16384);            <span class="comment">// 16 K file, with a 0 at the end</span></div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a016ea00e151417b636e554996389530b">fs::create_reg</a>(fn);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ab08bd63a5c393f115fa045a250386c6d">fs::set_size</a>(fn, 16384);            <span class="comment">// 16 K file, with a 0 at the end</span></div>
 <div class="line">    </div>
-<div class="line">    <span class="keyword">auto</span> st = fs::file_stat(fn);</div>
+<div class="line">    <span class="keyword">auto</span> st = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">fs::file_stat</a>(fn);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;12288 hole at start of file:\n&quot;</span> &lt;&lt; st &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(st.size, 16384);</div>
 <div class="line">    ASSERT_EQ(st.alloc_size, 4096);     <span class="comment">// the last block has data</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> sm = fs::sparse_map(fn);</div>
+<div class="line">    <span class="keyword">auto</span> sm = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">fs::sparse_map</a>(fn);</div>
 <div class="line">    cout &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;start&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;data&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : sm)</div>
 <div class="line">    {</div>
@@ -266,12 +273,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <div class="line"> </div>
 <div class="line">    write_sparse(1024);                 <span class="comment">// write the string at 1024, causing first block to be written</span></div>
 <div class="line">    </div>
-<div class="line">    st = fs::file_stat(fn);</div>
+<div class="line">    st = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">fs::file_stat</a>(fn);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;8192 hole in middle of file\n&quot;</span> &lt;&lt; st &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(st.alloc_size, 8192);</div>
 <div class="line"> </div>
-<div class="line">    sm = fs::sparse_map(fn);</div>
+<div class="line">    sm = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">fs::sparse_map</a>(fn);</div>
 <div class="line">    cout &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;start&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;data&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : sm)</div>
 <div class="line">    {</div>
@@ -282,14 +289,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <div class="line">    ver[4096] = 12287;                  <span class="comment">// 8192 sized hole at 4096 (middle)</span></div>
 <div class="line">    ASSERT_EQ(sm, ver);</div>
 <div class="line"> </div>
-<div class="line">    fs::set_size(fn, 12288);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ab08bd63a5c393f115fa045a250386c6d">fs::set_size</a>(fn, 12288);</div>
 <div class="line"> </div>
-<div class="line">    st = fs::file_stat(fn);</div>
+<div class="line">    st = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">fs::file_stat</a>(fn);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;8192 hole at end of file\n&quot;</span> &lt;&lt; st &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(st.alloc_size, 4096);</div>
 <div class="line"> </div>
-<div class="line">    sm = fs::sparse_map(fn);</div>
+<div class="line">    sm = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">fs::sparse_map</a>(fn);</div>
 <div class="line">    cout &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;start&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;data&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : sm)</div>
 <div class="line">    {</div>
@@ -307,13 +314,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <div class="line">    f.read(&amp;val[0], val.size());</div>
 <div class="line">    ASSERT_EQ(val, s);</div>
 <div class="line"> </div>
-<div class="line">    fs::change_dir(curdir);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ac8d1bfd313fff264e32a55c71a666e25">fs::change_dir</a>(curdir);</div>
 <div class="line">    fs::remove_all(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
 <div class="line">}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassscc_1_1util_1_1FileDesc_html"><div class="ttname"><a href="../../dc/da2/classscc_1_1util_1_1FileDesc.html">scc::util::FileDesc</a></div><div class="ttdoc">File descriptor wrapper.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d55/filedesc_8h_source.html#l00064">filedesc.h:64</a></div></div>
-<div class="ttc" id="agroup__util__safeclib_html_ga1e9d8b889d2d80d6e72e4d1c5903c215"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#ga1e9d8b889d2d80d6e72e4d1c5903c215">scc::util::safe_write_throw</a></div><div class="ttdeci">ssize_t safe_write_throw(int fd, const void *buf, size_t count)</div><div class="ttdoc">Signal safe write, throws system_error on error.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00147">safe_clib.cc:147</a></div></div>
-<div class="ttc" id="agroup__util__safeclib_html_gaaa8d9b1879599530eb1d7ac1e186aa13"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#gaaa8d9b1879599530eb1d7ac1e186aa13">scc::util::safe_open_throw</a></div><div class="ttdeci">int safe_open_throw(const char *pathname, int flags)</div><div class="ttdoc">Signal safe open, throws system_error on error.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00216">safe_clib.cc:216</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_adfe3b464af051dd60ebbf73266a65db3"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">scc::util::Filesystem::sparse_map</a></div><div class="ttdeci">static std::map&lt; off_t, off_t &gt; sparse_map(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Map of file sparseness.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00515">fs.cc:515</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1FileDesc_html"><div class="ttname"><a href="../../dc/da2/classscc_1_1util_1_1FileDesc.html">scc::util::FileDesc</a></div><div class="ttdoc">File descriptor.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d55/filedesc_8h_source.html#l00065">filedesc.h:65</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_ab08bd63a5c393f115fa045a250386c6d"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ab08bd63a5c393f115fa045a250386c6d">scc::util::Filesystem::set_size</a></div><div class="ttdeci">static void set_size(const std::string &amp;, off_t, std::system_error *=nullptr)</div><div class="ttdoc">Set the file size.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00604">fs.cc:604</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_a01371ec986f45bd7df354cb2c19af132"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a01371ec986f45bd7df354cb2c19af132">scc::util::Filesystem::get_current_dir</a></div><div class="ttdeci">static std::string get_current_dir(std::system_error *=nullptr)</div><div class="ttdoc">Get working directory.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00444">fs.cc:444</a></div></div>
+<div class="ttc" id="aunittest_2inet_8cc_html_a821ca81eacb859889b5efeae7ffa1997"><div class="ttname"><a href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a></div><div class="ttdeci">TEST(inet_example, client_server_stream_test)</div><div class="ttdoc">[Inet client server]</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8d/unittest_2inet_8cc_source.html#l00521">inet.cc:521</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_ac8d1bfd313fff264e32a55c71a666e25"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ac8d1bfd313fff264e32a55c71a666e25">scc::util::Filesystem::change_dir</a></div><div class="ttdeci">static void change_dir(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Change working directory.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00430">fs.cc:430</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_a016ea00e151417b636e554996389530b"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a016ea00e151417b636e554996389530b">scc::util::Filesystem::create_reg</a></div><div class="ttdeci">static void create_reg(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Create a regular file.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00288">fs.cc:288</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_ae9f80534d1d1150d33023f8162f7e097"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ae9f80534d1d1150d33023f8162f7e097">scc::util::Filesystem::create_dir</a></div><div class="ttdeci">static void create_dir(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Create a directory.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00274">fs.cc:274</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_a9d20147e6e2f28b1f86d17c43e6a35b0"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">scc::util::Filesystem::file_stat</a></div><div class="ttdeci">static FileStat file_stat(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Get the file stat.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00390">fs.cc:390</a></div></div>
+<div class="ttc" id="agroup__util__safeclib_html_ga1e9d8b889d2d80d6e72e4d1c5903c215"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#ga1e9d8b889d2d80d6e72e4d1c5903c215">scc::util::safe_write_throw</a></div><div class="ttdeci">ssize_t safe_write_throw(int fd, const void *buf, size_t count)</div><div class="ttdoc">Signal safe write, throws system_error on error.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00152">safe_clib.cc:152</a></div></div>
+<div class="ttc" id="agroup__util__safeclib_html_gaaa8d9b1879599530eb1d7ac1e186aa13"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#gaaa8d9b1879599530eb1d7ac1e186aa13">scc::util::safe_open_throw</a></div><div class="ttdeci">int safe_open_throw(const char *pathname, int flags)</div><div class="ttdoc">Signal safe open, throws system_error on error.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00221">safe_clib.cc:221</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

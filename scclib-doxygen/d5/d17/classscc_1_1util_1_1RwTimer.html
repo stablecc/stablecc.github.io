@@ -70,7 +70,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d0/d6f/classscc_1_1util_1_1RwTimer-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">scc::util::RwTimer Class Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">I/O stream utilities</a></div></div>  </div>
+<div class="title">scc::util::RwTimer Class Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">input/output stream utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -206,7 +206,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_calls_reset</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Adds byte count to a read/write stream. </p>
-<p>Example from scclib/util/unittest/iohelper.cc </p><div class="fragment"><div class="line">    <span class="keyword">using</span> std::chrono::milliseconds;</div>
+<p>Example from <a class="el" href="../../de/d12/iohelper_8cc.html">scclib/util/unittest/iohelper.cc</a> </p><div class="fragment"><div class="line">    <span class="keyword">using</span> std::chrono::milliseconds;</div>
 <div class="line">    <span class="keyword">using</span> std::chrono::duration_cast;</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">struct </span>Slow : <span class="keyword">public</span> Reader, <span class="keyword">public</span> Writer</div>
@@ -239,7 +239,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_calls_reset</b>
 <div class="line">    ASSERT_EQ(duration_cast&lt;milliseconds&gt;(t.write_dur()).count(), 100);</div>
 <div class="line">    ASSERT_EQ(c.read_count(), 50);</div>
 <div class="line">    ASSERT_EQ(c.write_count(), 100);</div>
-</div><!-- fragment -->
+</div><!-- fragment --><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d9/ded/util_2unittest_2iohelper_8cc-example.html#_a2">util/unittest/iohelper.cc</a>.</dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="../../de/d08/rwtimer_8h_source.html#l00138">138</a> of file <a class="el" href="../../de/d08/rwtimer_8h_source.html">rwtimer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a77e64e81c890b910f08277b4b65a6306"></a>
@@ -271,7 +273,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_calls_reset</b>
 <p>Chain using references. </p>
 <p>Does not assume ownership. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00805">805</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00795">795</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
 
 </div>
 </div>
@@ -280,9 +282,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_calls_reset</b>
 <li>util/<a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassscc_1_1util_1_1ReadTimer_html_a78d29f75972c89d6377889728c9e1b82"><div class="ttname"><a href="../../d7/d9e/classscc_1_1util_1_1ReadTimer.html#a78d29f75972c89d6377889728c9e1b82">scc::util::ReadTimer::read</a></div><div class="ttdeci">virtual size_t read(void *, size_t)</div><div class="ttdoc">Read and update time over underlying read.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3e/iostream_8cc_source.html#l00724">iostream.cc:724</a></div></div>
-<div class="ttc" id="aclassscc_1_1util_1_1WriteTimer_html_a8cf43ae0a2072bede101b62bb5dab295"><div class="ttname"><a href="../../dc/df3/classscc_1_1util_1_1WriteTimer.html#a8cf43ae0a2072bede101b62bb5dab295">scc::util::WriteTimer::write</a></div><div class="ttdeci">virtual size_t write(const void *, size_t)</div><div class="ttdoc">Write and update time over underlying write.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3e/iostream_8cc_source.html#l00770">iostream.cc:770</a></div></div>
-<div class="ttc" id="aclassscc_1_1util_1_1RwTimer_html_a43adf7ca9e1206dff89712e5638322ee"><div class="ttname"><a href="../../d5/d17/classscc_1_1util_1_1RwTimer.html#a43adf7ca9e1206dff89712e5638322ee">scc::util::RwTimer::RwTimer</a></div><div class="ttdeci">RwTimer()</div><div class="ttdoc">Reads and writes return 0 until reset.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3e/iostream_8cc_source.html#l00801">iostream.cc:801</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1ReadTimer_html_a78d29f75972c89d6377889728c9e1b82"><div class="ttname"><a href="../../d7/d9e/classscc_1_1util_1_1ReadTimer.html#a78d29f75972c89d6377889728c9e1b82">scc::util::ReadTimer::read</a></div><div class="ttdeci">virtual size_t read(void *, size_t)</div><div class="ttdoc">Read and update time over underlying read.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3e/iostream_8cc_source.html#l00714">iostream.cc:714</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1WriteTimer_html_a8cf43ae0a2072bede101b62bb5dab295"><div class="ttname"><a href="../../dc/df3/classscc_1_1util_1_1WriteTimer.html#a8cf43ae0a2072bede101b62bb5dab295">scc::util::WriteTimer::write</a></div><div class="ttdeci">virtual size_t write(const void *, size_t)</div><div class="ttdoc">Write and update time over underlying write.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3e/iostream_8cc_source.html#l00760">iostream.cc:760</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1RwTimer_html_a43adf7ca9e1206dff89712e5638322ee"><div class="ttname"><a href="../../d5/d17/classscc_1_1util_1_1RwTimer.html#a43adf7ca9e1206dff89712e5638322ee">scc::util::RwTimer::RwTimer</a></div><div class="ttdeci">RwTimer()</div><div class="ttdoc">Reads and writes return 0 until reset.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3e/iostream_8cc_source.html#l00791">iostream.cc:791</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

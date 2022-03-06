@@ -69,11 +69,11 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">logger.h File Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../da/d9a/group__util__logger.html">Logging utility</a></div></div>  </div>
+<div class="title">logger.h File Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../da/d9a/group__util__logger.html">Thread safe logging</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Logging utility.  
+<p>Thread safe logging.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
@@ -83,7 +83,7 @@ Include dependency graph for logger.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/db3/logger_8h__incl.png" border="0" usemap="#util_2pub_2util_2logger_8h" alt=""/></div>
 <map name="util_2pub_2util_2logger_8h" id="util_2pub_2util_2logger_8h">
-<area shape="rect" title="Logging utility." alt="" coords="51,5,203,32"/>
+<area shape="rect" title="Thread safe logging." alt="" coords="51,5,203,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,64,107"/>
 <area shape="rect" title=" " alt="" coords="89,80,165,107"/>
 <area shape="rect" title=" " alt="" coords="189,80,267,107"/>
@@ -94,8 +94,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/dcf/logger_8h__dep__incl.png" border="0" usemap="#util_2pub_2util_2logger_8hdep" alt=""/></div>
 <map name="util_2pub_2util_2logger_8hdep" id="util_2pub_2util_2logger_8hdep">
-<area shape="rect" title="Logging utility." alt="" coords="5,5,157,32"/>
-<area shape="rect" href="../../d5/d6e/logger_8cc_source.html" title=" " alt="" coords="29,80,134,107"/>
+<area shape="rect" title="Thread safe logging." alt="" coords="504,5,656,32"/>
+<area shape="rect" href="../../de/d77/netmain_8cc.html" title="Networking example." alt="" coords="5,80,192,107"/>
+<area shape="rect" href="../../dd/d8d/unittest_2inet_8cc.html" title="Tests for Internet tcp and udp networking sockets." alt="" coords="216,80,360,107"/>
+<area shape="rect" href="../../d0/d3a/inet__stream_8cc.html" title="Tests for Internet tcp and udp networking streams." alt="" coords="384,80,581,107"/>
+<area shape="rect" href="../../db/dc1/unittest_2unix_8cc.html" title="Tests for Unix domain tcp and udp networking." alt="" coords="605,80,752,107"/>
+<area shape="rect" href="../../d5/d6e/logger_8cc.html" title="Thread safe logging implementation" alt="" coords="777,80,882,107"/>
+<area shape="rect" href="../../d6/d89/unittest_2logger_8cc.html" title="Tests for Thread safe logging." alt="" coords="906,80,1065,107"/>
 </map>
 </div>
 </div>
@@ -104,11 +109,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da2/classscc_1_1util_1_1Logger.html">scc::util::Logger</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream logger class.  <a href="../../db/da2/classscc_1_1util_1_1Logger.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe stream logger.  <a href="../../db/da2/classscc_1_1util_1_1Logger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Logging utility. </p>
+<div class="textblock"><p>Thread safe logging. </p>
 
 <p class="definition">Definition in file <a class="el" href="../../d1/d8c/logger_8h_source.html">logger.h</a>.</p>
 </div></div><!-- contents -->

@@ -1,4 +1,9 @@
 <map id="util/pub/util/poller.h" name="util/pub/util/poller.h">
-<area shape="rect" id="node1" title="Linux kernel i/o event notification (poller)." alt="" coords="5,5,153,32"/>
-<area shape="rect" id="node2" href="$d3/dd7/poller_8cc_source.html" title=" " alt="" coords="29,80,130,107"/>
+<area shape="rect" id="node1" title="Linux kernel i/o event notification (poller)." alt="" coords="506,5,654,32"/>
+<area shape="rect" id="node2" href="$de/d77/netmain_8cc.html" title="Networking example." alt="" coords="5,80,192,107"/>
+<area shape="rect" id="node3" href="$dd/d8d/unittest_2inet_8cc.html" title="Tests for Internet tcp and udp networking sockets." alt="" coords="216,80,360,107"/>
+<area shape="rect" id="node4" href="$d0/d3a/inet__stream_8cc.html" title="Tests for Internet tcp and udp networking streams." alt="" coords="384,80,581,107"/>
+<area shape="rect" id="node5" href="$db/dc1/unittest_2unix_8cc.html" title="Tests for Unix domain tcp and udp networking." alt="" coords="605,80,752,107"/>
+<area shape="rect" id="node6" href="$d3/dd7/poller_8cc.html" title="Kernel file descriptor event notification poller implementation" alt="" coords="776,80,877,107"/>
+<area shape="rect" id="node7" href="$d8/d32/unittest_2poller_8cc.html" title="Tests for Kernel file descriptor event notification poller." alt="" coords="901,80,1056,107"/>
 </map>

@@ -1,4 +1,4 @@
-<map id="Logging utility" name="Logging utility">
+<map id="Thread safe logging" name="Thread safe logging">
 <area shape="rect" id="node1" href="$d4/d3a/group__util.html" title=" " alt="" coords="5,5,132,31"/>
-<area shape="rect" id="node2" title="Thread&#45;safe logging utility." alt="" coords="180,5,295,31"/>
+<area shape="rect" id="node2" title="Logging utility which can share std::ostream objects between multiple threads." alt="" coords="180,5,331,31"/>
 </map>

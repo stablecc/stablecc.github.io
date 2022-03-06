@@ -1,5 +1,5 @@
 <map id="scc::util::OutPipeline" name="scc::util::OutPipeline">
-<area shape="rect" id="node1" title="OutPipeline with pipeline of writers." alt="" coords="82,393,237,420"/>
+<area shape="rect" id="node1" title="Output stream pipeline of writers." alt="" coords="82,393,237,420"/>
 <area shape="rect" id="node2" href="$d5/db8/structscc_1_1util_1_1OutChain.html" title="Chain of writers base class." alt="" coords="5,319,145,345"/>
 <area shape="rect" id="node3" href="$d6/dbd/classscc_1_1util_1_1OutStream.html" title="Output stream wrapper for writer." alt="" coords="169,319,320,345"/>
 <area shape="rect" id="node4" title="STL class." alt="" coords="193,244,297,271"/>

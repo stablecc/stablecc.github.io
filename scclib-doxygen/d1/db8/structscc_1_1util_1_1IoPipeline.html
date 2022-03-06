@@ -70,11 +70,11 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../da/d94/structscc_1_1util_1_1IoPipeline-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">scc::util::IoPipeline Struct Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">I/O stream utilities</a></div></div>  </div>
+<div class="title">scc::util::IoPipeline Struct Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">input/output stream utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d9/d84/classscc_1_1util_1_1IoStream.html" title="I/O stream wrapper for reader/writer.">IoStream</a> with pipeline of readers and writers.  
+<p>Input/output stream with pipeline of readers and writers.  
  <a href="../../d1/db8/structscc_1_1util_1_1IoPipeline.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d2/d09/iopipeline_8h_source.html">iopipeline.h</a>&gt;</code></p>
@@ -83,10 +83,10 @@ Inheritance diagram for scc::util::IoPipeline:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d08/structscc_1_1util_1_1IoPipeline__inherit__graph.png" border="0" usemap="#scc_1_1util_1_1IoPipeline_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1util_1_1IoPipeline_inherit__map" id="scc_1_1util_1_1IoPipeline_inherit__map">
-<area shape="rect" title="IoStream with pipeline of readers and writers." alt="" coords="157,155,301,181"/>
+<area shape="rect" title="Input/output stream with pipeline of readers and writers." alt="" coords="157,155,301,181"/>
 <area shape="rect" href="../../d5/dd1/structscc_1_1util_1_1InChain.html" title="Chain of readers base class." alt="" coords="5,80,135,107"/>
 <area shape="rect" href="../../d5/db8/structscc_1_1util_1_1OutChain.html" title="Chain of writers base class." alt="" coords="159,80,299,107"/>
-<area shape="rect" href="../../d9/d84/classscc_1_1util_1_1IoStream.html" title="I/O stream wrapper for reader/writer." alt="" coords="323,80,462,107"/>
+<area shape="rect" href="../../d9/d84/classscc_1_1util_1_1IoStream.html" title="Input/output stream wrapper for reader/writer." alt="" coords="323,80,462,107"/>
 <area shape="rect" title=" " alt="" coords="339,5,447,32"/>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
@@ -95,7 +95,7 @@ Collaboration diagram for scc::util::IoPipeline:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/dad/structscc_1_1util_1_1IoPipeline__coll__graph.png" border="0" usemap="#scc_1_1util_1_1IoPipeline_coll__map" alt="Collaboration graph"/></div>
 <map name="scc_1_1util_1_1IoPipeline_coll__map" id="scc_1_1util_1_1IoPipeline_coll__map">
-<area shape="rect" title="IoStream with pipeline of readers and writers." alt="" coords="1507,158,1651,185"/>
+<area shape="rect" title="Input/output stream with pipeline of readers and writers." alt="" coords="1507,158,1651,185"/>
 <area shape="rect" href="../../d5/dd1/structscc_1_1util_1_1InChain.html" title="Chain of readers base class." alt="" coords="1323,71,1452,98"/>
 <area shape="rect" title=" " alt="" coords="959,5,1207,47"/>
 <area shape="rect" title=" " alt="" coords="584,5,756,47"/>
@@ -108,7 +108,7 @@ Collaboration diagram for scc::util::IoPipeline:</div>
 <area shape="rect" href="../../d5/dea/structscc_1_1util_1_1PipelineWriter.html" title="Pipeline writer to carry out processing in a pipeline (chain of writers)." alt="" coords="206,189,378,215"/>
 <area shape="rect" title=" " alt="" coords="961,185,1204,227"/>
 <area shape="rect" title=" " alt="" coords="587,183,753,224"/>
-<area shape="rect" href="../../d9/d84/classscc_1_1util_1_1IoStream.html" title="I/O stream wrapper for reader/writer." alt="" coords="1318,230,1457,257"/>
+<area shape="rect" href="../../d9/d84/classscc_1_1util_1_1IoStream.html" title="Input/output stream wrapper for reader/writer." alt="" coords="1318,230,1457,257"/>
 <area shape="rect" title=" " alt="" coords="1029,251,1137,278"/>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
@@ -261,8 +261,10 @@ std::list&lt; std::shared_ptr&lt; <a class="el" href="../../d5/dea/structscc_1_1
 <tr class="separator:a4815087ca5530ff45a9cc61164670d1a inherit pub_attribs_structscc_1_1util_1_1OutChain"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../d9/d84/classscc_1_1util_1_1IoStream.html" title="I/O stream wrapper for reader/writer.">IoStream</a> with pipeline of readers and writers. </p>
+<div class="textblock"><p>Input/output stream with pipeline of readers and writers. </p>
 <p>Without: stream reads/writes &lt;-&gt; base With chain: stream reads/writes &lt;-&gt; chain[0] &lt;-&gt; ... &lt;-&gt; chain[N] &lt;-&gt; base </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d9/ded/util_2unittest_2iohelper_8cc-example.html#_a7">util/unittest/iohelper.cc</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d09/iopipeline_8h_source.html#l00162">162</a> of file <a class="el" href="../../d2/d09/iopipeline_8h_source.html">iopipeline.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following files:<ul>

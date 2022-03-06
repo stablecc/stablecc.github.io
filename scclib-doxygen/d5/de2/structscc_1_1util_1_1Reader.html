@@ -70,7 +70,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d3/dcd/structscc_1_1util_1_1Reader-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">scc::util::Reader Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">I/O stream utilities</a></div></div>  </div>
+<div class="title">scc::util::Reader Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">input/output stream utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -84,12 +84,12 @@ Inheritance diagram for scc::util::Reader:</div>
 <div class="center"><img src="../../df/d5c/structscc_1_1util_1_1Reader__inherit__graph.png" border="0" usemap="#scc_1_1util_1_1Reader_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1util_1_1Reader_inherit__map" id="scc_1_1util_1_1Reader_inherit__map">
 <area shape="rect" title="Interface class for objects which can be read." alt="" coords="5,144,132,171"/>
-<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title=" " alt="" coords="197,56,341,83"/>
+<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title="Tcp socket base class." alt="" coords="197,56,341,83"/>
 <area shape="rect" href="../../df/d03/structscc_1_1util_1_1PipelineReader.html" title="Pipeline reader to carry out processing in a pipeline (chain of readers)." alt="" coords="180,144,359,171"/>
 <area shape="rect" href="../../de/d4e/classscc_1_1util_1_1RwLoopBuffer.html" title="Loopback read/write stream buffer." alt="" coords="184,195,355,221"/>
-<area shape="rect" href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html" title="Transmission Control Protocol socket (TCP/IP)." alt="" coords="436,5,593,32"/>
+<area shape="rect" href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html" title="Internet transmission control protocol (tcp) socket." alt="" coords="436,5,593,32"/>
 <area shape="rect" href="../../df/d37/classscc_1_1net_1_1UnixTcpSock.html" title="Unix domain tcp (stream) socket." alt="" coords="433,56,596,83"/>
-<area shape="rect" href="../../df/d35/structscc_1_1util_1_1FlowThroughPipelineReader.html" title=" " alt="" coords="407,107,623,149"/>
+<area shape="rect" href="../../df/d35/structscc_1_1util_1_1FlowThroughPipelineReader.html" title="Pipeline reader which flows through all data." alt="" coords="407,107,623,149"/>
 <area shape="rect" href="../../de/ddd/classscc_1_1util_1_1ReadCounter.html" title="Adds byte count to a read stream." alt="" coords="433,173,597,200"/>
 <area shape="rect" href="../../d7/d9e/classscc_1_1util_1_1ReadTimer.html" title="Adds timer to a read stream." alt="" coords="439,224,590,251"/>
 <area shape="rect" href="../../d2/dc0/classscc_1_1util_1_1RwCounter.html" title="Adds byte count to a read/write stream." alt="" coords="671,173,821,200"/>
@@ -105,8 +105,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface class for objects which can be read. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d9/ded/util_2unittest_2iohelper_8cc-example.html#_a0">util/unittest/iohelper.cc</a>, and <a class="el" href="../../d3/d92/util_2unittest_2iostream_8cc-example.html#_a5">util/unittest/iostream.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d65/iobase_8h_source.html#l00069">69</a> of file <a class="el" href="../../d6/d65/iobase_8h_source.html">iobase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d65/iobase_8h_source.html#l00066">66</a> of file <a class="el" href="../../d6/d65/iobase_8h_source.html">iobase.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa5c812efa3ab059921a35a2194ac3e88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5c812efa3ab059921a35a2194ac3e88">&#9670;&nbsp;</a></span>read()</h2>

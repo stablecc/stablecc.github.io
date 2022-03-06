@@ -93,7 +93,7 @@ Include dependency graph for inet.h:</div>
 <area shape="rect" href="../../da/ddd/socket_8h.html" title="Low&#45;level tcp and udp sockets." alt="" coords="166,80,268,107"/>
 <area shape="rect" title=" " alt="" coords="263,155,371,181"/>
 <area shape="rect" title=" " alt="" coords="396,155,462,181"/>
-<area shape="rect" href="../../d6/d65/iobase_8h.html" title="I/O stream base reader/writer interface classes." alt="" coords="136,155,239,181"/>
+<area shape="rect" href="../../d6/d65/iobase_8h.html" title="Input/output stream base reader/writer interface classes." alt="" coords="136,155,239,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -101,10 +101,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../da/d4d/inet_8h__dep__incl.png" border="0" usemap="#net_2pub_2net_2inet_8hdep" alt=""/></div>
 <map name="net_2pub_2net_2inet_8hdep" id="net_2pub_2net_2inet_8hdep">
-<area shape="rect" title="Internet tcp and udp networking." alt="" coords="123,5,260,32"/>
-<area shape="rect" href="../../d7/d39/net__if_8h.html" title="Internet network interface utility." alt="" coords="5,80,153,107"/>
-<area shape="rect" href="../../da/d64/net__if_8cc_source.html" title=" " alt="" coords="85,155,186,181"/>
-<area shape="rect" href="../../dc/d52/inet_8cc_source.html" title=" " alt="" coords="229,80,319,107"/>
+<area shape="rect" title="Internet tcp and udp networking." alt="" coords="463,5,601,32"/>
+<area shape="rect" href="../../de/d77/netmain_8cc.html" title="Networking example." alt="" coords="5,155,192,181"/>
+<area shape="rect" href="../../d7/d39/net__if_8h.html" title="Internet network interface utility." alt="" coords="305,80,453,107"/>
+<area shape="rect" href="../../da/d64/net__if_8cc.html" title="Internet network interface utility implementation" alt="" coords="216,155,317,181"/>
+<area shape="rect" href="../../dd/d8d/unittest_2inet_8cc.html" title="Tests for Internet tcp and udp networking sockets." alt="" coords="520,155,664,181"/>
+<area shape="rect" href="../../dc/d52/inet_8cc.html" title="Internet tcp and udp networking implementation" alt="" coords="528,80,619,107"/>
+<area shape="rect" href="../../d0/d3a/inet__stream_8cc.html" title="Tests for Internet tcp and udp networking streams." alt="" coords="643,80,840,107"/>
+<area shape="rect" href="../../dd/d84/inetaddr_8cc.html" title="Tests for Internet tcp and udp networking addresses." alt="" coords="865,80,1037,107"/>
+<area shape="rect" href="../../db/dc1/unittest_2unix_8cc.html" title="Tests for Unix domain tcp and udp networking." alt="" coords="1061,80,1208,107"/>
+<area shape="rect" href="../../de/d1f/unittest_2net__if_8cc.html" title="Tests for Internet network interface utility." alt="" coords="341,155,496,181"/>
 </map>
 </div>
 </div>
@@ -113,13 +119,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d56/classscc_1_1net_1_1InetAddr.html">scc::net::InetAddr</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network address.  <a href="../../da/d56/classscc_1_1net_1_1InetAddr.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ipv6 internet address.  <a href="../../da/d56/classscc_1_1net_1_1InetAddr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html">scc::net::InetTcpSock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmission Control Protocol socket (TCP/IP).  <a href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internet transmission control protocol (tcp) socket.  <a href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da1/classscc_1_1net_1_1InetUdpSock.html">scc::net::InetUdpSock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">User Datagram Protocol socket (UDP/IP).  <a href="../../df/da1/classscc_1_1net_1_1InetUdpSock.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internet user datagram protocol (udp) socket.  <a href="../../df/da1/classscc_1_1net_1_1InetUdpSock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -158,7 +164,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="../../d6/d5e/group__net__inet.html#ggad09c529846f2804e903604f6df2c31b7af764f0fcb75d9527229af393ea87c8ef">scc::net::unique_local_address</a> = 0x10000000
 <br />
  }</td></tr>
-<tr class="memdesc:gad09c529846f2804e903604f6df2c31b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address flags.  <a href="../../d6/d5e/group__net__inet.html#gad09c529846f2804e903604f6df2c31b7">More...</a><br /></td></tr>
+<tr class="memdesc:gad09c529846f2804e903604f6df2c31b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internet address flags.  <a href="../../d6/d5e/group__net__inet.html#gad09c529846f2804e903604f6df2c31b7">More...</a><br /></td></tr>
 <tr class="separator:gad09c529846f2804e903604f6df2c31b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>

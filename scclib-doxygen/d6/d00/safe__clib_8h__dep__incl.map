@@ -1,9 +1,11 @@
 <map id="util/pub/util/safe_clib.h" name="util/pub/util/safe_clib.h">
-<area shape="rect" id="node1" title="Signal&#45;safe C library wrapper." alt="" coords="317,5,445,47"/>
-<area shape="rect" id="node2" href="$d2/d88/socket_8cc_source.html" title=" " alt="" coords="5,95,112,121"/>
-<area shape="rect" id="node3" href="$d0/d1c/event_8cc_source.html" title=" " alt="" coords="137,95,239,121"/>
-<area shape="rect" id="node4" href="$d6/d4d/filedesc_8cc_source.html" title=" " alt="" coords="264,95,379,121"/>
-<area shape="rect" id="node5" href="$db/de1/fs_8cc_source.html" title=" " alt="" coords="403,95,480,121"/>
-<area shape="rect" id="node6" href="$d3/dd7/poller_8cc_source.html" title=" " alt="" coords="504,95,605,121"/>
-<area shape="rect" id="node7" href="$dd/df5/safe__clib_8cc_source.html" title=" " alt="" coords="629,95,752,121"/>
+<area shape="rect" id="node1" title="Signal&#45;safe C library wrapper." alt="" coords="433,5,561,47"/>
+<area shape="rect" id="node2" href="$d2/d88/socket_8cc.html" title="Low&#45;level tcp and udp sockets implementation" alt="" coords="5,102,112,129"/>
+<area shape="rect" id="node3" href="$d0/d1c/event_8cc.html" title="Signaling kernel event counter implementation" alt="" coords="137,102,239,129"/>
+<area shape="rect" id="node4" href="$d6/d4d/filedesc_8cc.html" title="File descriptor implementation" alt="" coords="264,102,379,129"/>
+<area shape="rect" id="node5" href="$db/de1/fs_8cc.html" title="Common file system utilities implementation" alt="" coords="403,102,480,129"/>
+<area shape="rect" id="node6" href="$d3/dd7/poller_8cc.html" title="Kernel file descriptor event notification poller implementation" alt="" coords="504,102,605,129"/>
+<area shape="rect" id="node7" href="$dd/df5/safe__clib_8cc.html" title="Signal&#45;safe C library wrapper implementation" alt="" coords="629,102,752,129"/>
+<area shape="rect" id="node8" href="$d9/d2e/unittest_2fs_8cc.html" title="Tests for Common file system utilities." alt="" coords="776,102,907,129"/>
+<area shape="rect" id="node9" href="$d5/d0a/unittest_2safe__clib_8cc.html" title="Tests for Signal&#45;safe C library wrapper." alt="" coords="931,95,1061,136"/>
 </map>

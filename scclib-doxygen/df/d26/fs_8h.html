@@ -71,11 +71,11 @@ $(function() {
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">fs.h File Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../d0/dcc/group__util__fs.html">Filesystem utilities</a></div></div>  </div>
+<div class="title">fs.h File Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../d0/dcc/group__util__fs.html">Common file system utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>File system utilities.  
+<p>Common file system utilities.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
@@ -87,7 +87,7 @@ Include dependency graph for fs.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/de1/fs_8h__incl.png" border="0" usemap="#util_2pub_2util_2fs_8h" alt=""/></div>
 <map name="util_2pub_2util_2fs_8h" id="util_2pub_2util_2fs_8h">
-<area shape="rect" title="File system utilities." alt="" coords="145,5,269,32"/>
+<area shape="rect" title="Common file system utilities." alt="" coords="145,5,269,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,64,107"/>
 <area shape="rect" title=" " alt="" coords="88,80,139,107"/>
 <area shape="rect" title=" " alt="" coords="163,80,250,107"/>
@@ -100,8 +100,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d98/fs_8h__dep__incl.png" border="0" usemap="#util_2pub_2util_2fs_8hdep" alt=""/></div>
 <map name="util_2pub_2util_2fs_8hdep" id="util_2pub_2util_2fs_8hdep">
-<area shape="rect" title="File system utilities." alt="" coords="5,5,129,32"/>
-<area shape="rect" href="../../db/de1/fs_8cc_source.html" title=" " alt="" coords="29,80,106,107"/>
+<area shape="rect" title="Common file system utilities." alt="" coords="217,5,341,32"/>
+<area shape="rect" href="../../db/dc1/unittest_2unix_8cc.html" title="Tests for Unix domain tcp and udp networking." alt="" coords="5,80,152,107"/>
+<area shape="rect" href="../../db/de1/fs_8cc.html" title="Common file system utilities implementation" alt="" coords="176,80,253,107"/>
+<area shape="rect" href="../../d9/d2e/unittest_2fs_8cc.html" title="Tests for Common file system utilities." alt="" coords="277,80,408,107"/>
+<area shape="rect" href="../../d6/d89/unittest_2logger_8cc.html" title="Tests for Thread safe logging." alt="" coords="433,80,591,107"/>
 </map>
 </div>
 </div>
@@ -110,10 +113,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dfc/structscc_1_1util_1_1FileStat.html">scc::util::FileStat</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">File stat.  <a href="../../d2/dfc/structscc_1_1util_1_1FileStat.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">File status structure.  <a href="../../d2/dfc/structscc_1_1util_1_1FileStat.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df9/classscc_1_1util_1_1Filesystem.html">scc::util::Filesystem</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../df/df9/classscc_1_1util_1_1Filesystem.html" title="Filesystem utility.">Filesystem</a> utility.  <a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common file system utilities.  <a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -135,9 +138,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gafa37d093d81e98fc8e56f1c93b91635b"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcc/group__util__fs.html#gafa37d093d81e98fc8e56f1c93b91635b">scc::util::default_scan_filter</a> (const std::string &amp;, <a class="el" href="../../d0/dcc/group__util__fs.html#ga2349db6f4bbd746c5b2e1e281e880269">FileType</a>)</td></tr>
-<tr class="memdesc:gafa37d093d81e98fc8e56f1c93b91635b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default scan filter returns true for all files, except "." or ".." directories. <br /></td></tr>
+<tr class="memitem:gafa37d093d81e98fc8e56f1c93b91635b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcc/group__util__fs.html#gafa37d093d81e98fc8e56f1c93b91635b">scc::util::default_scan_filter</a> (const std::string &amp;, <a class="el" href="../../d0/dcc/group__util__fs.html#ga2349db6f4bbd746c5b2e1e281e880269">FileType</a>)</td></tr>
+<tr class="memdesc:gafa37d093d81e98fc8e56f1c93b91635b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default scan filter.  <a href="../../d0/dcc/group__util__fs.html#gafa37d093d81e98fc8e56f1c93b91635b">More...</a><br /></td></tr>
 <tr class="separator:gafa37d093d81e98fc8e56f1c93b91635b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaeb4917df6672395a812c36fbcfbd57"><td class="memItemLeft" align="right" valign="top">
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;, <a class="el" href="../../d2/dfc/structscc_1_1util_1_1FileStat.html">scc::util::FileStat</a>)</td></tr>
@@ -147,7 +149,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <tr class="separator:gac62921308b39e19a9d1a669f578d9aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>File system utilities. </p>
+<div class="textblock"><p>Common file system utilities. </p>
 
 <p class="definition">Definition in file <a class="el" href="../../df/d26/fs_8h_source.html">fs.h</a>.</p>
 </div></div><!-- contents -->

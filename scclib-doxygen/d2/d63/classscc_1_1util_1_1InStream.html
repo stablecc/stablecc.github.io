@@ -70,7 +70,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../de/d68/classscc_1_1util_1_1InStream-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">scc::util::InStream Class Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">I/O stream utilities</a></div></div>  </div>
+<div class="title">scc::util::InStream Class Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">input/output stream utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -84,7 +84,7 @@ Inheritance diagram for scc::util::InStream:</div>
 <div class="center"><img src="../../d3/d2d/classscc_1_1util_1_1InStream__inherit__graph.png" border="0" usemap="#scc_1_1util_1_1InStream_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1util_1_1InStream_inherit__map" id="scc_1_1util_1_1InStream_inherit__map">
 <area shape="rect" title="Input stream wrapper for reader." alt="" coords="21,319,160,345"/>
-<area shape="rect" href="../../dd/d80/structscc_1_1util_1_1InPipeline.html" title="InStream with pipeline of readers." alt="" coords="19,393,163,420"/>
+<area shape="rect" href="../../dd/d80/structscc_1_1util_1_1InPipeline.html" title="Input stream with pipeline of readers." alt="" coords="19,393,163,420"/>
 <area shape="rect" title="STL class." alt="" coords="41,244,141,271"/>
 <area shape="rect" title="STL class." alt="" coords="20,155,161,196"/>
 <area shape="rect" title="STL class." alt="" coords="5,80,176,107"/>
@@ -155,6 +155,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (std::ios::
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Input stream wrapper for reader. </p>
 <p>Makes <a class="el" href="../../d5/de2/structscc_1_1util_1_1Reader.html">Reader</a> objects compatible with std::istream. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d7/d4a/examples_2net_2netmain_8cc-example.html#_a3">examples/net/netmain.cc</a>, <a class="el" href="../../d9/ded/util_2unittest_2iohelper_8cc-example.html#_a9">util/unittest/iohelper.cc</a>, and <a class="el" href="../../d3/d92/util_2unittest_2iostream_8cc-example.html#_a1">util/unittest/iostream.cc</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d27/iostream_8h_source.html#l00058">58</a> of file <a class="el" href="../../dd/d27/iostream_8h_source.html">iostream.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -193,7 +195,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (std::ios::
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00351">351</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00341">341</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
 
 </div>
 </div>
@@ -232,7 +234,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (std::ios::
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00358">358</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00348">348</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
 
 </div>
 </div>
@@ -264,7 +266,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (std::ios::
 <p>When an exception is thrown during an underlying read, the exception value is set in <a class="el" href="../../d2/d63/classscc_1_1util_1_1InStream.html#af43846bd750fc45b272c9b8c1b4aaa97" title="Failure message from the input stream.">recv_fail()</a>, and the bad bit is set.</p>
 <p>When a read returns 0, the eof bit is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00429">429</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00419">419</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
 
 </div>
 </div>
@@ -295,7 +297,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (std::ios::
 <p>Resize the receive buffer. </p>
 <p>Clears any data currently in the input buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00417">417</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d3e/iostream_8cc_source.html#l00407">407</a> of file <a class="el" href="../../d2/d3e/iostream_8cc_source.html">iostream.cc</a>.</p>
 
 </div>
 </div>

@@ -85,11 +85,11 @@ Inheritance diagram for scc::net::SocketBase:</div>
 <div class="center"><img src="../../d6/ded/classscc_1_1net_1_1SocketBase__inherit__graph.png" border="0" usemap="#scc_1_1net_1_1SocketBase_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1net_1_1SocketBase_inherit__map" id="scc_1_1net_1_1SocketBase_inherit__map">
 <area shape="rect" title="Socket base class." alt="" coords="5,81,160,108"/>
-<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title=" " alt="" coords="211,56,355,83"/>
-<area shape="rect" href="../../de/d8b/classscc_1_1net_1_1UdpSocket.html" title=" " alt="" coords="208,107,357,133"/>
-<area shape="rect" href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html" title="Transmission Control Protocol socket (TCP/IP)." alt="" coords="410,5,567,32"/>
+<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title="Tcp socket base class." alt="" coords="211,56,355,83"/>
+<area shape="rect" href="../../de/d8b/classscc_1_1net_1_1UdpSocket.html" title="Udp socket base class." alt="" coords="208,107,357,133"/>
+<area shape="rect" href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html" title="Internet transmission control protocol (tcp) socket." alt="" coords="410,5,567,32"/>
 <area shape="rect" href="../../df/d37/classscc_1_1net_1_1UnixTcpSock.html" title="Unix domain tcp (stream) socket." alt="" coords="407,56,570,83"/>
-<area shape="rect" href="../../df/da1/classscc_1_1net_1_1InetUdpSock.html" title="User Datagram Protocol socket (UDP/IP)." alt="" coords="407,107,570,133"/>
+<area shape="rect" href="../../df/da1/classscc_1_1net_1_1InetUdpSock.html" title="Internet user datagram protocol (udp) socket." alt="" coords="407,107,570,133"/>
 <area shape="rect" href="../../d0/d46/classscc_1_1net_1_1UnixUdpSock.html" title="Unix domain udp (datagram) socket." alt="" coords="405,157,572,184"/>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
@@ -187,7 +187,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <div class="textblock"><p>Socket base class. </p>
 <p>In general most errors are returned via exception. Some of the interfaces can be called with an error_code reference, in which case the error return must be checked by the caller. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html#a0767af2cb2366095da8b082213781100" title="Get the current error code (status).">SocketBase::error_code</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/ddd/socket_8h_source.html#l00078">78</a> of file <a class="el" href="../../da/ddd/socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/ddd/socket_8h_source.html#l00076">76</a> of file <a class="el" href="../../da/ddd/socket_8h_source.html">socket.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0767af2cb2366095da8b082213781100"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0767af2cb2366095da8b082213781100">&#9670;&nbsp;</a></span>error_code()</h2>
@@ -209,7 +209,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Error value() 0 means success, otherwise this is a system error.</p>
 <p>&lt;cerror&gt; header contains system errors, e.g. EINPROGRESS means a call on a non-blocking socket cannot be completed immediately. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00089">89</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00094">94</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -232,11 +232,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Set the socket non-blocking. </p>
 <p>Most socket operations that would normally block will now return with EAGAIN error code.</p>
 <p>connect() calls will return the EINPROGRESS error.</p>
-<p>Allows polling of the socket. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html" title="Poller.">scc::util::Poller</a></dd></dl>
+<p>Allows polling of the socket. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html" title="Poller which allows polling of generic file descriptors for various events.">scc::util::Poller</a></dd></dl>
 <p>From the system documentation, the following polling flags can be used for the socket: ┌────────────────────────────────────────────────────────────────────┐ │ I/O events │ ├───────────┬───────────┬────────────────────────────────────────────┤ │Event │ Poll flag │ Occurrence │ ├───────────┼───────────┼────────────────────────────────────────────┤ │Read │ POLLIN │ New data arrived. │ ├───────────┼───────────┼────────────────────────────────────────────┤ │Read │ POLLIN │ A connection setup has been completed (for │ │ │ │ connection-oriented sockets) │ ├───────────┼───────────┼────────────────────────────────────────────┤ │Read │ POLLHUP │ A disconnection request has been initiated │ │ │ │ by the other end. │ ├───────────┼───────────┼────────────────────────────────────────────┤ │Read │ POLLHUP │ A connection is broken (only for connec‐ │ │ │ │ tion-oriented protocols). When the socket │ │ │ │ is written SIGPIPE is also sent. │ ├───────────┼───────────┼────────────────────────────────────────────┤ │Write │ POLLOUT │ Socket has enough send buffer space for │ │ │ │ writing new data. │ ├───────────┼───────────┼────────────────────────────────────────────┤ │Read/Write │ POLLIN | │ An outgoing connect(2) finished. │ │ │ POLLOUT │ │ ├───────────┼───────────┼────────────────────────────────────────────┤ │Read/Write │ POLLERR │ An asynchronous error occurred. │ ├───────────┼───────────┼────────────────────────────────────────────┤ │Read/Write │ POLLHUP │ The other end has shut down one direction. │ ├───────────┼───────────┼────────────────────────────────────────────┤ │Exception │ POLLPRI │ Urgent data arrived. SIGURG is sent then. │ └───────────┴───────────┴────────────────────────────────────────────┘</p>
 <p>Default is false. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00183">183</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00188">188</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Receive bytes, throwing an exception on error. </p>
 <p>Returns the number of bytes received. If a non-zero number of bytes is requested, 0 will be returned if the peer has performed an orderly shutdown. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00262">262</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00267">267</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -318,7 +318,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>The caller should check the error code(), with 0 meaning success.</p>
 <p>Non-blocking sockets may return error codes of EAGAIN or EWOULDBLOCK, meaning that there is no data available, and no other error. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00242">242</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00247">247</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -341,7 +341,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Set receive buffer size. </p>
 <p>Minimum input value is 128. The system will double the value input to account for bookeeping overhead. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00103">103</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00108">108</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>If the timeout elapses and there is data available, the <a class="el" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html#a4108de36f552b34bba6c741120bee9d1" title="Receive bytes, throwing an exception on error.">recv()</a> will return the amount of data available. If no data is availble, the system will return an error of EAGAIN or EWOULDBLOCK as if the socket were non-blocking.</p>
 <p>The default is 0, meaning that the <a class="el" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html#a4108de36f552b34bba6c741120bee9d1" title="Receive bytes, throwing an exception on error.">recv()</a> has no timeout. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00227">227</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00232">232</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -390,8 +390,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Allows a bind to an address if there is not an active listener on the address.</p>
 <p>The system may delay releasing a non-reusable address after it has been used.</p>
 <p>The system default is non-reusable. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/df3/net_2unittest_2inet_stream_8cc-example.html#a6">net/unittest/inet_stream.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00157">157</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00162">162</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -419,7 +421,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>For UDP sockets, having a distinct socket per thread or process may be more efficient than having multiple threads compete for datagrams from the same socket.</p>
 <p>The system default is non-reuseable. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00170">170</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00175">175</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -452,7 +454,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Send bytes, throwing an exception on error. </p>
 <p>Returns the number of bytes sent. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00295">295</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00300">300</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -501,7 +503,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>The caller should check the error code(), with 0 meaning success.</p>
 <p>Non-blocking sockets may return error codes of EAGAIN or EWOULDBLOCK, meaning that there is no data available, and no other error. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00275">275</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00280">280</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -524,7 +526,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Set send buffer size. </p>
 <p>Minimum input value is 1024. The system will double the value input to account for bookeeping overhead. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00130">130</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00135">135</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -549,7 +551,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>If the timeout elapses and there is data available, the <a class="el" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html#a6bb978414aed436cea991a461cb744b7" title="Send bytes, throwing an exception on error.">send()</a> will return the amount of data available. If no data is availble, the system will return an error of EAGAIN or EWOULDBLOCK as if the socket were non-blocking.</p>
 <p>The default is 0, meaning that the <a class="el" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html#a6bb978414aed436cea991a461cb744b7" title="Send bytes, throwing an exception on error.">send()</a> has no timeout. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00212">212</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00217">217</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>

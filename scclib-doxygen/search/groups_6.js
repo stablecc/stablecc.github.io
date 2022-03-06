@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['signaling_20kernel_20event_20counter_578',['Signaling kernel event counter',['../dd/d8f/group__util__event.html',1,'']]],
-  ['signal_2dsafe_20c_20library_20wrapper_579',['Signal-safe C library wrapper',['../d2/dff/group__util__safeclib.html',1,'']]]
+  ['low_2dlevel_20tcp_20and_20udp_20sockets_612',['Low-level tcp and udp sockets',['../dd/d15/group__net__sock.html',1,'']]]
 ];

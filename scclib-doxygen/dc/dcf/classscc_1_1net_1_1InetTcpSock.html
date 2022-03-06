@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Transmission Control Protocol socket (TCP/IP).  
+<p>Internet transmission control protocol (tcp) socket.  
  <a href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d6/d4a/inet_8h_source.html">inet.h</a>&gt;</code></p>
@@ -84,8 +84,8 @@ Inheritance diagram for scc::net::InetTcpSock:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d8c/classscc_1_1net_1_1InetTcpSock__inherit__graph.png" border="0" usemap="#scc_1_1net_1_1InetTcpSock_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1net_1_1InetTcpSock_inherit__map" id="scc_1_1net_1_1InetTcpSock_inherit__map">
-<area shape="rect" title="Transmission Control Protocol socket (TCP/IP)." alt="" coords="169,155,327,181"/>
-<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title=" " alt="" coords="176,80,320,107"/>
+<area shape="rect" title="Internet transmission control protocol (tcp) socket." alt="" coords="169,155,327,181"/>
+<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title="Tcp socket base class." alt="" coords="176,80,320,107"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="5,5,160,32"/>
 <area shape="rect" href="../../d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="185,5,311,32"/>
 <area shape="rect" href="../../dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="336,5,456,32"/>
@@ -96,8 +96,8 @@ Collaboration diagram for scc::net::InetTcpSock:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/d8e/classscc_1_1net_1_1InetTcpSock__coll__graph.png" border="0" usemap="#scc_1_1net_1_1InetTcpSock_coll__map" alt="Collaboration graph"/></div>
 <map name="scc_1_1net_1_1InetTcpSock_coll__map" id="scc_1_1net_1_1InetTcpSock_coll__map">
-<area shape="rect" title="Transmission Control Protocol socket (TCP/IP)." alt="" coords="169,155,327,181"/>
-<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title=" " alt="" coords="176,80,320,107"/>
+<area shape="rect" title="Internet transmission control protocol (tcp) socket." alt="" coords="169,155,327,181"/>
+<area shape="rect" href="../../d4/d36/classscc_1_1net_1_1TcpSocket.html" title="Tcp socket base class." alt="" coords="176,80,320,107"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="5,5,160,32"/>
 <area shape="rect" href="../../d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="185,5,311,32"/>
 <area shape="rect" href="../../dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="336,5,456,32"/>
@@ -252,10 +252,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <tr class="separator:a98a53e1e618f58be8fcfe559f4736178 inherit pro_methods_classscc_1_1net_1_1SocketBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Transmission Control Protocol socket (TCP/IP). </p>
+<div class="textblock"><p>Internet transmission control protocol (tcp) socket. </p>
 <p>Allows reliable, error-checked delivery of a stream of bytes between two connected peers. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d7/d4a/examples_2net_2netmain_8cc-example.html#_a8">examples/net/netmain.cc</a>, <a class="el" href="../../d4/dc4/net_2unittest_2inet_8cc-example.html#_a7">net/unittest/inet.cc</a>, and <a class="el" href="../../dc/df3/net_2unittest_2inet_stream_8cc-example.html#_a5">net/unittest/inet_stream.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d4a/inet_8h_source.html#l00244">244</a> of file <a class="el" href="../../d6/d4a/inet_8h_source.html">inet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d4a/inet_8h_source.html#l00250">250</a> of file <a class="el" href="../../d6/d4a/inet_8h_source.html">inet.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a54df8b938d1bfd790d99bee896015d3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54df8b938d1bfd790d99bee896015d3b">&#9670;&nbsp;</a></span>accept() <span class="overload">[1/2]</span></h2>
@@ -276,7 +278,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Returns a new socket connected to the peer, or throws an exception on error.</p>
 <p>The socket can be polled for Poller::PollFlag::input events, to wait for incoming connections without blocking. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00425">425</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00430">430</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>
@@ -300,7 +302,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Returns a new socket connected to the peer and sets the peer address, or throws an exception on error.</p>
 <p>The socket can be polled for Poller::PollFlag::input events, to wait for incoming connections without blocking. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00438">438</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00443">443</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>

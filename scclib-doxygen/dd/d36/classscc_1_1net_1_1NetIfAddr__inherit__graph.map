@@ -1,5 +1,5 @@
 <map id="scc::net::NetIfAddr" name="scc::net::NetIfAddr">
 <area shape="rect" id="node1" title="Named address within an interface." alt="" coords="19,155,162,181"/>
-<area shape="rect" id="node2" href="$da/d56/classscc_1_1net_1_1InetAddr.html" title="Network address." alt="" coords="23,80,158,107"/>
+<area shape="rect" id="node2" href="$da/d56/classscc_1_1net_1_1InetAddr.html" title="Ipv6 internet address." alt="" coords="23,80,158,107"/>
 <area shape="rect" id="node3" href="$d5/d33/classscc_1_1net_1_1SockaddrBase.html" title="Socket address base class." alt="" coords="5,5,176,32"/>
 </map>

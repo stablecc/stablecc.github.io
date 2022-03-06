@@ -1,6 +1,6 @@
 <map id="scc::net::UdpSocket" name="scc::net::UdpSocket">
-<area shape="rect" id="node1" title=" " alt="" coords="107,80,256,107"/>
-<area shape="rect" id="node3" href="$df/da1/classscc_1_1net_1_1InetUdpSock.html" title="User Datagram Protocol socket (UDP/IP)." alt="" coords="5,155,168,181"/>
+<area shape="rect" id="node1" title="Udp socket base class." alt="" coords="107,80,256,107"/>
+<area shape="rect" id="node3" href="$df/da1/classscc_1_1net_1_1InetUdpSock.html" title="Internet user datagram protocol (udp) socket." alt="" coords="5,155,168,181"/>
 <area shape="rect" id="node4" href="$d0/d46/classscc_1_1net_1_1UnixUdpSock.html" title="Unix domain udp (datagram) socket." alt="" coords="193,155,359,181"/>
 <area shape="rect" id="node2" href="$d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="104,5,259,32"/>
 </map>

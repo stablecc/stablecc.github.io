@@ -1,9 +1,9 @@
 <map id="scc::net::SocketBase" name="scc::net::SocketBase">
 <area shape="rect" id="node1" title="Socket base class." alt="" coords="5,81,160,108"/>
-<area shape="rect" id="node2" href="$d4/d36/classscc_1_1net_1_1TcpSocket.html" title=" " alt="" coords="211,56,355,83"/>
-<area shape="rect" id="node5" href="$de/d8b/classscc_1_1net_1_1UdpSocket.html" title=" " alt="" coords="208,107,357,133"/>
-<area shape="rect" id="node3" href="$dc/dcf/classscc_1_1net_1_1InetTcpSock.html" title="Transmission Control Protocol socket (TCP/IP)." alt="" coords="410,5,567,32"/>
+<area shape="rect" id="node2" href="$d4/d36/classscc_1_1net_1_1TcpSocket.html" title="Tcp socket base class." alt="" coords="211,56,355,83"/>
+<area shape="rect" id="node5" href="$de/d8b/classscc_1_1net_1_1UdpSocket.html" title="Udp socket base class." alt="" coords="208,107,357,133"/>
+<area shape="rect" id="node3" href="$dc/dcf/classscc_1_1net_1_1InetTcpSock.html" title="Internet transmission control protocol (tcp) socket." alt="" coords="410,5,567,32"/>
 <area shape="rect" id="node4" href="$df/d37/classscc_1_1net_1_1UnixTcpSock.html" title="Unix domain tcp (stream) socket." alt="" coords="407,56,570,83"/>
-<area shape="rect" id="node6" href="$df/da1/classscc_1_1net_1_1InetUdpSock.html" title="User Datagram Protocol socket (UDP/IP)." alt="" coords="407,107,570,133"/>
+<area shape="rect" id="node6" href="$df/da1/classscc_1_1net_1_1InetUdpSock.html" title="Internet user datagram protocol (udp) socket." alt="" coords="407,107,570,133"/>
 <area shape="rect" id="node7" href="$d0/d46/classscc_1_1net_1_1UnixUdpSock.html" title="Unix domain udp (datagram) socket." alt="" coords="405,157,572,184"/>
 </map>

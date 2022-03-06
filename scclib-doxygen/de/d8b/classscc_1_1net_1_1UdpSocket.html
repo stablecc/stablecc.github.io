@@ -74,13 +74,18 @@ $(function() {
 <div class="title">scc::net::UdpSocket Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="../../d9/dd2/group__net.html">Networking utilities</a> &raquo; <a class="el" href="../../dd/d15/group__net__sock.html">Low-level tcp and udp sockets</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Udp socket base class.  
+ <a href="../../de/d8b/classscc_1_1net_1_1UdpSocket.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/ddd/socket_8h_source.html">socket.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for scc::net::UdpSocket:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d1a/classscc_1_1net_1_1UdpSocket__inherit__graph.png" border="0" usemap="#scc_1_1net_1_1UdpSocket_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1net_1_1UdpSocket_inherit__map" id="scc_1_1net_1_1UdpSocket_inherit__map">
-<area shape="rect" title=" " alt="" coords="107,80,256,107"/>
-<area shape="rect" href="../../df/da1/classscc_1_1net_1_1InetUdpSock.html" title="User Datagram Protocol socket (UDP/IP)." alt="" coords="5,155,168,181"/>
+<area shape="rect" title="Udp socket base class." alt="" coords="107,80,256,107"/>
+<area shape="rect" href="../../df/da1/classscc_1_1net_1_1InetUdpSock.html" title="Internet user datagram protocol (udp) socket." alt="" coords="5,155,168,181"/>
 <area shape="rect" href="../../d0/d46/classscc_1_1net_1_1UnixUdpSock.html" title="Unix domain udp (datagram) socket." alt="" coords="193,155,359,181"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="104,5,259,32"/>
 </map>
@@ -90,7 +95,7 @@ Collaboration diagram for scc::net::UdpSocket:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/d4c/classscc_1_1net_1_1UdpSocket__coll__graph.png" border="0" usemap="#scc_1_1net_1_1UdpSocket_coll__map" alt="Collaboration graph"/></div>
 <map name="scc_1_1net_1_1UdpSocket_coll__map" id="scc_1_1net_1_1UdpSocket_coll__map">
-<area shape="rect" title=" " alt="" coords="8,80,157,107"/>
+<area shape="rect" title="Udp socket base class." alt="" coords="8,80,157,107"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="5,5,160,32"/>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
@@ -209,8 +214,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <tr class="separator:a98a53e1e618f58be8fcfe559f4736178 inherit pro_methods_classscc_1_1net_1_1SocketBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../da/ddd/socket_8h_source.html#l00346">346</a> of file <a class="el" href="../../da/ddd/socket_8h_source.html">socket.h</a>.</p>
+<div class="textblock"><p>Udp socket base class. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/ddd/socket_8h_source.html#l00348">348</a> of file <a class="el" href="../../da/ddd/socket_8h_source.html">socket.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3f4b4cb584b62956a625a3a9cdef9606"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f4b4cb584b62956a625a3a9cdef9606">&#9670;&nbsp;</a></span>recv() <span class="overload">[1/2]</span></h2>
@@ -247,7 +253,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Receive bytes (a datagram), setting the socket address of the peer. </p>
 <p>/see Socket::recv </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00448">448</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00453">453</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -300,7 +306,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Receive bytes (a datagram), setting the socket address of the peer, and the error code. </p>
 <p>/see Socket::recv </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00422">422</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00427">427</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -339,7 +345,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Send bytes (a datagram) to a peer address. </p>
 <p>/see Socket::send </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00481">481</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00486">486</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>
@@ -392,7 +398,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Send bytes (a datagram) to a peer address, setting the error code. </p>
 <p>/see Socket::send </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00461">461</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00466">466</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
 
 </div>
 </div>

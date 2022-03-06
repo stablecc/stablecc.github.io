@@ -70,11 +70,11 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../db/d8d/classscc_1_1util_1_1Filesystem-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">scc::util::Filesystem Class Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../d0/dcc/group__util__fs.html">Filesystem utilities</a></div></div>  </div>
+<div class="title">scc::util::Filesystem Class Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../d0/dcc/group__util__fs.html">Common file system utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../df/df9/classscc_1_1util_1_1Filesystem.html" title="Filesystem utility.">Filesystem</a> utility.  
+<p>Common file system utilities.  
  <a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../df/d26/fs_8h_source.html">fs.h</a>&gt;</code></p>
@@ -149,10 +149,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa6f6494c6de5697f0a1cd5f5621aa9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../df/df9/classscc_1_1util_1_1Filesystem.html" title="Filesystem utility.">Filesystem</a> utility. </p>
+<div class="textblock"><p>Common file system utilities. </p>
 <p>Utility to manipulate files and the filesystem. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#_a0">util/unittest/fs.cc</a>, and <a class="el" href="../../d2/d18/util_2unittest_2logger_8cc-example.html#_a0">util/unittest/logger.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d26/fs_8h_source.html#l00097">97</a> of file <a class="el" href="../../df/d26/fs_8h_source.html">fs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d26/fs_8h_source.html#l00102">102</a> of file <a class="el" href="../../df/d26/fs_8h_source.html">fs.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac8d1bfd313fff264e32a55c71a666e25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8d1bfd313fff264e32a55c71a666e25">&#9670;&nbsp;</a></span>change_dir()</h2>
@@ -190,8 +192,10 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Change working directory. </p>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a4">util/unittest/fs.cc</a>, and <a class="el" href="../../d2/d18/util_2unittest_2logger_8cc-example.html#a4">util/unittest/logger.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00425">425</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00430">430</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -239,8 +243,10 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>The directory will be created if necessary with mode 0700. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a3">util/unittest/fs.cc</a>, and <a class="el" href="../../d2/d18/util_2unittest_2logger_8cc-example.html#a3">util/unittest/logger.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00269">269</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00274">274</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -281,8 +287,10 @@ Static Public Member Functions</h2></td></tr>
 <p>Create a named pipe (FIFO). </p>
 <p>On error, throws an exception or sets err if provided.</p>
 <p>The file will be created if necessary with mode 0600. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a8">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00371">371</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00376">376</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -337,8 +345,10 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a7">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00357">357</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00362">362</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -387,8 +397,10 @@ Static Public Member Functions</h2></td></tr>
 <p>The file will be created if necessary with mode 0600.</p>
 <p>If the file exists, and cannot be opened for writing, throws an error.</p>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a5">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00283">283</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00288">288</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -443,8 +455,10 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <p>E.g. create_symlink("../reg", "dir/link") creates a symlink: dir/link -&gt; ../reg</p>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a6">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00324">324</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00329">329</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -485,8 +499,10 @@ Static Public Member Functions</h2></td></tr>
 <p>Create a temporary regular file. </p>
 <p>Return the filename, which will be prefix plus a random string.</p>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a11">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00299">299</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00304">304</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -526,8 +542,10 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get the file stat. </p>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a13">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00385">385</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00390">390</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -568,7 +586,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Get the file type. </p>
 <p>On error, throws an exception or sets err if provided. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00171">171</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00176">176</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -598,8 +616,10 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get working directory. </p>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a2">util/unittest/fs.cc</a>, and <a class="el" href="../../d2/d18/util_2unittest_2logger_8cc-example.html#a2">util/unittest/logger.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00439">439</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00444">444</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -657,8 +677,10 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a23">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00643">643</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00648">648</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -694,7 +716,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d26/fs_8h_source.html#l00335">335</a> of file <a class="el" href="../../df/d26/fs_8h_source.html">fs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d26/fs_8h_source.html#l00340">340</a> of file <a class="el" href="../../df/d26/fs_8h_source.html">fs.h</a>.</p>
 
 </div>
 </div>
@@ -743,8 +765,10 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>target_name File name of the symbolic link target</dd></dl>
 <p>Example if "dir/link" -&gt; "dir/regular", read_symlink(dir/link) will return "dir/regular"</p>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a14">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00338">338</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00343">343</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -784,8 +808,10 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Remove the file or directory. </p>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/dba/net_2unittest_2unix_8cc-example.html#a8">net/unittest/unix.cc</a>, and <a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a12">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00218">218</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00223">223</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -826,7 +852,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Recursively removes the file or directory. </p>
 <p>On error, throws an exception or sets err if provided. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d26/fs_8h_source.html#l00221">221</a> of file <a class="el" href="../../df/d26/fs_8h_source.html">fs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d26/fs_8h_source.html#l00226">226</a> of file <a class="el" href="../../df/d26/fs_8h_source.html">fs.h</a>.</p>
 
 </div>
 </div>
@@ -879,7 +905,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00255">255</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00260">260</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -934,7 +960,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>map&lt;name, FileType&gt; Map of files found, empty if no files were found.</dd></dl>
-<p>Example in scclib/util/unittest/fs.cc </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">bool</span> reg_filt(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s, <a class="code" href="../../d0/dcc/group__util__fs.html#ga2349db6f4bbd746c5b2e1e281e880269">FileType</a> t)</div>
+<p>Example in <a class="el" href="../../d9/d2e/unittest_2fs_8cc.html">scclib/util/unittest/fs.cc</a> </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">bool</span> reg_filt(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s, <a class="code" href="../../d0/dcc/group__util__fs.html#ga2349db6f4bbd746c5b2e1e281e880269">FileType</a> t)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;reg&quot;</span> &amp;&amp; t == <a class="code" href="../../d0/dcc/group__util__fs.html#gga2349db6f4bbd746c5b2e1e281e880269a33c0ee425e2c0efe834afc1aa1e33a4c">FileType::reg</a>)</div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -945,15 +971,17 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">TEST_F(FsTest, filter)</div>
 <div class="line">{</div>
 <div class="line">    create_files();</div>
-<div class="line">    <span class="keyword">auto</span> files = fs::scan_dir(<span class="stringliteral">&quot;sandbox&quot;</span>, reg_filt);</div>
+<div class="line">    <span class="keyword">auto</span> files = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a8a259c001a39ce4fcee3946ebe798aec">fs::scan_dir</a>(<span class="stringliteral">&quot;sandbox&quot;</span>, reg_filt);</div>
 <div class="line">    ASSERT_EQ(files.size(), 1);</div>
 <div class="line">    ASSERT_EQ(files.begin()-&gt;first, <span class="stringliteral">&quot;reg&quot;</span>);</div>
 <div class="line"><span class="comment">//  ASSERT_EQ(files.begin()-&gt;second, FileType::reg);  // some problem googletest has with ostream conversion...</span></div>
 <div class="line">    ASSERT_TRUE(files.begin()-&gt;second == <a class="code" href="../../d0/dcc/group__util__fs.html#gga2349db6f4bbd746c5b2e1e281e880269a33c0ee425e2c0efe834afc1aa1e33a4c">FileType::reg</a>);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00113">113</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+</div><!-- fragment --><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a10">util/unittest/fs.cc</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00118">118</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1043,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00472">472</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00477">477</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -1081,8 +1109,10 @@ Static Public Member Functions</h2></td></tr>
 </ul>
 <p>Calling this api on a symbolic link will result in an error.</p>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a15">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00457">457</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00462">462</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -1137,15 +1167,15 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <p>If size is less than current size, file is truncated.</p>
 <p>If size is greater than current size, a sparse file is created.</p>
-<p>Example in scclib/util/unittest/fs.cc </p><div class="fragment"><div class="line">TEST(FsExampleTest, sparse_and_trunc)</div>
+<p>Example in <a class="el" href="../../d9/d2e/unittest_2fs_8cc.html">scclib/util/unittest/fs.cc</a> </p><div class="fragment"><div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(FsExampleTest, sparse_and_trunc)</div>
 <div class="line">{</div>
 <div class="line">    system_error err;</div>
 <div class="line">    fs::remove_all(<span class="stringliteral">&quot;sandbox&quot;</span>, &amp;err);</div>
-<div class="line">    fs::create_dir(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
-<div class="line">    <span class="keyword">auto</span> curdir = fs::get_current_dir();</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ae9f80534d1d1150d33023f8162f7e097">fs::create_dir</a>(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> curdir = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a01371ec986f45bd7df354cb2c19af132">fs::get_current_dir</a>();</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;curdir: &quot;</span> &lt;&lt; curdir &lt;&lt; endl;</div>
 <div class="line"> </div>
-<div class="line">    fs::change_dir(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ac8d1bfd313fff264e32a55c71a666e25">fs::change_dir</a>(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">string</span> s(<span class="stringliteral">&quot;this is a test of the emergency sizing system\n&quot;</span>);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;sparse test with string len=&quot;</span> &lt;&lt; s.size() &lt;&lt; endl;</div>
@@ -1166,16 +1196,16 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;wrote &quot;</span> &lt;&lt; s.size() &lt;&lt; <span class="stringliteral">&quot; bytes at loc &quot;</span> &lt;&lt; loc &lt;&lt; endl;</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    fs::create_reg(fn);</div>
-<div class="line">    fs::set_size(fn, 16384);            <span class="comment">// 16 K file, with a 0 at the end</span></div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a016ea00e151417b636e554996389530b">fs::create_reg</a>(fn);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ab08bd63a5c393f115fa045a250386c6d">fs::set_size</a>(fn, 16384);            <span class="comment">// 16 K file, with a 0 at the end</span></div>
 <div class="line">    </div>
-<div class="line">    <span class="keyword">auto</span> st = fs::file_stat(fn);</div>
+<div class="line">    <span class="keyword">auto</span> st = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">fs::file_stat</a>(fn);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;12288 hole at start of file:\n&quot;</span> &lt;&lt; st &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(st.size, 16384);</div>
 <div class="line">    ASSERT_EQ(st.alloc_size, 4096);     <span class="comment">// the last block has data</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> sm = fs::sparse_map(fn);</div>
+<div class="line">    <span class="keyword">auto</span> sm = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">fs::sparse_map</a>(fn);</div>
 <div class="line">    cout &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;start&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;data&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : sm)</div>
 <div class="line">    {</div>
@@ -1189,12 +1219,12 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line">    write_sparse(1024);                 <span class="comment">// write the string at 1024, causing first block to be written</span></div>
 <div class="line">    </div>
-<div class="line">    st = fs::file_stat(fn);</div>
+<div class="line">    st = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">fs::file_stat</a>(fn);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;8192 hole in middle of file\n&quot;</span> &lt;&lt; st &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(st.alloc_size, 8192);</div>
 <div class="line"> </div>
-<div class="line">    sm = fs::sparse_map(fn);</div>
+<div class="line">    sm = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">fs::sparse_map</a>(fn);</div>
 <div class="line">    cout &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;start&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;data&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : sm)</div>
 <div class="line">    {</div>
@@ -1205,14 +1235,14 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">    ver[4096] = 12287;                  <span class="comment">// 8192 sized hole at 4096 (middle)</span></div>
 <div class="line">    ASSERT_EQ(sm, ver);</div>
 <div class="line"> </div>
-<div class="line">    fs::set_size(fn, 12288);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ab08bd63a5c393f115fa045a250386c6d">fs::set_size</a>(fn, 12288);</div>
 <div class="line"> </div>
-<div class="line">    st = fs::file_stat(fn);</div>
+<div class="line">    st = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">fs::file_stat</a>(fn);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;8192 hole at end of file\n&quot;</span> &lt;&lt; st &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(st.alloc_size, 4096);</div>
 <div class="line"> </div>
-<div class="line">    sm = fs::sparse_map(fn);</div>
+<div class="line">    sm = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">fs::sparse_map</a>(fn);</div>
 <div class="line">    cout &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;start&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;data&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : sm)</div>
 <div class="line">    {</div>
@@ -1230,11 +1260,13 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">    f.read(&amp;val[0], val.size());</div>
 <div class="line">    ASSERT_EQ(val, s);</div>
 <div class="line"> </div>
-<div class="line">    fs::change_dir(curdir);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ac8d1bfd313fff264e32a55c71a666e25">fs::change_dir</a>(curdir);</div>
 <div class="line">    fs::remove_all(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00599">599</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+</div><!-- fragment --><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a21">util/unittest/fs.cc</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00604">604</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -1296,8 +1328,10 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>On error, throws an exception or sets err if provided. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a16">util/unittest/fs.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00489">489</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00494">494</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -1347,15 +1381,15 @@ Static Public Member Functions</h2></td></tr>
 <p>A sparse file will contain data only in blocks which have been written. When data is read from an unwritten "hole", 0 is returned.</p>
 <p>For example, a 16 K sparse file with a single 0 written at the front and end will have map: </p><pre class="fragment">&lt;4096, 12287&gt;   - block from 4096 to 12287 is hole
 </pre><p>This file reads all 0, but takes up 8192 bytes on disk instead of 16384.</p>
-<p>Example in scclib/util/unittest/fs.cc </p><div class="fragment"><div class="line">TEST(FsExampleTest, sparse_and_trunc)</div>
+<p>Example in <a class="el" href="../../d9/d2e/unittest_2fs_8cc.html">scclib/util/unittest/fs.cc</a> </p><div class="fragment"><div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(FsExampleTest, sparse_and_trunc)</div>
 <div class="line">{</div>
 <div class="line">    system_error err;</div>
 <div class="line">    fs::remove_all(<span class="stringliteral">&quot;sandbox&quot;</span>, &amp;err);</div>
-<div class="line">    fs::create_dir(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
-<div class="line">    <span class="keyword">auto</span> curdir = fs::get_current_dir();</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ae9f80534d1d1150d33023f8162f7e097">fs::create_dir</a>(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> curdir = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a01371ec986f45bd7df354cb2c19af132">fs::get_current_dir</a>();</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;curdir: &quot;</span> &lt;&lt; curdir &lt;&lt; endl;</div>
 <div class="line"> </div>
-<div class="line">    fs::change_dir(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ac8d1bfd313fff264e32a55c71a666e25">fs::change_dir</a>(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">string</span> s(<span class="stringliteral">&quot;this is a test of the emergency sizing system\n&quot;</span>);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;sparse test with string len=&quot;</span> &lt;&lt; s.size() &lt;&lt; endl;</div>
@@ -1376,16 +1410,16 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;wrote &quot;</span> &lt;&lt; s.size() &lt;&lt; <span class="stringliteral">&quot; bytes at loc &quot;</span> &lt;&lt; loc &lt;&lt; endl;</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    fs::create_reg(fn);</div>
-<div class="line">    fs::set_size(fn, 16384);            <span class="comment">// 16 K file, with a 0 at the end</span></div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a016ea00e151417b636e554996389530b">fs::create_reg</a>(fn);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ab08bd63a5c393f115fa045a250386c6d">fs::set_size</a>(fn, 16384);            <span class="comment">// 16 K file, with a 0 at the end</span></div>
 <div class="line">    </div>
-<div class="line">    <span class="keyword">auto</span> st = fs::file_stat(fn);</div>
+<div class="line">    <span class="keyword">auto</span> st = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">fs::file_stat</a>(fn);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;12288 hole at start of file:\n&quot;</span> &lt;&lt; st &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(st.size, 16384);</div>
 <div class="line">    ASSERT_EQ(st.alloc_size, 4096);     <span class="comment">// the last block has data</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> sm = fs::sparse_map(fn);</div>
+<div class="line">    <span class="keyword">auto</span> sm = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">fs::sparse_map</a>(fn);</div>
 <div class="line">    cout &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;start&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;data&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : sm)</div>
 <div class="line">    {</div>
@@ -1399,12 +1433,12 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line">    write_sparse(1024);                 <span class="comment">// write the string at 1024, causing first block to be written</span></div>
 <div class="line">    </div>
-<div class="line">    st = fs::file_stat(fn);</div>
+<div class="line">    st = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">fs::file_stat</a>(fn);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;8192 hole in middle of file\n&quot;</span> &lt;&lt; st &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(st.alloc_size, 8192);</div>
 <div class="line"> </div>
-<div class="line">    sm = fs::sparse_map(fn);</div>
+<div class="line">    sm = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">fs::sparse_map</a>(fn);</div>
 <div class="line">    cout &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;start&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;data&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : sm)</div>
 <div class="line">    {</div>
@@ -1415,14 +1449,14 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">    ver[4096] = 12287;                  <span class="comment">// 8192 sized hole at 4096 (middle)</span></div>
 <div class="line">    ASSERT_EQ(sm, ver);</div>
 <div class="line"> </div>
-<div class="line">    fs::set_size(fn, 12288);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ab08bd63a5c393f115fa045a250386c6d">fs::set_size</a>(fn, 12288);</div>
 <div class="line"> </div>
-<div class="line">    st = fs::file_stat(fn);</div>
+<div class="line">    st = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">fs::file_stat</a>(fn);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;8192 hole at end of file\n&quot;</span> &lt;&lt; st &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(st.alloc_size, 4096);</div>
 <div class="line"> </div>
-<div class="line">    sm = fs::sparse_map(fn);</div>
+<div class="line">    sm = <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">fs::sparse_map</a>(fn);</div>
 <div class="line">    cout &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;start&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;data&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : sm)</div>
 <div class="line">    {</div>
@@ -1440,11 +1474,13 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">    f.read(&amp;val[0], val.size());</div>
 <div class="line">    ASSERT_EQ(val, s);</div>
 <div class="line"> </div>
-<div class="line">    fs::change_dir(curdir);</div>
+<div class="line">    <a class="code" href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ac8d1bfd313fff264e32a55c71a666e25">fs::change_dir</a>(curdir);</div>
 <div class="line">    fs::remove_all(<span class="stringliteral">&quot;sandbox&quot;</span>);</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00510">510</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
+</div><!-- fragment --><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/d31/util_2unittest_2fs_8cc-example.html#a22">util/unittest/fs.cc</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/de1/fs_8cc_source.html#l00515">515</a> of file <a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a>.</p>
 
 </div>
 </div>
@@ -1453,11 +1489,20 @@ Static Public Member Functions</h2></td></tr>
 <li>util/<a class="el" href="../../db/de1/fs_8cc_source.html">fs.cc</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassscc_1_1util_1_1FileDesc_html"><div class="ttname"><a href="../../dc/da2/classscc_1_1util_1_1FileDesc.html">scc::util::FileDesc</a></div><div class="ttdoc">File descriptor wrapper.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d55/filedesc_8h_source.html#l00064">filedesc.h:64</a></div></div>
-<div class="ttc" id="agroup__util__safeclib_html_ga1e9d8b889d2d80d6e72e4d1c5903c215"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#ga1e9d8b889d2d80d6e72e4d1c5903c215">scc::util::safe_write_throw</a></div><div class="ttdeci">ssize_t safe_write_throw(int fd, const void *buf, size_t count)</div><div class="ttdoc">Signal safe write, throws system_error on error.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00147">safe_clib.cc:147</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_a8a259c001a39ce4fcee3946ebe798aec"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a8a259c001a39ce4fcee3946ebe798aec">scc::util::Filesystem::scan_dir</a></div><div class="ttdeci">static std::map&lt; std::string, FileType &gt; scan_dir(const std::string &amp;, std::function&lt; bool(const std::string &amp;, FileType)&gt;=default_scan_filter, std::system_error *=nullptr)</div><div class="ttdoc">Scan a directory, and return a map of names and file types.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00118">fs.cc:118</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_adfe3b464af051dd60ebbf73266a65db3"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#adfe3b464af051dd60ebbf73266a65db3">scc::util::Filesystem::sparse_map</a></div><div class="ttdeci">static std::map&lt; off_t, off_t &gt; sparse_map(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Map of file sparseness.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00515">fs.cc:515</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1FileDesc_html"><div class="ttname"><a href="../../dc/da2/classscc_1_1util_1_1FileDesc.html">scc::util::FileDesc</a></div><div class="ttdoc">File descriptor.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d55/filedesc_8h_source.html#l00065">filedesc.h:65</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_ab08bd63a5c393f115fa045a250386c6d"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ab08bd63a5c393f115fa045a250386c6d">scc::util::Filesystem::set_size</a></div><div class="ttdeci">static void set_size(const std::string &amp;, off_t, std::system_error *=nullptr)</div><div class="ttdoc">Set the file size.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00604">fs.cc:604</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_a01371ec986f45bd7df354cb2c19af132"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a01371ec986f45bd7df354cb2c19af132">scc::util::Filesystem::get_current_dir</a></div><div class="ttdeci">static std::string get_current_dir(std::system_error *=nullptr)</div><div class="ttdoc">Get working directory.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00444">fs.cc:444</a></div></div>
+<div class="ttc" id="aunittest_2inet_8cc_html_a821ca81eacb859889b5efeae7ffa1997"><div class="ttname"><a href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a></div><div class="ttdeci">TEST(inet_example, client_server_stream_test)</div><div class="ttdoc">[Inet client server]</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8d/unittest_2inet_8cc_source.html#l00521">inet.cc:521</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_ac8d1bfd313fff264e32a55c71a666e25"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ac8d1bfd313fff264e32a55c71a666e25">scc::util::Filesystem::change_dir</a></div><div class="ttdeci">static void change_dir(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Change working directory.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00430">fs.cc:430</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_a016ea00e151417b636e554996389530b"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a016ea00e151417b636e554996389530b">scc::util::Filesystem::create_reg</a></div><div class="ttdeci">static void create_reg(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Create a regular file.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00288">fs.cc:288</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_ae9f80534d1d1150d33023f8162f7e097"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#ae9f80534d1d1150d33023f8162f7e097">scc::util::Filesystem::create_dir</a></div><div class="ttdeci">static void create_dir(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Create a directory.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00274">fs.cc:274</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Filesystem_html_a9d20147e6e2f28b1f86d17c43e6a35b0"><div class="ttname"><a href="../../df/df9/classscc_1_1util_1_1Filesystem.html#a9d20147e6e2f28b1f86d17c43e6a35b0">scc::util::Filesystem::file_stat</a></div><div class="ttdeci">static FileStat file_stat(const std::string &amp;, std::system_error *=nullptr)</div><div class="ttdoc">Get the file stat.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/fs_8cc_source.html#l00390">fs.cc:390</a></div></div>
+<div class="ttc" id="agroup__util__safeclib_html_ga1e9d8b889d2d80d6e72e4d1c5903c215"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#ga1e9d8b889d2d80d6e72e4d1c5903c215">scc::util::safe_write_throw</a></div><div class="ttdeci">ssize_t safe_write_throw(int fd, const void *buf, size_t count)</div><div class="ttdoc">Signal safe write, throws system_error on error.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00152">safe_clib.cc:152</a></div></div>
 <div class="ttc" id="agroup__util__fs_html_ga2349db6f4bbd746c5b2e1e281e880269"><div class="ttname"><a href="../../d0/dcc/group__util__fs.html#ga2349db6f4bbd746c5b2e1e281e880269">scc::util::FileType</a></div><div class="ttdeci">FileType</div><div class="ttdoc">File type.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d26/fs_8h_source.html#l00058">fs.h:58</a></div></div>
 <div class="ttc" id="agroup__util__fs_html_gga2349db6f4bbd746c5b2e1e281e880269a33c0ee425e2c0efe834afc1aa1e33a4c"><div class="ttname"><a href="../../d0/dcc/group__util__fs.html#gga2349db6f4bbd746c5b2e1e281e880269a33c0ee425e2c0efe834afc1aa1e33a4c">scc::util::FileType::reg</a></div><div class="ttdeci">@ reg</div><div class="ttdoc">regular file</div></div>
-<div class="ttc" id="agroup__util__safeclib_html_gaaa8d9b1879599530eb1d7ac1e186aa13"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#gaaa8d9b1879599530eb1d7ac1e186aa13">scc::util::safe_open_throw</a></div><div class="ttdeci">int safe_open_throw(const char *pathname, int flags)</div><div class="ttdoc">Signal safe open, throws system_error on error.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00216">safe_clib.cc:216</a></div></div>
+<div class="ttc" id="agroup__util__safeclib_html_gaaa8d9b1879599530eb1d7ac1e186aa13"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#gaaa8d9b1879599530eb1d7ac1e186aa13">scc::util::safe_open_throw</a></div><div class="ttdeci">int safe_open_throw(const char *pathname, int flags)</div><div class="ttdoc">Signal safe open, throws system_error on error.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00221">safe_clib.cc:221</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -70,11 +70,11 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../da/d5d/structscc_1_1util_1_1InPipeline-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">scc::util::InPipeline Struct Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">I/O stream utilities</a></div></div>  </div>
+<div class="title">scc::util::InPipeline Struct Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../de/d16/group__util__iostream.html">input/output stream utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d2/d63/classscc_1_1util_1_1InStream.html" title="Input stream wrapper for reader.">InStream</a> with pipeline of readers.  
+<p>Input stream with pipeline of readers.  
  <a href="../../dd/d80/structscc_1_1util_1_1InPipeline.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d2/d09/iopipeline_8h_source.html">iopipeline.h</a>&gt;</code></p>
@@ -83,7 +83,7 @@ Inheritance diagram for scc::util::InPipeline:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/ddd/structscc_1_1util_1_1InPipeline__inherit__graph.png" border="0" usemap="#scc_1_1util_1_1InPipeline_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1util_1_1InPipeline_inherit__map" id="scc_1_1util_1_1InPipeline_inherit__map">
-<area shape="rect" title="InStream with pipeline of readers." alt="" coords="77,393,221,420"/>
+<area shape="rect" title="Input stream with pipeline of readers." alt="" coords="77,393,221,420"/>
 <area shape="rect" href="../../d5/dd1/structscc_1_1util_1_1InChain.html" title="Chain of readers base class." alt="" coords="5,319,135,345"/>
 <area shape="rect" href="../../d2/d63/classscc_1_1util_1_1InStream.html" title="Input stream wrapper for reader." alt="" coords="159,319,298,345"/>
 <area shape="rect" title="STL class." alt="" coords="179,244,279,271"/>
@@ -97,7 +97,7 @@ Collaboration diagram for scc::util::InPipeline:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/df8/structscc_1_1util_1_1InPipeline__coll__graph.png" border="0" usemap="#scc_1_1util_1_1InPipeline_coll__map" alt="Collaboration graph"/></div>
 <map name="scc_1_1util_1_1InPipeline_coll__map" id="scc_1_1util_1_1InPipeline_coll__map">
-<area shape="rect" title="InStream with pipeline of readers." alt="" coords="1413,98,1557,125"/>
+<area shape="rect" title="Input stream with pipeline of readers." alt="" coords="1413,98,1557,125"/>
 <area shape="rect" href="../../d5/dd1/structscc_1_1util_1_1InChain.html" title="Chain of readers base class." alt="" coords="1230,71,1359,98"/>
 <area shape="rect" title=" " alt="" coords="869,5,1117,47"/>
 <area shape="rect" title=" " alt="" coords="584,5,756,47"/>
@@ -200,7 +200,7 @@ std::list&lt; std::shared_ptr&lt; <a class="el" href="../../df/d03/structscc_1_1
 <tr class="separator:a967d3898186eb5e35b9f974e15cab2db inherit pub_attribs_structscc_1_1util_1_1InChain"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../d2/d63/classscc_1_1util_1_1InStream.html" title="Input stream wrapper for reader.">InStream</a> with pipeline of readers. </p>
+<div class="textblock"><p>Input stream with pipeline of readers. </p>
 <p>Without: stream reads &lt;-&gt; base With chain: stream reads &lt;-&gt; chain[0] &lt;-&gt; ... &lt;-&gt; chain[N] &lt;-&gt; base </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d09/iopipeline_8h_source.html#l00134">134</a> of file <a class="el" href="../../d2/d09/iopipeline_8h_source.html">iopipeline.h</a>.</p>

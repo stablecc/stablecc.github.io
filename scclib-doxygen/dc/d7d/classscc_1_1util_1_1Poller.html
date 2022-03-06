@@ -71,11 +71,11 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../df/dcc/classscc_1_1util_1_1Poller-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">scc::util::Poller Class Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../d5/d5f/group__util__poller.html">Kernel i/o event notification poller</a></div></div>  </div>
+<div class="title">scc::util::Poller Class Reference<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">General utilities</a> &raquo; <a class="el" href="../../d5/d5f/group__util__poller.html">Kernel file descriptor event notification poller</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html" title="Poller.">Poller</a>.  
+<p><a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html" title="Poller which allows polling of generic file descriptors for various events.">Poller</a> which allows polling of generic file descriptors for various events.  
  <a href="../../dc/d7d/classscc_1_1util_1_1Poller.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d4/db0/poller_8h_source.html">poller.h</a>&gt;</code></p>
@@ -128,11 +128,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="separator:ae3248293f3797288b500bfaf36c6cfa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html" title="Poller.">Poller</a>. </p>
-<p>Allows polling of generic file descriptors for various events.</p>
+<div class="textblock"><p><a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html" title="Poller which allows polling of generic file descriptors for various events.">Poller</a> which allows polling of generic file descriptors for various events. </p>
 <p>Examples of valid descriptors are pipes and stream (TCP) sockets.</p>
 <p>After a <a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html#acd1e2f8785d440cf64f8d456dfc96e54" title="Wait forever for an event.">wait()</a>, the poller can be tested to see which events have been polled.</p>
-<p>Example from scclib/net/unittest/inet.cc using a <a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html" title="Poller.">Poller</a> to wait for <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Kernel event counter.">Event</a> </p><div class="fragment"><div class="line">TEST(inet_example, client_server_stream_test)</div>
+<p>Example from <a class="el" href="../../dd/d8d/unittest_2inet_8cc.html">scclib/net/unittest/inet.cc</a> using a <a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html" title="Poller which allows polling of generic file descriptors for various events.">Poller</a> to wait for <a class="el" href="../../db/d7d/classscc_1_1util_1_1Event.html" title="Signaling kernel event counter.">Event</a> </p><div class="fragment"><div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(inet_example, client_server_stream_test)</div>
 <div class="line">{</div>
 <div class="line">    Logger log;</div>
 <div class="line">    log.add_cout();</div>
@@ -259,7 +258,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div class="line">    log &lt;&lt; <span class="stringliteral">&quot;got result=&quot;</span> &lt;&lt; res &lt;&lt; endl;</div>
 <div class="line">    ASSERT_EQ(res, line1.size()+line2.size());</div>
 <div class="line">}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d7/d4a/examples_2net_2netmain_8cc-example.html#_a2">examples/net/netmain.cc</a>, <a class="el" href="../../d4/dc4/net_2unittest_2inet_8cc-example.html#_a3">net/unittest/inet.cc</a>, <a class="el" href="../../dc/df3/net_2unittest_2inet_stream_8cc-example.html#_a3">net/unittest/inet_stream.cc</a>, <a class="el" href="../../d4/dba/net_2unittest_2unix_8cc-example.html#_a3">net/unittest/unix.cc</a>, and <a class="el" href="../../d4/d6e/util_2unittest_2poller_8cc-example.html#_a1">util/unittest/poller.cc</a>.</dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="../../d4/db0/poller_8h_source.html#l00065">65</a> of file <a class="el" href="../../d4/db0/poller_8h_source.html">poller.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a457fdbd142fb45582cf46991a14d3448"></a>
@@ -322,7 +323,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <dd>
 event Logical OR of poll flags, see: <a class="el" href="../../dc/d7d/classscc_1_1util_1_1Poller.html#a457fdbd142fb45582cf46991a14d3448">PollFlag</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dd7/poller_8cc_source.html#l00166">166</a> of file <a class="el" href="../../d3/dd7/poller_8cc_source.html">poller.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/dd7/poller_8cc_source.html#l00171">171</a> of file <a class="el" href="../../d3/dd7/poller_8cc_source.html">poller.cc</a>.</p>
 
 </div>
 </div>
@@ -350,7 +351,7 @@ event Logical OR of poll flags, see: <a class="el" href="../../dc/d7d/classscc_1
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dd7/poller_8cc_source.html#l00096">96</a> of file <a class="el" href="../../d3/dd7/poller_8cc_source.html">poller.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/dd7/poller_8cc_source.html#l00101">101</a> of file <a class="el" href="../../d3/dd7/poller_8cc_source.html">poller.cc</a>.</p>
 
 </div>
 </div>
@@ -390,7 +391,7 @@ event Logical OR of poll flags, see: <a class="el" href="../../dc/d7d/classscc_1
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dd7/poller_8cc_source.html#l00049">49</a> of file <a class="el" href="../../d3/dd7/poller_8cc_source.html">poller.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/dd7/poller_8cc_source.html#l00054">54</a> of file <a class="el" href="../../d3/dd7/poller_8cc_source.html">poller.cc</a>.</p>
 
 </div>
 </div>
@@ -399,16 +400,17 @@ event Logical OR of poll flags, see: <a class="el" href="../../dc/d7d/classscc_1
 <li>util/<a class="el" href="../../d3/dd7/poller_8cc_source.html">poller.cc</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassscc_1_1util_1_1Event_html"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html">scc::util::Event</a></div><div class="ttdoc">Kernel event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d20/event_8h_source.html#l00078">event.h:78</a></div></div>
-<div class="ttc" id="aclassscc_1_1net_1_1InetAddr_html_a1095f1d4312b1de36af5ca4b1a375fde"><div class="ttname"><a href="../../da/d56/classscc_1_1net_1_1InetAddr.html#a1095f1d4312b1de36af5ca4b1a375fde">scc::net::InetAddr::port</a></div><div class="ttdeci">unsigned port() const</div><div class="ttdoc">Get the port.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d52/inet_8cc_source.html#l00154">inet.cc:154</a></div></div>
-<div class="ttc" id="aclassscc_1_1util_1_1IoStream_html"><div class="ttname"><a href="../../d9/d84/classscc_1_1util_1_1IoStream.html">scc::util::IoStream</a></div><div class="ttdoc">I/O stream wrapper for reader/writer.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d27/iostream_8h_source.html#l00156">iostream.h:156</a></div></div>
-<div class="ttc" id="aclassscc_1_1net_1_1InetTcpSock_html"><div class="ttname"><a href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html">scc::net::InetTcpSock</a></div><div class="ttdoc">Transmission Control Protocol socket (TCP/IP).</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d4a/inet_8h_source.html#l00244">inet.h:244</a></div></div>
-<div class="ttc" id="aclassscc_1_1util_1_1Event_html_a032a78255cfed5d53c6674724cacccac"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#a032a78255cfed5d53c6674724cacccac">scc::util::Event::read</a></div><div class="ttdeci">uint64_t read()</div><div class="ttdoc">Read from (decrement) the event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00077">event.cc:77</a></div></div>
-<div class="ttc" id="aclassscc_1_1net_1_1InetAddr_html_a8e636fc9993bb98239fddfb49668c565"><div class="ttname"><a href="../../da/d56/classscc_1_1net_1_1InetAddr.html#a8e636fc9993bb98239fddfb49668c565">scc::net::InetAddr::host</a></div><div class="ttdeci">virtual std::string host() const</div><div class="ttdoc">Get host.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d52/inet_8cc_source.html#l00183">inet.cc:183</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Event_html"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html">scc::util::Event</a></div><div class="ttdoc">Signaling kernel event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d20/event_8h_source.html#l00078">event.h:78</a></div></div>
+<div class="ttc" id="aclassscc_1_1net_1_1InetAddr_html_a1095f1d4312b1de36af5ca4b1a375fde"><div class="ttname"><a href="../../da/d56/classscc_1_1net_1_1InetAddr.html#a1095f1d4312b1de36af5ca4b1a375fde">scc::net::InetAddr::port</a></div><div class="ttdeci">unsigned port() const</div><div class="ttdoc">Get the port.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d52/inet_8cc_source.html#l00159">inet.cc:159</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1IoStream_html"><div class="ttname"><a href="../../d9/d84/classscc_1_1util_1_1IoStream.html">scc::util::IoStream</a></div><div class="ttdoc">Input/output stream wrapper for reader/writer.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d27/iostream_8h_source.html#l00156">iostream.h:156</a></div></div>
+<div class="ttc" id="aclassscc_1_1net_1_1InetTcpSock_html"><div class="ttname"><a href="../../dc/dcf/classscc_1_1net_1_1InetTcpSock.html">scc::net::InetTcpSock</a></div><div class="ttdoc">Internet transmission control protocol (tcp) socket.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d4a/inet_8h_source.html#l00250">inet.h:250</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Event_html_a032a78255cfed5d53c6674724cacccac"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#a032a78255cfed5d53c6674724cacccac">scc::util::Event::read</a></div><div class="ttdeci">uint64_t read()</div><div class="ttdoc">Read from (decrement) the event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00082">event.cc:82</a></div></div>
+<div class="ttc" id="aclassscc_1_1net_1_1InetAddr_html_a8e636fc9993bb98239fddfb49668c565"><div class="ttname"><a href="../../da/d56/classscc_1_1net_1_1InetAddr.html#a8e636fc9993bb98239fddfb49668c565">scc::net::InetAddr::host</a></div><div class="ttdeci">virtual std::string host() const</div><div class="ttdoc">Get host.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d52/inet_8cc_source.html#l00188">inet.cc:188</a></div></div>
+<div class="ttc" id="aunittest_2inet_8cc_html_a821ca81eacb859889b5efeae7ffa1997"><div class="ttname"><a href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a></div><div class="ttdeci">TEST(inet_example, client_server_stream_test)</div><div class="ttdoc">[Inet client server]</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8d/unittest_2inet_8cc_source.html#l00521">inet.cc:521</a></div></div>
 <div class="ttc" id="aclassscc_1_1util_1_1Poller_html_a457fdbd142fb45582cf46991a14d3448ada140a980a4316af36af00f25c2588f8"><div class="ttname"><a href="../../dc/d7d/classscc_1_1util_1_1Poller.html#a457fdbd142fb45582cf46991a14d3448ada140a980a4316af36af00f25c2588f8">scc::util::Poller::input</a></div><div class="ttdeci">@ input</div><div class="ttdoc">File descriptor is available for read operations.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db0/poller_8h_source.html#l00077">poller.h:77</a></div></div>
-<div class="ttc" id="aclassscc_1_1net_1_1InetAddr_html"><div class="ttname"><a href="../../da/d56/classscc_1_1net_1_1InetAddr.html">scc::net::InetAddr</a></div><div class="ttdoc">Network address.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d4a/inet_8h_source.html#l00112">inet.h:112</a></div></div>
+<div class="ttc" id="aclassscc_1_1net_1_1InetAddr_html"><div class="ttname"><a href="../../da/d56/classscc_1_1net_1_1InetAddr.html">scc::net::InetAddr</a></div><div class="ttdoc">Ipv6 internet address.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d4a/inet_8h_source.html#l00119">inet.h:119</a></div></div>
 <div class="ttc" id="aclassscc_1_1util_1_1Poller_html_a457fdbd142fb45582cf46991a14d3448a4d261becd3cceb79648e2613e2a09e71"><div class="ttname"><a href="../../dc/d7d/classscc_1_1util_1_1Poller.html#a457fdbd142fb45582cf46991a14d3448a4d261becd3cceb79648e2613e2a09e71">scc::util::Poller::output</a></div><div class="ttdeci">@ output</div><div class="ttdoc">File descriptor is available for write operations.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db0/poller_8h_source.html#l00078">poller.h:78</a></div></div>
-<div class="ttc" id="aclassscc_1_1util_1_1Event_html_aea69066c6a9da69b9ce19a28d5d77ec2"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#aea69066c6a9da69b9ce19a28d5d77ec2">scc::util::Event::write</a></div><div class="ttdeci">void write(uint64_t)</div><div class="ttdoc">Write to (increment) the event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00089">event.cc:89</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Event_html_aea69066c6a9da69b9ce19a28d5d77ec2"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#aea69066c6a9da69b9ce19a28d5d77ec2">scc::util::Event::write</a></div><div class="ttdeci">void write(uint64_t)</div><div class="ttdoc">Write to (increment) the event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00094">event.cc:94</a></div></div>
 <div class="ttc" id="agroup__util__fs_html_gga2349db6f4bbd746c5b2e1e281e880269a317d37b0edc7bd7cbd25d97f53a16ce5"><div class="ttname"><a href="../../d0/dcc/group__util__fs.html#gga2349db6f4bbd746c5b2e1e281e880269a317d37b0edc7bd7cbd25d97f53a16ce5">scc::util::FileType::sock</a></div><div class="ttdeci">@ sock</div><div class="ttdoc">socket</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

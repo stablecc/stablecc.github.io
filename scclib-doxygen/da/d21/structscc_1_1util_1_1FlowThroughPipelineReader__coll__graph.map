@@ -1,5 +1,5 @@
 <map id="scc::util::FlowThroughPipelineReader" name="scc::util::FlowThroughPipelineReader">
-<area shape="rect" id="node1" title=" " alt="" coords="81,199,297,240"/>
+<area shape="rect" id="node1" title="Pipeline reader which flows through all data." alt="" coords="81,199,297,240"/>
 <area shape="rect" id="node2" href="$df/d03/structscc_1_1util_1_1PipelineReader.html" title="Pipeline reader to carry out processing in a pipeline (chain of readers)." alt="" coords="5,102,184,129"/>
 <area shape="rect" id="node3" href="$d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="126,5,253,32"/>
 <area shape="rect" id="node4" title=" " alt="" coords="208,95,363,136"/>

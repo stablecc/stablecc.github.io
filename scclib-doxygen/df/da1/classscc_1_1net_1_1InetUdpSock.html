@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>User Datagram Protocol socket (UDP/IP).  
+<p>Internet user datagram protocol (udp) socket.  
  <a href="../../df/da1/classscc_1_1net_1_1InetUdpSock.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d6/d4a/inet_8h_source.html">inet.h</a>&gt;</code></p>
@@ -83,8 +83,8 @@ Inheritance diagram for scc::net::InetUdpSock:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d99/classscc_1_1net_1_1InetUdpSock__inherit__graph.png" border="0" usemap="#scc_1_1net_1_1InetUdpSock_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1net_1_1InetUdpSock_inherit__map" id="scc_1_1net_1_1InetUdpSock_inherit__map">
-<area shape="rect" title="User Datagram Protocol socket (UDP/IP)." alt="" coords="5,155,168,181"/>
-<area shape="rect" href="../../de/d8b/classscc_1_1net_1_1UdpSocket.html" title=" " alt="" coords="12,80,161,107"/>
+<area shape="rect" title="Internet user datagram protocol (udp) socket." alt="" coords="5,155,168,181"/>
+<area shape="rect" href="../../de/d8b/classscc_1_1net_1_1UdpSocket.html" title="Udp socket base class." alt="" coords="12,80,161,107"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="9,5,164,32"/>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
@@ -93,8 +93,8 @@ Collaboration diagram for scc::net::InetUdpSock:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/db8/classscc_1_1net_1_1InetUdpSock__coll__graph.png" border="0" usemap="#scc_1_1net_1_1InetUdpSock_coll__map" alt="Collaboration graph"/></div>
 <map name="scc_1_1net_1_1InetUdpSock_coll__map" id="scc_1_1net_1_1InetUdpSock_coll__map">
-<area shape="rect" title="User Datagram Protocol socket (UDP/IP)." alt="" coords="5,155,168,181"/>
-<area shape="rect" href="../../de/d8b/classscc_1_1net_1_1UdpSocket.html" title=" " alt="" coords="12,80,161,107"/>
+<area shape="rect" title="Internet user datagram protocol (udp) socket." alt="" coords="5,155,168,181"/>
+<area shape="rect" href="../../de/d8b/classscc_1_1net_1_1UdpSocket.html" title="Udp socket base class." alt="" coords="12,80,161,107"/>
 <area shape="rect" href="../../d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="9,5,164,32"/>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
@@ -240,10 +240,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <tr class="separator:a98a53e1e618f58be8fcfe559f4736178 inherit pro_methods_classscc_1_1net_1_1SocketBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>User Datagram Protocol socket (UDP/IP). </p>
+<div class="textblock"><p>Internet user datagram protocol (udp) socket. </p>
 <p>Allows connectionless delivery of messages (datagrams), with a checksum for message integrity, but no guarantee of message ordering or delivery. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d7/d4a/examples_2net_2netmain_8cc-example.html#_a9">examples/net/netmain.cc</a>, and <a class="el" href="../../d4/dc4/net_2unittest_2inet_8cc-example.html#_a8">net/unittest/inet.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d4a/inet_8h_source.html#l00289">289</a> of file <a class="el" href="../../d6/d4a/inet_8h_source.html">inet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d4a/inet_8h_source.html#l00294">294</a> of file <a class="el" href="../../d6/d4a/inet_8h_source.html">inet.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af522f300495168d66dd2a12eb60a0ca1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af522f300495168d66dd2a12eb60a0ca1">&#9670;&nbsp;</a></span>mcast_hops()</h2>
@@ -265,7 +267,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>This is number of times the message will be passed between routers for outgoing traffic.</p>
 <p>The default is 1 (the local subnet router only). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00551">551</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00556">556</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>
@@ -289,7 +291,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>Sets the default interface index. </p><dl class="section see"><dt>See also</dt><dd>net::Interfaces</dd></dl>
 <p>If interface is 0, removes the default (and lets the system choose an interface). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00525">525</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00530">530</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>
@@ -324,7 +326,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>All-nodes groups (e.g. ff01::1 and ff02::1) are automatically joined.</p>
 <p>ipv4 mapped multicast addresses are not supported. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00491">491</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00496">496</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>
@@ -348,7 +350,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sockaddr</b> (soc
 <p>If enabled, multicast messages sent by the interface will be recieved on the interface.</p>
 <p>Default is enabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00538">538</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00543">543</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>

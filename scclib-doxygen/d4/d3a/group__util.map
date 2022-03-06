@@ -1,10 +1,10 @@
 <map id="General utilities" name="General utilities">
-<area shape="rect" id="node1" href="$d2/dff/group__util__safeclib.html" title="Provides signal safe wrapper for commonly used C library APIs." alt="" coords="203,5,358,45"/>
-<area shape="rect" id="node2" href="$dd/d8f/group__util__event.html" title="A wrapper for Linux eventfd (man eventfd). Provides a signallable event counter, which is readable an..." alt="" coords="197,69,364,109"/>
+<area shape="rect" id="node1" href="$d2/dff/group__util__safeclib.html" title="Provides signal safe wrapper for commonly used C library APIs." alt="" coords="193,5,348,45"/>
+<area shape="rect" id="node2" href="$dd/d8f/group__util__event.html" title="A wrapper for Linux eventfd. Provides a signallable event counter, which is readable and writable acr..." alt="" coords="187,69,354,109"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,183,132,209"/>
-<area shape="rect" id="node4" href="$da/d9a/group__util__logger.html" title="Thread&#45;safe logging utility." alt="" coords="223,134,338,159"/>
-<area shape="rect" id="node5" href="$da/d7c/group__util__filedesc.html" title="Wraps an open file descriptor, providing safe duplication and destruction." alt="" coords="195,183,366,209"/>
-<area shape="rect" id="node6" href="$d5/d5f/group__util__poller.html" title="Wrapper for Linux kernel i/o event notification." alt="" coords="180,233,381,273"/>
-<area shape="rect" id="node7" href="$de/d16/group__util__iostream.html" title="Allows wrapping of generic streaming objects into std::iostream." alt="" coords="209,298,352,323"/>
-<area shape="rect" id="node8" href="$d0/dcc/group__util__fs.html" title="File system utility class for common operations." alt="" coords="207,347,354,373"/>
+<area shape="rect" id="node4" href="$da/d9a/group__util__logger.html" title="Logging utility which can share std::ostream objects between multiple threads." alt="" coords="195,134,346,159"/>
+<area shape="rect" id="node5" href="$da/d7c/group__util__filedesc.html" title="Wraps an open file descriptor, providing safe duplication and destruction." alt="" coords="213,183,328,209"/>
+<area shape="rect" id="node6" href="$d5/d5f/group__util__poller.html" title="Linux kernel file descriptor event notification, using Linux epoll." alt="" coords="180,233,361,273"/>
+<area shape="rect" id="node7" href="$de/d16/group__util__iostream.html" title="Allows wrapping of generic streaming objects into std::iostream." alt="" coords="195,297,346,337"/>
+<area shape="rect" id="node8" href="$d0/dcc/group__util__fs.html" title="File system utility common operations." alt="" coords="192,361,349,401"/>
 </map>

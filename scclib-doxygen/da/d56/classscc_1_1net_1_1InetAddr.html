@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Network address.  
+<p>Ipv6 internet address.  
  <a href="../../da/d56/classscc_1_1net_1_1InetAddr.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d6/d4a/inet_8h_source.html">inet.h</a>&gt;</code></p>
@@ -83,7 +83,7 @@ Inheritance diagram for scc::net::InetAddr:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../da/d4d/classscc_1_1net_1_1InetAddr__inherit__graph.png" border="0" usemap="#scc_1_1net_1_1InetAddr_inherit__map" alt="Inheritance graph"/></div>
 <map name="scc_1_1net_1_1InetAddr_inherit__map" id="scc_1_1net_1_1InetAddr_inherit__map">
-<area shape="rect" title="Network address." alt="" coords="23,80,158,107"/>
+<area shape="rect" title="Ipv6 internet address." alt="" coords="23,80,158,107"/>
 <area shape="rect" href="../../d6/d0e/classscc_1_1net_1_1NetIfAddr.html" title="Named address within an interface." alt="" coords="19,155,162,181"/>
 <area shape="rect" href="../../d5/d33/classscc_1_1net_1_1SockaddrBase.html" title="Socket address base class." alt="" coords="5,5,176,32"/>
 </map>
@@ -93,7 +93,7 @@ Collaboration diagram for scc::net::InetAddr:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d0a/classscc_1_1net_1_1InetAddr__coll__graph.png" border="0" usemap="#scc_1_1net_1_1InetAddr_coll__map" alt="Collaboration graph"/></div>
 <map name="scc_1_1net_1_1InetAddr_coll__map" id="scc_1_1net_1_1InetAddr_coll__map">
-<area shape="rect" title="Network address." alt="" coords="23,80,158,107"/>
+<area shape="rect" title="Ipv6 internet address." alt="" coords="23,80,158,107"/>
 <area shape="rect" href="../../d5/d33/classscc_1_1net_1_1SockaddrBase.html" title="Socket address base class." alt="" coords="5,5,176,32"/>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
@@ -193,10 +193,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="separator:a01e878bb967bad238f80e6b42c267017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Network address. </p>
-<p>Uses ipv6 addresses only. For example, an ipv4 address can be embedded in ipv6 by <code>::ffff:192.168.1.2</code> The default address is any host (all zeroes or ::) </p>
+<div class="textblock"><p>Ipv6 internet address. </p>
+<p>An ipv4 address can be embedded in ipv6 for example, with ipv4/ipv6</p>
+<p>Example:</p>
+<p>::ffff:192.168.1.2</p>
+<p>The default address is any host (all zeroes or ::) </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d7/d4a/examples_2net_2netmain_8cc-example.html#_a7">examples/net/netmain.cc</a>, <a class="el" href="../../d4/dc4/net_2unittest_2inet_8cc-example.html#_a6">net/unittest/inet.cc</a>, <a class="el" href="../../dc/df3/net_2unittest_2inet_stream_8cc-example.html#_a4">net/unittest/inet_stream.cc</a>, <a class="el" href="../../d5/dfd/net_2unittest_2inetaddr_8cc-example.html#_a0">net/unittest/inetaddr.cc</a>, and <a class="el" href="../../df/d04/net_2unittest_2net_if_8cc-example.html#_a2">net/unittest/net_if.cc</a>.</dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d4a/inet_8h_source.html#l00112">112</a> of file <a class="el" href="../../d6/d4a/inet_8h_source.html">inet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d4a/inet_8h_source.html#l00119">119</a> of file <a class="el" href="../../d6/d4a/inet_8h_source.html">inet.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a896cd25bc69c46be412fa73bf0dab36f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a896cd25bc69c46be412fa73bf0dab36f">&#9670;&nbsp;</a></span>InetAddr()</h2>
@@ -217,7 +222,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>ipv6 internet address, move constructed. </p>
 <p>The original address is set to any. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00105">105</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00110">110</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>
@@ -240,7 +245,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>Return the address flags. </p>
 <p>The address flags cover commonly used IPv6 address cases and are not exhaustive. </p><dl class="section see"><dt>See also</dt><dd>InetAddrFlag for covered cases. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00210">210</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00215">215</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>
@@ -263,7 +268,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>Set the host address. </p>
 <p>Any host :: Local host ::1 ipv4 host ::ffff:192.168.1.2 </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00170">170</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00175">175</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>
@@ -286,7 +291,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>ipv6 internet address, move assigned. </p>
 <p>The original address is set to any. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00111">111</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00116">116</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>
@@ -311,7 +316,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>If the scope_id is not set for a scoped address, the routing table may be used to find an address.</p>
 <p>In general link-local unicast (fe80::/64) or link-scope multicast (ff00::/8) may require scope_id to route correctly. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00160">160</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d52/inet_8cc_source.html#l00165">165</a> of file <a class="el" href="../../dc/d52/inet_8cc_source.html">inet.cc</a>.</p>
 
 </div>
 </div>

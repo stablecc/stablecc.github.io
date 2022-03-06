@@ -70,7 +70,7 @@ $(function() {
 <div class="title">event.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="../../d0/d1c/event_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">BSD 3-Clause License</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">Copyright (c) 2022, Stable Cloud Computing, Inc.</span></div>
@@ -107,75 +107,75 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d76/safe__clib_8h.html">util/safe_clib.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using namespace </span>scc::util;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../db/d7d/classscc_1_1util_1_1Event.html#a913ac25228b5b6b6dff737777161bfb5">   40</a></span>&#160;<a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#a913ac25228b5b6b6dff737777161bfb5">Event::Event</a>(<span class="keywordtype">int</span> flags) : m_fd(-1), m_flags(flags)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#a403841dedcbd34f4d398d61105bcefcd">reset</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">using namespace </span>scc::util;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;Event::~Event()</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../db/d7d/classscc_1_1util_1_1Event.html#a913ac25228b5b6b6dff737777161bfb5">   45</a></span>&#160;<a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#a913ac25228b5b6b6dff737777161bfb5">Event::Event</a>(<span class="keywordtype">int</span> flags) : m_fd(-1), m_flags(flags)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    close();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#a403841dedcbd34f4d398d61105bcefcd">reset</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> Event::close()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;Event::~Event()</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (m_fd != -1)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="../../d2/dff/group__util__safeclib.html#ga05dc7ef7190e8678dbd2099b7266225d">safe_close</a>(m_fd);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../db/d7d/classscc_1_1util_1_1Event.html#a403841dedcbd34f4d398d61105bcefcd">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#a403841dedcbd34f4d398d61105bcefcd">Event::reset</a>(<span class="keywordtype">int</span> flags)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    close();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (flags &gt;= 0)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        m_flags = flags;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> m = 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> ((m_flags &amp; <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a7951b75035fe0c7d11b860464b0738be">nonblocking</a>) == <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a7951b75035fe0c7d11b860464b0738be">nonblocking</a>)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    close();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> Event::close()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (m_fd != -1)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="../../d2/dff/group__util__safeclib.html#ga05dc7ef7190e8678dbd2099b7266225d">safe_close</a>(m_fd);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../db/d7d/classscc_1_1util_1_1Event.html#a403841dedcbd34f4d398d61105bcefcd">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#a403841dedcbd34f4d398d61105bcefcd">Event::reset</a>(<span class="keywordtype">int</span> flags)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    close();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (flags &gt;= 0)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        m |= EFD_NONBLOCK;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        m_flags = flags;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> ((m_flags &amp; <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a1d5ff527110ed7b7c98b721259430609">semaphore</a>) == <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a1d5ff527110ed7b7c98b721259430609">semaphore</a>)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        m |= EFD_SEMAPHORE;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    m_fd = ::eventfd(0, m);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../db/d7d/classscc_1_1util_1_1Event.html#a032a78255cfed5d53c6674724cacccac">   77</a></span>&#160;uint64_t <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#a032a78255cfed5d53c6674724cacccac">Event::read</a>()</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    uint64_t val;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (::eventfd_read(m_fd, &amp;val) == -1)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        std::stringstream st;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        st &lt;&lt; <span class="stringliteral">&quot;eventfd_read()&quot;</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">throw</span> std::system_error(errno, std::system_category(), st.str());</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> val;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../db/d7d/classscc_1_1util_1_1Event.html#aea69066c6a9da69b9ce19a28d5d77ec2">   89</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#aea69066c6a9da69b9ce19a28d5d77ec2">Event::write</a>(uint64_t v)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (::eventfd_write(m_fd, v) == -1)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        std::stringstream st;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        st &lt;&lt; <span class="stringliteral">&quot;eventfd_write()&quot;</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">throw</span> std::system_error(errno, std::system_category(), st.str());</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> m = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> ((m_flags &amp; <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a7951b75035fe0c7d11b860464b0738be">nonblocking</a>) == <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a7951b75035fe0c7d11b860464b0738be">nonblocking</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        m |= EFD_NONBLOCK;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> ((m_flags &amp; <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a1d5ff527110ed7b7c98b721259430609">semaphore</a>) == <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a1d5ff527110ed7b7c98b721259430609">semaphore</a>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        m |= EFD_SEMAPHORE;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    m_fd = ::eventfd(0, m);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../db/d7d/classscc_1_1util_1_1Event.html#a032a78255cfed5d53c6674724cacccac">   82</a></span>&#160;uint64_t <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#a032a78255cfed5d53c6674724cacccac">Event::read</a>()</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    uint64_t val;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (::eventfd_read(m_fd, &amp;val) == -1)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        std::stringstream st;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        st &lt;&lt; <span class="stringliteral">&quot;eventfd_read()&quot;</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">throw</span> std::system_error(errno, std::system_category(), st.str());</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> val;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../db/d7d/classscc_1_1util_1_1Event.html#aea69066c6a9da69b9ce19a28d5d77ec2">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d7d/classscc_1_1util_1_1Event.html#aea69066c6a9da69b9ce19a28d5d77ec2">Event::write</a>(uint64_t v)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (::eventfd_write(m_fd, v) == -1)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        std::stringstream st;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        st &lt;&lt; <span class="stringliteral">&quot;eventfd_write()&quot;</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">throw</span> std::system_error(errno, std::system_category(), st.str());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassscc_1_1util_1_1Event_html_af745de611ee08f671beb83cfe02eabd8a1d5ff527110ed7b7c98b721259430609"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a1d5ff527110ed7b7c98b721259430609">scc::util::Event::semaphore</a></div><div class="ttdeci">@ semaphore</div><div class="ttdoc">Semaphore mode. Event reads decrement the counter by 1. Otherwise, reads set the counter to 0.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d20/event_8h_source.html#l00089">event.h:89</a></div></div>
 <div class="ttc" id="aclassscc_1_1util_1_1Event_html_af745de611ee08f671beb83cfe02eabd8a7951b75035fe0c7d11b860464b0738be"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8a7951b75035fe0c7d11b860464b0738be">scc::util::Event::nonblocking</a></div><div class="ttdeci">@ nonblocking</div><div class="ttdoc">Non-blocking mode. If an event is read while unsignalled, throws and exception.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d20/event_8h_source.html#l00088">event.h:88</a></div></div>
-<div class="ttc" id="aclassscc_1_1util_1_1Event_html_a913ac25228b5b6b6dff737777161bfb5"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#a913ac25228b5b6b6dff737777161bfb5">scc::util::Event::Event</a></div><div class="ttdeci">Event(int=0)</div><div class="ttdoc">Construct an event.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00040">event.cc:40</a></div></div>
-<div class="ttc" id="aclassscc_1_1util_1_1Event_html_a032a78255cfed5d53c6674724cacccac"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#a032a78255cfed5d53c6674724cacccac">scc::util::Event::read</a></div><div class="ttdeci">uint64_t read()</div><div class="ttdoc">Read from (decrement) the event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00077">event.cc:77</a></div></div>
-<div class="ttc" id="agroup__util__safeclib_html_ga05dc7ef7190e8678dbd2099b7266225d"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#ga05dc7ef7190e8678dbd2099b7266225d">scc::util::safe_close</a></div><div class="ttdeci">int safe_close(int fd)</div><div class="ttdoc">Signal safe close.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00090">safe_clib.cc:90</a></div></div>
-<div class="ttc" id="aclassscc_1_1util_1_1Event_html_a403841dedcbd34f4d398d61105bcefcd"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#a403841dedcbd34f4d398d61105bcefcd">scc::util::Event::reset</a></div><div class="ttdeci">void reset(int=-1)</div><div class="ttdoc">Reset the event.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00058">event.cc:58</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Event_html_a913ac25228b5b6b6dff737777161bfb5"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#a913ac25228b5b6b6dff737777161bfb5">scc::util::Event::Event</a></div><div class="ttdeci">Event(int=0)</div><div class="ttdoc">Construct an event.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00045">event.cc:45</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Event_html_a032a78255cfed5d53c6674724cacccac"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#a032a78255cfed5d53c6674724cacccac">scc::util::Event::read</a></div><div class="ttdeci">uint64_t read()</div><div class="ttdoc">Read from (decrement) the event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00082">event.cc:82</a></div></div>
+<div class="ttc" id="agroup__util__safeclib_html_ga05dc7ef7190e8678dbd2099b7266225d"><div class="ttname"><a href="../../d2/dff/group__util__safeclib.html#ga05dc7ef7190e8678dbd2099b7266225d">scc::util::safe_close</a></div><div class="ttdeci">int safe_close(int fd)</div><div class="ttdoc">Signal safe close.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/safe__clib_8cc_source.html#l00095">safe_clib.cc:95</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Event_html_a403841dedcbd34f4d398d61105bcefcd"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#a403841dedcbd34f4d398d61105bcefcd">scc::util::Event::reset</a></div><div class="ttdeci">void reset(int=-1)</div><div class="ttdoc">Reset the event.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00063">event.cc:63</a></div></div>
 <div class="ttc" id="aevent_8h_html"><div class="ttname"><a href="../../dd/d20/event_8h.html">event.h</a></div><div class="ttdoc">Signaling kernel event counter.</div></div>
-<div class="ttc" id="aclassscc_1_1util_1_1Event_html_aea69066c6a9da69b9ce19a28d5d77ec2"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#aea69066c6a9da69b9ce19a28d5d77ec2">scc::util::Event::write</a></div><div class="ttdeci">void write(uint64_t)</div><div class="ttdoc">Write to (increment) the event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00089">event.cc:89</a></div></div>
+<div class="ttc" id="aclassscc_1_1util_1_1Event_html_aea69066c6a9da69b9ce19a28d5d77ec2"><div class="ttname"><a href="../../db/d7d/classscc_1_1util_1_1Event.html#aea69066c6a9da69b9ce19a28d5d77ec2">scc::util::Event::write</a></div><div class="ttdeci">void write(uint64_t)</div><div class="ttdoc">Write to (increment) the event counter.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/event_8cc_source.html#l00094">event.cc:94</a></div></div>
 <div class="ttc" id="asafe__clib_8h_html"><div class="ttname"><a href="../../d3/d76/safe__clib_8h.html">safe_clib.h</a></div><div class="ttdoc">Signal-safe C library wrapper.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
