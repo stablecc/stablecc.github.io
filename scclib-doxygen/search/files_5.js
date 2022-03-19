@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['poller_2ecc_363',['poller.cc',['../d3/dd7/poller_8cc.html',1,'(Global Namespace)'],['../d8/d32/unittest_2poller_8cc.html',1,'(Global Namespace)']]],
-  ['poller_2eh_364',['poller.h',['../d4/db0/poller_8h.html',1,'']]]
+  ['logger_2ecc_432',['logger.cc',['../d5/d6e/logger_8cc.html',1,'(Global Namespace)'],['../d6/d89/unittest_2logger_8cc.html',1,'(Global Namespace)']]],
+  ['logger_2eh_433',['logger.h',['../d1/d8c/logger_8h.html',1,'']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['internet_20network_20interface_20utility_613',['Internet network interface utility',['../df/d00/group__net__if.html',1,'']]],
-  ['internet_20tcp_20and_20udp_20networking_614',['Internet tcp and udp networking',['../d6/d5e/group__net__inet.html',1,'']]],
-  ['input_2foutput_20stream_20utilities_615',['input/output stream utilities',['../de/d16/group__util__iostream.html',1,'']]]
+  ['general_20utilities_744',['General utilities',['../d4/d3a/group__util.html',1,'']]]
 ];

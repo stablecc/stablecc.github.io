@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['common_20file_20system_20utilities_609',['Common file system utilities',['../d0/dcc/group__util__fs.html',1,'']]]
+  ['big_20number_20arithmetic_737',['Big number arithmetic',['../dc/d2a/group__crypto__bignum.html',1,'']]],
+  ['binary_20to_20hex_20string_20converter_738',['Binary to hex string converter',['../d3/dea/group__encode__hex.html',1,'']]]
 ];

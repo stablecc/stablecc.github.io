@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['networking_20utilities_618',['Networking utilities',['../d9/dd2/group__net.html',1,'']]]
+  ['low_2dlevel_20tcp_20and_20udp_20sockets_749',['Low-level tcp and udp sockets',['../dd/d15/group__net__sock.html',1,'']]]
 ];

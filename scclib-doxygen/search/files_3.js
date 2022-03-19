@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['logger_2ecc_358',['logger.cc',['../d5/d6e/logger_8cc.html',1,'(Global Namespace)'],['../d6/d89/unittest_2logger_8cc.html',1,'(Global Namespace)']]],
-  ['logger_2eh_359',['logger.h',['../d1/d8c/logger_8h.html',1,'']]]
+  ['hex_2ecc_421',['hex.cc',['../d8/d61/unittest_2hex_8cc.html',1,'']]],
+  ['hex_2eh_422',['hex.h',['../d0/d84/hex_8h.html',1,'']]]
 ];

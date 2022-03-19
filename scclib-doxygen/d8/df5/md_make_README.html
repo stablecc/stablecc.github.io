@@ -67,13 +67,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>A build system using <a href="https://www.gnu.org/software/make/">GNU make</a> is provided for environments where Bazel is not available.</p>
-<p>Shared libaries and applications can be built from their directories, with output to <b>bin/</b> and <b>obj/</b> directories relative to the project root.</p>
+<p>Shared libaries and applications can be built from their directories, with output to <code>bin/</code> and <code>obj/</code> directories under the project root.</p>
 <p>General make help: </p><div class="fragment"><div class="line">$ make help</div>
 </div><!-- fragment --><p>Debug and release builds: </p><div class="fragment"><div class="line">$ make # or make debug</div>
 <div class="line">$ make release</div>
-</div><!-- fragment --><h1>code coverage (gcov)</h1>
+</div><!-- fragment --><h1>submodules</h1>
+<p>Using the GNU make system requires several submodules to be available under the <code>import/</code> directory.</p>
+<p>To initialize the submodules: </p><div class="fragment"><div class="line">$ git submodule update --init --recursive</div>
+</div><!-- fragment --><p>To refresh the submodules: </p><div class="fragment"><div class="line">$ git submodule update --init --remote --recursive</div>
+</div><!-- fragment --><h1>googletest</h1>
+<p>Running unit tests requires a <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodule</a> snapshot of googletest.</p>
+<p>Now can build and run unit tests, for example from <code>net/unittest</code> directory.</p>
+<h1>code coverage (gcov)</h1>
 <p>Code coverage <a href="https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html">instruments</a> the code using the <b>&ndash;coverage -fprofile-arcs -ftest-coverage</b> options, and links with <b>-lgcov</b>. The <a href="https://gcc.gnu.org/onlinedocs/gcc/Invoking-Gcov.html#Invoking-Gcov">gcov</a> application can be used to analyze the code.</p>
-<p>An example using gcov from the <b>examples/net</b> directory: </p><div class="fragment"><div class="line">$ make cleanall</div>
+<p>An example using gcov from the <code>examples/net</code> directory: </p><div class="fragment"><div class="line">$ make cleanall</div>
 <div class="line">$ make gcov</div>
 <div class="line">$ LD_LIBRARY_PATH=../../bin ../../bin/ntest_d -I # list interfaces</div>
 <div class="line">$ LD_LIBRARY_PATH=../../bin ../../bin/ntest_d -T google.com 443 # test connect to google</div>
@@ -86,14 +93,7 @@ $(function() {
 <div class="line">$ rm *.gcov # gcov leaves these files around</div>
 <div class="line">$ popd</div>
 <div class="line">$ make cleanall # get rid of all the instrumented object files</div>
-</div><!-- fragment --><h1>googletest</h1>
-<p>Running unit tests requires a <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodule</a> snapshot of googletest.</p>
-<p>After downloading source code, initialize the submodules: </p><div class="fragment"><div class="line">$ git submodule init</div>
-<div class="line">Submodule &#39;import/googletest&#39; (https://github.com/stablecc/googletest.git) registered for path &#39;import/googletest&#39;</div>
-<div class="line">$ git submodule update</div>
-<div class="line">Submodule path &#39;import/googletest&#39;: checked out &#39;d1d1586089c85f4b724fb9c4dfd3a2e62760afe1&#39;</div>
-</div><!-- fragment --><p>Now can build and run unit tests, for example from <b>net/unittest</b> directory. </p>
-</div></div><!-- contents -->
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

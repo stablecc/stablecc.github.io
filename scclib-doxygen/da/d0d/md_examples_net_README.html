@@ -69,14 +69,14 @@ $(function() {
 <div class="textblock"><h1>ntest</h1>
 <p>Networking test.</p>
 <h2>build</h2>
-<p>Using the project workspace: </p><div class="fragment"><div class="line">bazel build :ntest</div>
-</div><!-- fragment --><p>Using from a local workspace: </p><div class="fragment"><div class="line">bazel build @com_stablecc_scclib//examples/net:ntest</div>
-</div><!-- fragment --><p>Use the output of the bazel build command to find the location of the ntest executable.</p>
+<p>Using the project workspace: </p><div class="fragment"><div class="line">$ bazel build :ntest</div>
+</div><!-- fragment --><p>Using from a local workspace: </p><div class="fragment"><div class="line">$ bazel build @com_stablecc_scclib//examples/net:ntest</div>
+</div><!-- fragment --><p>Use the output of the bazel build command to find the location of the ntest executable, or use (or <code>bazel run</code>).</p>
 <h2>informational</h2>
-<p>List addresses and interfaces. </p><div class="fragment"><div class="line">ntest # list available commands</div>
-<div class="line">ntest -I # list available network interfaces</div>
-<div class="line">ntest -A # list available addresses</div>
-</div><!-- fragment --><p>Hostname resolution: </p><div class="fragment"><div class="line">ntest -R google.com localhost</div>
+<p>List addresses and interfaces. </p><div class="fragment"><div class="line">$ ntest # list available commands</div>
+<div class="line">$ ntest -I # list available network interfaces</div>
+<div class="line">$ ntest -A # list available addresses</div>
+</div><!-- fragment --><p>Hostname resolution: </p><div class="fragment"><div class="line">$ ntest -R google.com localhost</div>
 <div class="line">* resolving google.com</div>
 <div class="line">* ipv6 2607:f8b0:4002:c09::66 port: 0 scope_id: 0 flags: type-unicast scope-global</div>
 <div class="line">* ipv6 2607:f8b0:4002:c09::8a port: 0 scope_id: 0 flags: type-unicast scope-global</div>
@@ -85,26 +85,26 @@ $(function() {
 <div class="line">* resolving localhost</div>
 <div class="line">* ipv4 ::ffff:127.0.0.1 port: 0 scope_id: 0 flags: type-loop</div>
 </div><!-- fragment --><h1>test connection</h1>
-<p>Test a connection: </p><div class="fragment"><div class="line">ntest -T google.com 443</div>
+<p>Test a connection: </p><div class="fragment"><div class="line">$ ntest -T google.com 443</div>
 <div class="line">* google.com --&gt; ipv6 2607:f8b0:4007:80a::200e port: 0 scope_id: 0 flags: type-unicast scope-global</div>
 <div class="line">* connecting with no timeout</div>
 <div class="line">* connected OK</div>
-<div class="line">net -T google.com 44 1</div>
+<div class="line">$ net -T google.com 44 1</div>
 <div class="line">* google.com --&gt; ipv6 2607:f8b0:4007:815::200e port: 0 scope_id: 0 flags: type-unicast scope-global</div>
 <div class="line">* connecting with 1 second timeout...</div>
 <div class="line">* connection failed: timed out</div>
 </div><!-- fragment --><h1>tcp client and echo server</h1>
-<p>start a server to listen on any address: </p><div class="fragment"><div class="line">ntest -l :: 1234</div>
-</div><!-- fragment --><p>start a client to connect to various addresses: </p><div class="fragment"><div class="line">ntest ::1 1234 # loopback</div>
-<div class="line">ntest ::ffff:192.168.1.70 1234 # ipv4</div>
-<div class="line">ntest 2600:&lt;your global address&gt; 1234 # global ipv6 address</div>
-<div class="line">ntest -s 2 fe80:&lt;your link local address&gt; 1234 # link local ipv6 address, specifying the interface id</div>
+<p>start a server to listen on any address: </p><div class="fragment"><div class="line">$ ntest -l :: 1234</div>
+</div><!-- fragment --><p>start a client to connect to various addresses: </p><div class="fragment"><div class="line">$ ntest ::1 1234 # loopback</div>
+<div class="line">$ ntest ::ffff:192.168.1.70 1234 # ipv4</div>
+<div class="line">$ ntest 2600:&lt;your global address&gt; 1234 # global ipv6 address</div>
+<div class="line">$ ntest -s 2 fe80:&lt;your link local address&gt; 1234 # link local ipv6 address, specifying the interface id</div>
 </div><!-- fragment --><h1>udp client and echo server</h1>
-<p>start a server to listen on any address: </p><div class="fragment"><div class="line">ntest -l -u :: 1234</div>
-</div><!-- fragment --><p>start a client to send messages to various addresses: </p><div class="fragment"><div class="line">ntest -u ::1 1234 # loopback</div>
-<div class="line">ntest -u ::ffff:192.168.1.70 1234 # ipv4 address</div>
-<div class="line">ntest -u &lt;global address beginning with 2600&gt; 1234 # global ipv6 address</div>
-<div class="line">ntest -s 2 -u &lt;link local address beginning with fe80&gt; 1234 # link local ipv6 address, specifying the interface id</div>
+<p>start a server to listen on any address: </p><div class="fragment"><div class="line">$ ntest -l -u :: 1234</div>
+</div><!-- fragment --><p>start a client to send messages to various addresses: </p><div class="fragment"><div class="line">$ ntest -u ::1 1234 # loopback</div>
+<div class="line">$ ntest -u ::ffff:192.168.1.70 1234 # ipv4 address</div>
+<div class="line">$ ntest -u &lt;global address beginning with 2600&gt; 1234 # global ipv6 address</div>
+<div class="line">$ ntest -s 2 -u &lt;link local address beginning with fe80&gt; 1234 # link local ipv6 address, specifying the interface id</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

@@ -95,6 +95,36 @@ $(function() {
 <div class="line">    strip_prefix = &quot;benchmark-0d98dba29d66e93259db7daa53a9327df767a415&quot;,</div>
 <div class="line">    urls = [&quot;https://github.com/google/benchmark/archive/0d98dba29d66e93259db7daa53a9327df767a415.zip&quot;],</div>
 <div class="line">)</div>
+<div class="line"> </div>
+<div class="line">http_archive(</div>
+<div class="line">    name = &quot;com_stablecc_scclib_openssl&quot;,</div>
+<div class="line">    strip_prefix = &quot;scclib-openssl-master&quot;,</div>
+<div class="line">    urls = [&quot;https://github.com/stablecc/scclib-openssl/archive/refs/heads/master.zip&quot;],</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">http_archive(</div>
+<div class="line">    name = &quot;com_stablecc_scclib_ipp&quot;,</div>
+<div class="line">    strip_prefix = &quot;scclib-ipp-master&quot;,</div>
+<div class="line">    urls = [&quot;https://github.com/stablecc/scclib-ipp/archive/refs/heads/master.zip&quot;],</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">http_archive(</div>
+<div class="line">    name = &quot;com_stablecc_scclib_ippcp&quot;,</div>
+<div class="line">    strip_prefix = &quot;scclib-ippcp-master&quot;,</div>
+<div class="line">    urls = [&quot;https://github.com/stablecc/scclib-ippcp/archive/refs/heads/master.zip&quot;],</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">new_local_repository(</div>
+<div class="line">    name = &quot;import_ipp&quot;,</div>
+<div class="line">    path = &quot;/opt/intel/ipp&quot;,</div>
+<div class="line">    build_file = &quot;ipp.BUILD.bazel&quot;,</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">new_local_repository(</div>
+<div class="line">    name = &quot;import_ippcp&quot;,</div>
+<div class="line">    path = &quot;/opt/intel/ippcp&quot;,</div>
+<div class="line">    build_file = &quot;ippcp.BUILD.bazel&quot;,</div>
+<div class="line">)</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
