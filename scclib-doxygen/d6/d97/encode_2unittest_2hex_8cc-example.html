@@ -108,11 +108,9 @@ $(function() {
 <div class="line"><span class="keyword">using</span> std::string;</div>
 <div class="line"><span class="keyword">using</span> std::cout;</div>
 <div class="line"><span class="keyword">using</span> std::endl;</div>
-<div class="line"><span class="keyword">using</span> <a name="a0"></a><a class="code" href="../../d3/dea/group__encode__hex.html#gaf3b0a07841bec3df4230fe8dcb4132bd">scc::encode::bin_to_hex</a>;</div>
-<div class="line"><span class="keyword">using</span> <a name="a1"></a><a class="code" href="../../d3/dea/group__encode__hex.html#ga95a79c138905f728604596f3bdc9876f">scc::encode::bin_to_hexstr</a>;</div>
-<div class="line"><span class="keyword">using</span> <a name="a2"></a><a class="code" href="../../d3/dea/group__encode__hex.html#gab6c1fd10bdce735dbfab706a1147096a">scc::encode::hex_to_bin</a>;</div>
+<div class="line"><span class="keyword">using</span> <a name="_a0"></a><a class="code" href="../../d2/ddc/classscc_1_1encode_1_1Hex.html">scc::encode::Hex</a>;</div>
 <div class="line"> </div>
-<div class="line"><a name="a3"></a><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(hex, hex_to_bin_all)</div>
+<div class="line"><a name="a1"></a><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(hex, hex_to_bin_all)</div>
 <div class="line">{</div>
 <div class="line">    CharVec allbin(256, 0);</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 256; i++)</div>
@@ -120,32 +118,32 @@ $(function() {
 <div class="line">        allbin[i] = (char)i;</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordtype">string</span> hex;</div>
-<div class="line">    <a class="code" href="../../d3/dea/group__encode__hex.html#gaf3b0a07841bec3df4230fe8dcb4132bd">bin_to_hex</a>(allbin, hex);</div>
+<div class="line">    Hex::bin_to_hex(allbin, hex);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Hex: &quot;</span> &lt;&lt; hex &lt;&lt; endl;</div>
 <div class="line">    ASSERT_EQ(hex.size(), 512);</div>
 <div class="line"> </div>
 <div class="line">    CharVec newbin;</div>
-<div class="line">    <a class="code" href="../../d3/dea/group__encode__hex.html#gab6c1fd10bdce735dbfab706a1147096a">hex_to_bin</a>(hex, newbin);</div>
+<div class="line">    Hex::hex_to_bin(hex, newbin);</div>
 <div class="line">    ASSERT_EQ(newbin.size(), 256);</div>
 <div class="line">    ASSERT_EQ(allbin, newbin);</div>
 <div class="line"> </div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;bin to hex string:&quot;</span> &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <a class="code" href="../../d3/dea/group__encode__hex.html#ga95a79c138905f728604596f3bdc9876f">bin_to_hexstr</a>(allbin, <span class="stringliteral">&quot;:&quot;</span>, 20) &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; Hex::bin_to_hexstr(allbin, <span class="stringliteral">&quot;:&quot;</span>, 20) &lt;&lt; endl;</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(hex, zero)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">string</span> z, s;</div>
-<div class="line">    <a class="code" href="../../d3/dea/group__encode__hex.html#gaf3b0a07841bec3df4230fe8dcb4132bd">bin_to_hex</a>(CharVec(z.begin(), z.end()), s);</div>
+<div class="line">    Hex::bin_to_hex(CharVec(z.begin(), z.end()), s);</div>
 <div class="line">    ASSERT_EQ(s.size(), 0);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(hex, <a class="code" href="../../d3/dea/group__encode__hex.html#gaf3b0a07841bec3df4230fe8dcb4132bd">bin_to_hex</a>)</div>
+<div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(hex, bin_to_hex)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">string</span> bin = <span class="stringliteral">&quot;this is a test&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">string</span> hex1 = <span class="stringliteral">&quot;7468697320697320612074657374&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">string</span> hex2;</div>
-<div class="line">    <a class="code" href="../../d3/dea/group__encode__hex.html#gaf3b0a07841bec3df4230fe8dcb4132bd">bin_to_hex</a>(CharVec(bin.begin(), bin.end()), hex2);</div>
+<div class="line">    Hex::bin_to_hex(CharVec(bin.begin(), bin.end()), hex2);</div>
 <div class="line">    ASSERT_EQ(hex1, hex2);</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -154,15 +152,13 @@ $(function() {
 <div class="line">    <span class="keywordtype">string</span> corrupthex = <span class="stringliteral">&quot;7468697......!&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">string</span> validbin = <span class="stringliteral">&quot;thi&quot;</span>;</div>
 <div class="line">    CharVec bin, val(validbin.begin(), validbin.end());</div>
-<div class="line">    <a class="code" href="../../d3/dea/group__encode__hex.html#gab6c1fd10bdce735dbfab706a1147096a">hex_to_bin</a>(corrupthex, bin);</div>
+<div class="line">    Hex::hex_to_bin(corrupthex, bin);</div>
 <div class="line">    ASSERT_EQ(val, bin);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 </div><!-- fragment --> </div><!-- contents -->
-<div class="ttc" id="agroup__encode__hex_html_gaf3b0a07841bec3df4230fe8dcb4132bd"><div class="ttname"><a href="../../d3/dea/group__encode__hex.html#gaf3b0a07841bec3df4230fe8dcb4132bd">scc::encode::bin_to_hex</a></div><div class="ttdeci">void bin_to_hex(const std::vector&lt; char &gt; &amp;, std::string &amp;, bool=true)</div><div class="ttdoc">Encode to hex from binary.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dcb/hex_8cc_source.html#l00110">hex.cc:110</a></div></div>
-<div class="ttc" id="agroup__encode__hex_html_gab6c1fd10bdce735dbfab706a1147096a"><div class="ttname"><a href="../../d3/dea/group__encode__hex.html#gab6c1fd10bdce735dbfab706a1147096a">scc::encode::hex_to_bin</a></div><div class="ttdeci">void hex_to_bin(const std::string &amp;, std::vector&lt; char &gt; &amp;)</div><div class="ttdoc">Decode from hex to binary.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dcb/hex_8cc_source.html#l00129">hex.cc:129</a></div></div>
+<div class="ttc" id="aclassscc_1_1encode_1_1Hex_html"><div class="ttname"><a href="../../d2/ddc/classscc_1_1encode_1_1Hex.html">scc::encode::Hex</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/hex_8h_source.html#l00053">hex.h:53</a></div></div>
 <div class="ttc" id="ahex_8h_html"><div class="ttname"><a href="../../d0/d84/hex_8h.html">hex.h</a></div><div class="ttdoc">Binary to hex string converter.</div></div>
-<div class="ttc" id="agroup__encode__hex_html_ga95a79c138905f728604596f3bdc9876f"><div class="ttname"><a href="../../d3/dea/group__encode__hex.html#ga95a79c138905f728604596f3bdc9876f">scc::encode::bin_to_hexstr</a></div><div class="ttdeci">std::string bin_to_hexstr(const std::vector&lt; char &gt; &amp;, const std::string &amp;=&quot;&quot;, int limit=-1, const std::string &amp;=&quot; +more&quot;, bool=true)</div><div class="ttdoc">Binary to human readable string.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dcb/hex_8cc_source.html#l00105">hex.cc:105</a></div></div>
 <div class="ttc" id="aunittest_2inet_8cc_html_a821ca81eacb859889b5efeae7ffa1997"><div class="ttname"><a href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a></div><div class="ttdeci">TEST(inet_example, client_server_stream_test)</div><div class="ttdoc">[Inet client server]</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8d/unittest_2inet_8cc_source.html#l00521">inet.cc:521</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

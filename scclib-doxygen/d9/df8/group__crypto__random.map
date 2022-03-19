@@ -1,4 +1,4 @@
 <map id="Random number generator" name="Random number generator">
-<area shape="rect" id="node1" href="$d5/dfc/group__crypto.html" title="Depends on:" alt="" coords="5,5,172,31"/>
-<area shape="rect" id="node2" title="Cryptographically secure random numbers using pseudorandom number generator." alt="" coords="220,5,417,31"/>
+<area shape="rect" id="node1" href="$d5/dfc/group__crypto.html" title="Depends on general utilities and either OpenSSL or Intel ippcp." alt="" coords="5,5,113,31"/>
+<area shape="rect" id="node2" title="Cryptographically secure random numbers using pseudorandom number generator." alt="" coords="161,5,359,31"/>
 </map>

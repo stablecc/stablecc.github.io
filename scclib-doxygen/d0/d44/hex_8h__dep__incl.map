@@ -1,6 +1,7 @@
 <map id="encode/pub/encode/hex.h" name="encode/pub/encode/hex.h">
-<area shape="rect" id="node1" title="Binary to hex string converter." alt="" coords="135,5,323,32"/>
+<area shape="rect" id="node1" title="Binary to hex string converter." alt="" coords="218,5,406,32"/>
 <area shape="rect" id="node2" href="$df/dcb/hex_8cc_source.html" title=" " alt="" coords="5,80,120,107"/>
 <area shape="rect" id="node3" href="$d8/d61/unittest_2hex_8cc.html" title="Tests for Binary to hex string converter." alt="" coords="145,80,314,107"/>
-<area shape="rect" id="node4" href="$d2/d6b/bignum_8cc.html" title="Tests for Big number arithmetic." alt="" coords="338,80,526,107"/>
+<area shape="rect" id="node4" href="$d5/d03/uuid_8cc_source.html" title=" " alt="" coords="338,80,451,107"/>
+<area shape="rect" id="node5" href="$d2/d6b/bignum_8cc.html" title="Tests for Big number arithmetic." alt="" coords="475,80,663,107"/>
 </map>

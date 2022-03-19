@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['using_20scclib_20locally_764',['Using scclib locally',['../db/dbc/md_workspace_local.html',1,'']]],
-  ['using_20scclib_20remotely_765',['Using scclib remotely',['../df/dfd/md_workspace_remote.html',1,'']]]
+  ['networking_20example_842',['networking example',['../da/d0d/md_examples_net_README.html',1,'']]],
+  ['networking_20scc_3a_3anet_843',['networking scc::net',['../db/d09/md_net_README.html',1,'']]]
 ];

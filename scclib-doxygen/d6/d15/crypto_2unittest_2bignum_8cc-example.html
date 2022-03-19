@@ -102,11 +102,14 @@ $(function() {
 <div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d0/d84/hex_8h.html">encode/hex.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using namespace </span>std;</div>
-<div class="line"><span class="keyword">using namespace </span>scc::encode;</div>
-<div class="line"><span class="keyword">using</span> <a name="_a0"></a><a class="code" href="../../da/d2a/classscc_1_1crypto_1_1Bignum.html">scc::crypto::Bignum</a>;</div>
+<div class="line"><span class="keyword">using</span> std::cout;</div>
+<div class="line"><span class="keyword">using</span> std::endl;</div>
+<div class="line"><span class="keyword">using</span> std::vector;</div>
+<div class="line"><span class="keyword">using</span> std::runtime_error;</div>
+<div class="line"><span class="keyword">using</span> <a name="_a0"></a><a class="code" href="../../d2/ddc/classscc_1_1encode_1_1Hex.html">scc::encode::Hex</a>;</div>
+<div class="line"><span class="keyword">using</span> <a name="_a1"></a><a class="code" href="../../da/d2a/classscc_1_1crypto_1_1Bignum.html">scc::crypto::Bignum</a>;</div>
 <div class="line"> </div>
-<div class="line"><a name="a1"></a><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(bignum_test, init)</div>
+<div class="line"><a name="a2"></a><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(bignum_test, init)</div>
 <div class="line">{</div>
 <div class="line">    Bignum n;</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Init: &quot;</span> &lt;&lt; n &lt;&lt; endl;</div>
@@ -301,16 +304,16 @@ $(function() {
 <div class="line">    ASSERT_EQ(a, eleven);</div>
 <div class="line">    ASSERT_EQ(rem, one);</div>
 <div class="line"> </div>
-<div class="line">    a = exp(nine, zero);</div>
+<div class="line">    a = <a name="a3"></a><a class="code" href="../../dd/da2/bignum_8h.html#a404ea288a7ccbcdcf2de54410ce68847">exp</a>(nine, zero);</div>
 <div class="line">    ASSERT_EQ(a, one);</div>
 <div class="line"> </div>
-<div class="line">    a = exp(ten, two);</div>
+<div class="line">    a = <a class="code" href="../../dd/da2/bignum_8h.html#a404ea288a7ccbcdcf2de54410ce68847">exp</a>(ten, two);</div>
 <div class="line">    ASSERT_EQ(a, hund);</div>
 <div class="line">    a = ten;</div>
 <div class="line">    a.exp(two);</div>
 <div class="line">    ASSERT_EQ(a, hund);</div>
 <div class="line"> </div>
-<div class="line">    a = gcd(nine, twelve);</div>
+<div class="line">    a = <a name="a4"></a><a class="code" href="../../dd/da2/bignum_8h.html#abc9625a3e7b87afe6a826394a00f19b3">gcd</a>(nine, twelve);</div>
 <div class="line">    ASSERT_EQ(a, three);</div>
 <div class="line">    a = nine;</div>
 <div class="line">    a.gcd(twelve);</div>
@@ -350,16 +353,16 @@ $(function() {
 <div class="line">    ASSERT_EQ(a, 11);</div>
 <div class="line">    ASSERT_EQ(rem, 1);</div>
 <div class="line"> </div>
-<div class="line">    a = exp(nine, 0);</div>
+<div class="line">    a = <a class="code" href="../../dd/da2/bignum_8h.html#a404ea288a7ccbcdcf2de54410ce68847">exp</a>(nine, 0);</div>
 <div class="line">    ASSERT_EQ(a, 1);</div>
 <div class="line"> </div>
-<div class="line">    a = exp(ten, 2);</div>
+<div class="line">    a = <a class="code" href="../../dd/da2/bignum_8h.html#a404ea288a7ccbcdcf2de54410ce68847">exp</a>(ten, 2);</div>
 <div class="line">    ASSERT_EQ(a, 100);</div>
 <div class="line">    a = ten;</div>
 <div class="line">    a.exp(2);</div>
 <div class="line">    ASSERT_EQ(a, 100);</div>
 <div class="line"> </div>
-<div class="line">    a = gcd(nine, 12);</div>
+<div class="line">    a = <a class="code" href="../../dd/da2/bignum_8h.html#abc9625a3e7b87afe6a826394a00f19b3">gcd</a>(nine, 12);</div>
 <div class="line">    ASSERT_EQ(a, 3);</div>
 <div class="line">    a = nine;</div>
 <div class="line">    a.gcd(12);</div>
@@ -391,7 +394,7 @@ $(function() {
 <div class="line">    EXPECT_EQ(count, 100);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(bignum_test, gcd)</div>
+<div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(bignum_test, <a class="code" href="../../dd/da2/bignum_8h.html#abc9625a3e7b87afe6a826394a00f19b3">gcd</a>)</div>
 <div class="line">{</div>
 <div class="line">    Bignum p1(2829604451);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;p1: &quot;</span> &lt;&lt; std::hex &lt;&lt; p1 &lt;&lt; endl;</div>
@@ -406,10 +409,10 @@ $(function() {
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;p1 * p2: &quot;</span> &lt;&lt; std::hex &lt;&lt; p12 &lt;&lt; endl;</div>
 <div class="line">    Bignum p13 = p1 * p3;</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;p1 * p3: &quot;</span> &lt;&lt; std::hex &lt;&lt; p13 &lt;&lt; endl;</div>
-<div class="line">    Bignum gcd(p12);</div>
-<div class="line">    gcd.<a name="a2"></a><a class="code" href="../../da/d2a/classscc_1_1crypto_1_1Bignum.html#a5d000d47bfb2c00443acc33535d6aaf4">gcd</a>(p13);</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;gcd: &quot;</span> &lt;&lt; std::hex &lt;&lt; gcd &lt;&lt; endl;</div>
-<div class="line">    ASSERT_EQ(p1, gcd);</div>
+<div class="line">    Bignum <a class="code" href="../../dd/da2/bignum_8h.html#abc9625a3e7b87afe6a826394a00f19b3">gcd</a>(p12);</div>
+<div class="line">    <a class="code" href="../../dd/da2/bignum_8h.html#abc9625a3e7b87afe6a826394a00f19b3">gcd</a>.<a name="a5"></a><a class="code" href="../../da/d2a/classscc_1_1crypto_1_1Bignum.html#a5d000d47bfb2c00443acc33535d6aaf4">gcd</a>(p13);</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;gcd: &quot;</span> &lt;&lt; std::hex &lt;&lt; <a class="code" href="../../dd/da2/bignum_8h.html#abc9625a3e7b87afe6a826394a00f19b3">gcd</a> &lt;&lt; endl;</div>
+<div class="line">    ASSERT_EQ(p1, <a class="code" href="../../dd/da2/bignum_8h.html#abc9625a3e7b87afe6a826394a00f19b3">gcd</a>);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a>(bignum_test, bintest)</div>
@@ -711,7 +714,7 @@ $(function() {
 <div class="line">    {</div>
 <div class="line">        v.resize(a.len());</div>
 <div class="line">        a.get((<span class="keywordtype">void</span>*)v.data(), v.size());</div>
-<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot; get hex &quot;</span> &lt;&lt; <a name="a3"></a><a class="code" href="../../d3/dea/group__encode__hex.html#ga95a79c138905f728604596f3bdc9876f">bin_to_hexstr</a>(v, <span class="stringliteral">&quot; &quot;</span>) &lt;&lt; endl;</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot; get hex &quot;</span> &lt;&lt; Hex::bin_to_hexstr(v, <span class="stringliteral">&quot; &quot;</span>) &lt;&lt; endl;</div>
 <div class="line">    };</div>
 <div class="line"> </div>
 <div class="line">    get_test();</div>
@@ -735,7 +738,7 @@ $(function() {
 <div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot; len_2sc() = &quot;</span> &lt;&lt; a.len_2sc() &lt;&lt; endl;</div>
 <div class="line">        v.resize(a.len_2sc());</div>
 <div class="line">        a.get_2sc((<span class="keywordtype">void</span>*)v.data(), v.size());</div>
-<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot; get hex &quot;</span> &lt;&lt; <a class="code" href="../../d3/dea/group__encode__hex.html#ga95a79c138905f728604596f3bdc9876f">bin_to_hexstr</a>(v, <span class="stringliteral">&quot; &quot;</span>) &lt;&lt; endl;</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot; get hex &quot;</span> &lt;&lt; Hex::bin_to_hexstr(v, <span class="stringliteral">&quot; &quot;</span>) &lt;&lt; endl;</div>
 <div class="line">        ASSERT_EQ(v, chk);</div>
 <div class="line">    };</div>
 <div class="line"><span class="comment">/*</span></div>
@@ -766,11 +769,13 @@ $(function() {
 <div class="line">    get_test({<span class="stringliteral">&#39;\xff&#39;</span>,<span class="stringliteral">&#39;\x7f&#39;</span>});</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
+<div class="ttc" id="aclassscc_1_1encode_1_1Hex_html"><div class="ttname"><a href="../../d2/ddc/classscc_1_1encode_1_1Hex.html">scc::encode::Hex</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/hex_8h_source.html#l00053">hex.h:53</a></div></div>
 <div class="ttc" id="aclassscc_1_1crypto_1_1Bignum_html_a5d000d47bfb2c00443acc33535d6aaf4"><div class="ttname"><a href="../../da/d2a/classscc_1_1crypto_1_1Bignum.html#a5d000d47bfb2c00443acc33535d6aaf4">scc::crypto::Bignum::gcd</a></div><div class="ttdeci">void gcd(const Bignum &amp;)</div><div class="ttdoc">Greatest common divisor for a and b.</div></div>
+<div class="ttc" id="abignum_8h_html_abc9625a3e7b87afe6a826394a00f19b3"><div class="ttname"><a href="../../dd/da2/bignum_8h.html#abc9625a3e7b87afe6a826394a00f19b3">gcd</a></div><div class="ttdeci">scc::crypto::Bignum gcd(const scc::crypto::Bignum &amp;, const scc::crypto::Bignum &amp;)</div><div class="ttdoc">Greatest common divisor helper.</div></div>
 <div class="ttc" id="ahex_8h_html"><div class="ttname"><a href="../../d0/d84/hex_8h.html">hex.h</a></div><div class="ttdoc">Binary to hex string converter.</div></div>
-<div class="ttc" id="agroup__encode__hex_html_ga95a79c138905f728604596f3bdc9876f"><div class="ttname"><a href="../../d3/dea/group__encode__hex.html#ga95a79c138905f728604596f3bdc9876f">scc::encode::bin_to_hexstr</a></div><div class="ttdeci">std::string bin_to_hexstr(const std::vector&lt; char &gt; &amp;, const std::string &amp;=&quot;&quot;, int limit=-1, const std::string &amp;=&quot; +more&quot;, bool=true)</div><div class="ttdoc">Binary to human readable string.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dcb/hex_8cc_source.html#l00105">hex.cc:105</a></div></div>
 <div class="ttc" id="aunittest_2inet_8cc_html_a821ca81eacb859889b5efeae7ffa1997"><div class="ttname"><a href="../../dd/d8d/unittest_2inet_8cc.html#a821ca81eacb859889b5efeae7ffa1997">TEST</a></div><div class="ttdeci">TEST(inet_example, client_server_stream_test)</div><div class="ttdoc">[Inet client server]</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8d/unittest_2inet_8cc_source.html#l00521">inet.cc:521</a></div></div>
 <div class="ttc" id="abignum_8h_html"><div class="ttname"><a href="../../dd/da2/bignum_8h.html">bignum.h</a></div><div class="ttdoc">Big number arithmetic.</div></div>
+<div class="ttc" id="abignum_8h_html_a404ea288a7ccbcdcf2de54410ce68847"><div class="ttname"><a href="../../dd/da2/bignum_8h.html#a404ea288a7ccbcdcf2de54410ce68847">exp</a></div><div class="ttdeci">scc::crypto::Bignum exp(const scc::crypto::Bignum &amp;, const scc::crypto::Bignum &amp;)</div><div class="ttdoc">Exponent helper.</div></div>
 <div class="ttc" id="aclassscc_1_1crypto_1_1Bignum_html"><div class="ttname"><a href="../../da/d2a/classscc_1_1crypto_1_1Bignum.html">scc::crypto::Bignum</a></div><div class="ttdoc">Big number.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da2/bignum_8h_source.html#l00058">bignum.h:58</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

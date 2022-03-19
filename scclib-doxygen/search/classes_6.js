@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['outchain_389',['OutChain',['../d5/db8/structscc_1_1util_1_1OutChain.html',1,'scc::util']]],
-  ['outpipeline_390',['OutPipeline',['../df/df0/structscc_1_1util_1_1OutPipeline.html',1,'scc::util']]],
-  ['outstream_391',['OutStream',['../d6/dbd/classscc_1_1util_1_1OutStream.html',1,'scc::util']]]
+  ['netif_428',['NetIf',['../d6/df8/classscc_1_1net_1_1NetIf.html',1,'scc::net']]],
+  ['netifaddr_429',['NetIfAddr',['../d6/d0e/classscc_1_1net_1_1NetIfAddr.html',1,'scc::net']]]
 ];

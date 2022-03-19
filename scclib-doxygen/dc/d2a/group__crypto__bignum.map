@@ -1,4 +1,4 @@
 <map id="Big number arithmetic" name="Big number arithmetic">
-<area shape="rect" id="node1" href="$d5/dfc/group__crypto.html" title="Depends on:" alt="" coords="5,5,172,31"/>
-<area shape="rect" id="node2" title="Defines an arbitrary length big number for use in cryptographic applications." alt="" coords="220,5,388,31"/>
+<area shape="rect" id="node1" href="$d5/dfc/group__crypto.html" title="Depends on general utilities and either OpenSSL or Intel ippcp." alt="" coords="5,5,113,31"/>
+<area shape="rect" id="node2" title="Defines an arbitrary length big number for use in cryptographic applications." alt="" coords="161,5,329,31"/>
 </map>

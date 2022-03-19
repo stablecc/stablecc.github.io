@@ -1,4 +1,5 @@
 <map id="crypto/pub/crypto/random.h" name="crypto/pub/crypto/random.h">
-<area shape="rect" id="node1" title="Random number generator." alt="" coords="5,5,208,32"/>
-<area shape="rect" id="node2" href="$df/d1f/random_8cc.html" title="Tests for Random number generator." alt="" coords="12,80,201,107"/>
+<area shape="rect" id="node1" title="Random number generator." alt="" coords="49,5,251,32"/>
+<area shape="rect" id="node2" href="$d5/d03/uuid_8cc_source.html" title=" " alt="" coords="5,80,119,107"/>
+<area shape="rect" id="node3" href="$df/d1f/random_8cc.html" title="Tests for Random number generator." alt="" coords="143,80,333,107"/>
 </map>

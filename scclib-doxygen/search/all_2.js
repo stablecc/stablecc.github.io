@@ -3,7 +3,7 @@ var searchData=
   ['change_5fdir_26',['change_dir',['../df/df9/classscc_1_1util_1_1Filesystem.html#ac8d1bfd313fff264e32a55c71a666e25',1,'scc::util::Filesystem']]],
   ['change_5ftime_27',['change_time',['../d2/dfc/structscc_1_1util_1_1FileStat.html#a31b2ed9f3f003f2d1890ac0599f2e7f6',1,'scc::util::FileStat']]],
   ['chr_28',['chr',['../d0/dcc/group__util__fs.html#gga2349db6f4bbd746c5b2e1e281e880269a599e41d8cd8cf1ea79e494df54ede29a',1,'scc::util']]],
-  ['clear_29',['clear',['../db/da2/classscc_1_1util_1_1Logger.html#ad63939a5c0535c5abb8e59024b0ca6d4',1,'scc::util::Logger::clear()'],['../de/d4e/classscc_1_1util_1_1RwLoopBuffer.html#a4c7d4e8bb5296b08500186d4de2065e2',1,'scc::util::RwLoopBuffer::clear()'],['../da/d2a/classscc_1_1crypto_1_1Bignum.html#a940b73335a70024730e8767ea5ff8b93',1,'scc::crypto::Bignum::clear()']]],
+  ['clear_29',['clear',['../db/da2/classscc_1_1util_1_1Logger.html#ad63939a5c0535c5abb8e59024b0ca6d4',1,'scc::util::Logger::clear()'],['../de/d4e/classscc_1_1util_1_1RwLoopBuffer.html#a4c7d4e8bb5296b08500186d4de2065e2',1,'scc::util::RwLoopBuffer::clear()'],['../da/d2a/classscc_1_1crypto_1_1Bignum.html#a940b73335a70024730e8767ea5ff8b93',1,'scc::crypto::Bignum::clear()'],['../d1/d8e/classscc_1_1crypto_1_1SecVec.html#a2bd96353ef4b832ca67ad765e60cae9d',1,'scc::crypto::SecVec::clear()']]],
   ['clear_5fbit_30',['clear_bit',['../da/d2a/classscc_1_1crypto_1_1Bignum.html#a57d3b7a1e0159684571aa6bbd23fb24d',1,'scc::crypto::Bignum']]],
   ['close_31',['close',['../d9/d14/classscc_1_1net_1_1SocketBase.html#ae0867aac47e681abd0d05420014eb921',1,'scc::net::SocketBase::close()'],['../dc/da2/classscc_1_1util_1_1FileDesc.html#a4dbcf599dcda0215193b1556fc6be74f',1,'scc::util::FileDesc::close()']]],
   ['cmp_32',['cmp',['../da/d2a/classscc_1_1crypto_1_1Bignum.html#a4d28cdf62bcc62ceebd69b2b9ad6f3bf',1,'scc::crypto::Bignum::cmp(uint32_t w) const'],['../da/d2a/classscc_1_1crypto_1_1Bignum.html#ad503f03f4897f4c54167887f1a95f99b',1,'scc::crypto::Bignum::cmp(const Bignum &amp;) const']]],
@@ -16,7 +16,8 @@ var searchData=
   ['create_5freg_39',['create_reg',['../df/df9/classscc_1_1util_1_1Filesystem.html#a016ea00e151417b636e554996389530b',1,'scc::util::Filesystem']]],
   ['create_5fsymlink_40',['create_symlink',['../df/df9/classscc_1_1util_1_1Filesystem.html#a117521719994401868fac746c66cce86',1,'scc::util::Filesystem']]],
   ['create_5ftmp_5freg_41',['create_tmp_reg',['../df/df9/classscc_1_1util_1_1Filesystem.html#ab75763e7faa93d3a368c110db075e290',1,'scc::util::Filesystem']]],
-  ['cryptographic_20utilities_42',['Cryptographic utilities',['../d5/dfc/group__crypto.html',1,'']]],
+  ['cryptography_42',['cryptography',['../d5/dfc/group__crypto.html',1,'']]],
   ['ctx_43',['ctx',['../d2/dd2/classscc_1_1crypto_1_1RandomEngine.html#a946d49b8856063d6053fb21b1c97cf30',1,'scc::crypto::RandomEngine']]],
-  ['common_20file_20system_20utilities_44',['Common file system utilities',['../d0/dcc/group__util__fs.html',1,'']]]
+  ['cryptography_20scc_3a_3acrypto_44',['cryptography scc::crypto',['../da/d68/md_crypto_README.html',1,'']]],
+  ['common_20file_20system_20utilities_45',['Common file system utilities',['../d0/dcc/group__util__fs.html',1,'']]]
 ];

@@ -1,5 +1,7 @@
-<map id="Cryptographic utilities" name="Cryptographic utilities">
-<area shape="rect" id="node1" title="Depends on:" alt="" coords="5,31,172,56"/>
-<area shape="rect" id="node2" href="$dc/d2a/group__crypto__bignum.html" title="Defines an arbitrary length big number for use in cryptographic applications." alt="" coords="235,5,403,31"/>
-<area shape="rect" id="node3" href="$d9/df8/group__crypto__random.html" title="Cryptographically secure random numbers using pseudorandom number generator." alt="" coords="220,55,417,80"/>
+<map id="cryptography" name="cryptography">
+<area shape="rect" id="node1" title="Depends on general utilities and either OpenSSL or Intel ippcp." alt="" coords="5,92,113,117"/>
+<area shape="rect" id="node2" href="$dc/d2a/group__crypto__bignum.html" title="Defines an arbitrary length big number for use in cryptographic applications." alt="" coords="176,5,344,31"/>
+<area shape="rect" id="node3" href="$db/d28/group__crypto__uuid.html" title="Provides a randomly generated UUID." alt="" coords="188,55,332,95"/>
+<area shape="rect" id="node4" href="$d0/da1/group__crypto__secvec.html" title="Secure (automatically erased) vector." alt="" coords="205,120,315,145"/>
+<area shape="rect" id="node5" href="$d9/df8/group__crypto__random.html" title="Cryptographically secure random numbers using pseudorandom number generator." alt="" coords="161,169,359,195"/>
 </map>

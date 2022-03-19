@@ -1,7 +1,8 @@
 <map id="util/pub/util/fs.h" name="util/pub/util/fs.h">
-<area shape="rect" id="node1" title="Common file system utilities." alt="" coords="217,5,341,32"/>
+<area shape="rect" id="node1" title="Common file system utilities." alt="" coords="281,5,405,32"/>
 <area shape="rect" id="node2" href="$db/dc1/unittest_2unix_8cc.html" title="Tests for Unix domain tcp and udp networking." alt="" coords="5,80,152,107"/>
 <area shape="rect" id="node3" href="$db/de1/fs_8cc.html" title="Common file system utilities implementation" alt="" coords="176,80,253,107"/>
 <area shape="rect" id="node4" href="$d9/d2e/unittest_2fs_8cc.html" title="Tests for Common file system utilities." alt="" coords="277,80,408,107"/>
 <area shape="rect" id="node5" href="$d6/d89/unittest_2logger_8cc.html" title="Tests for Thread safe logging." alt="" coords="433,80,591,107"/>
+<area shape="rect" id="node6" href="$d4/dd9/unittest_2secvec_8cc.html" title="Tests for Secure vector." alt="" coords="616,80,800,107"/>
 </map>

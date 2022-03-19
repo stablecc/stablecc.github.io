@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>scclib: scc::net cryptography module</title>
+<title>scclib: cryptography scc::crypto</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -63,18 +63,18 @@ $(function() {
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">scc::net cryptography module </div>  </div>
+<div class="title">cryptography scc::crypto </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>See <a class="el" href="../../d5/dfc/group__crypto.html">Cryptographic utilities</a>.</p>
+<div class="textblock"><p>See <a class="el" href="../../d5/dfc/group__crypto.html">cryptography</a>.</p>
 <h1>dependencies</h1>
 <p>This module depends on the scclib <a href="../../../util">util</a> module.</p>
 <p>The module also depends on <a href="https://github.com/stablecc/scclib-openssl">OpenSSL</a> or <a href="https://github.com/stablecc/scclib-ippcp">Intel ippcp</a> depending on build parameters.</p>
-<h2>ippcp with Bazel</h2>
+<h2>ippcp with bazel</h2>
 <p>OpenSSL is the default. To use ippcp, use the following command line: </p><div class="fragment"><div class="line">$ bazel run :scccryptounit --define ipp=on</div>
 </div><!-- fragment --><p>or modify <code>.bazelrc</code> with the following: </p><div class="fragment"><div class="line">build --define ipp=on</div>
 </div><!-- fragment --><p>Requires the Intel IPP Cryptography library to be installed under <code>/opt/intel</code>.</p>
-<h2>ippcp with GNU make</h2>
+<h2>ippcp with gnu make</h2>
 <p>OpenSSL is the default. To build the libraries with ippcp, use the following command line: </p><div class="fragment"><div class="line">make IPP=on</div>
 </div><!-- fragment --><p><code>make cleanall</code> should be used when changing crypto libraries. The default can be changed in the <a href="../../../make/shared.mk">shared makefile</a>.</p>
 <p>Requires OpenSSL version 1.1.0 or greater. </p>

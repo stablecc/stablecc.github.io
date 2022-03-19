@@ -1,7 +1,7 @@
-<map id="Networking utilities" name="Networking utilities">
-<area shape="rect" id="node1" href="$dd/d15/group__net__sock.html" title="Low&#45;level socket interface." alt="" coords="217,5,383,45"/>
-<area shape="rect" id="node2" href="$df/d00/group__net__if.html" title="Scans network interfaces and enumerates address types." alt="" coords="204,69,396,109"/>
-<area shape="rect" id="node3" href="$d6/d90/group__net__unix.html" title="Local networking using socket files." alt="" coords="221,133,379,173"/>
-<area shape="rect" id="node4" title="Utilities to support tcp and udp networking." alt="" coords="5,109,156,134"/>
-<area shape="rect" id="node5" href="$d6/d5e/group__net__inet.html" title="Tcp/ip and udp/ip networking." alt="" coords="223,197,377,237"/>
+<map id="networking" name="networking">
+<area shape="rect" id="node1" href="$dd/d15/group__net__sock.html" title="Low&#45;level socket interface." alt="" coords="161,5,327,45"/>
+<area shape="rect" id="node2" href="$df/d00/group__net__if.html" title="Scans network interfaces and enumerates address types." alt="" coords="148,69,340,109"/>
+<area shape="rect" id="node3" href="$d6/d90/group__net__unix.html" title="Local networking using socket files." alt="" coords="165,133,323,173"/>
+<area shape="rect" id="node4" title="Utilities to support tcp and udp networking." alt="" coords="5,109,100,134"/>
+<area shape="rect" id="node5" href="$d6/d5e/group__net__inet.html" title="Tcp/ip and udp/ip networking." alt="" coords="167,197,321,237"/>
 </map>

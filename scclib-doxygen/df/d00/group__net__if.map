@@ -1,4 +1,4 @@
 <map id="Internet network interface utility" name="Internet network interface utility">
-<area shape="rect" id="node1" title="Scans network interfaces and enumerates address types." alt="" coords="204,5,396,45"/>
-<area shape="rect" id="node2" href="$d9/dd2/group__net.html" title="Utilities to support tcp and udp networking." alt="" coords="5,13,156,38"/>
+<area shape="rect" id="node1" title="Scans network interfaces and enumerates address types." alt="" coords="148,5,340,45"/>
+<area shape="rect" id="node2" href="$d9/dd2/group__net.html" title="Utilities to support tcp and udp networking." alt="" coords="5,13,100,38"/>
 </map>
