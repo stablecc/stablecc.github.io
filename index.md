@@ -2,5 +2,8 @@
 
 ### scclib documentation
 
-Documentation from the [scclib project](https://github.com/stablecc/scclib) project
+Documentation for the [scclib project](https://github.com/stablecc/scclib)
 is [here](scclib-doxygen/).
+
+Documentation for the [scclib sqlite project](https://github.com/stablecc/scclib-sqlite)
+is [here](scclib-sqlite-doxygen/).
