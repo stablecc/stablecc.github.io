@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scclib_20documentation_844',['scclib Documentation',['../index.html',1,'']]]
+  ['scclib_20documentation_844',['scclib documentation',['../index.html',1,'']]]
 ];

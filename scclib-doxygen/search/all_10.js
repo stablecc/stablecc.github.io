@@ -1,7 +1,7 @@
 var searchData=
 [
   ['secure_20vector_297',['Secure vector',['../d0/da1/group__crypto__secvec.html',1,'']]],
-  ['scclib_20documentation_298',['scclib Documentation',['../index.html',1,'']]],
+  ['scclib_20documentation_298',['scclib documentation',['../index.html',1,'']]],
   ['safe_5fclib_2ecc_299',['safe_clib.cc',['../dd/df5/safe__clib_8cc.html',1,'(Global Namespace)'],['../d5/d0a/unittest_2safe__clib_8cc.html',1,'(Global Namespace)']]],
   ['safe_5fclib_2eh_300',['safe_clib.h',['../d3/d76/safe__clib_8h.html',1,'']]],
   ['safe_5fclose_301',['safe_close',['../d2/dff/group__util__safeclib.html#ga05dc7ef7190e8678dbd2099b7266225d',1,'scc::util']]],
