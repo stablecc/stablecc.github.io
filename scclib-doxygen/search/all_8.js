@@ -40,7 +40,7 @@ var searchData=
   ['is_5fbit_5fset_135',['is_bit_set',['../da/d2a/classscc_1_1crypto_1_1Bignum.html#a059387cc2c1b54fe136a262d75c542b0',1,'scc::crypto::Bignum']]],
   ['is_5fnegative_136',['is_negative',['../da/d2a/classscc_1_1crypto_1_1Bignum.html#ae793f8e4822fff63e12d209d3f374016',1,'scc::crypto::Bignum']]],
   ['is_5fprime_137',['is_prime',['../da/d2a/classscc_1_1crypto_1_1Bignum.html#ab467ab2a66454777f3594ba0a7b3d84f',1,'scc::crypto::Bignum::is_prime(int=-1)'],['../da/d2a/classscc_1_1crypto_1_1Bignum.html#a8c09179e2a4a480b86ffc312a7095d44',1,'scc::crypto::Bignum::is_prime(uint32_t w)']]],
-  ['installing_20bazel_138',['Installing bazel',['../de/d58/md_install_bazel.html',1,'']]],
+  ['installing_20bazel_138',['installing bazel',['../de/d58/md_install_bazel.html',1,'']]],
   ['internet_20network_20interface_20utility_139',['Internet network interface utility',['../df/d00/group__net__if.html',1,'']]],
   ['internet_20tcp_20and_20udp_20networking_140',['Internet tcp and udp networking',['../d6/d5e/group__net__inet.html',1,'']]],
   ['input_2foutput_20stream_20utilities_141',['input/output stream utilities',['../de/d16/group__util__iostream.html',1,'']]]

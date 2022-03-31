@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>scclib: Installing bazel</title>
+<title>scclib: installing bazel</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -63,22 +63,31 @@ $(function() {
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Installing bazel </div>  </div>
+<div class="title">installing bazel </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Full details are <a href="https://docs.bazel.build/versions/5.0.0/bazel-overview.html#installing-bazel">here</a>.</p>
-<p>An easy way to install in Linux is to use the standalone installer (available with version 5.0.0): </p><div class="fragment"><div class="line">wget https://github.com/bazelbuild/bazel/releases/download/5.0.0/bazel-5.0.0-installer-linux-x86_64.sh</div>
+<div class="textblock"><p>An easy way to install in Linux is to use the standalone installer (available with version 5.0.0). For example, on x86_64 Linux: </p><div class="fragment"><div class="line">wget https://github.com/bazelbuild/bazel/releases/download/5.0.0/bazel-5.0.0-installer-linux-x86_64.sh</div>
 <div class="line">chmod +x bazel-5.0.0-installer-linux-x86_64.sh </div>
-</div><!-- fragment --><h1>Local user install</h1>
+</div><!-- fragment --><p>Full installation details are on <a href="https://bazel.build/install">bazel.build</a>.</p>
+<h1>local user install</h1>
 <p>Run the installer in user mode </p><div class="fragment"><div class="line">./bazel-5.0.0-installer-linux-x86_64.sh --user</div>
 </div><!-- fragment --><p>Make sure you have $HOME/bin in your path, for example by adding the following to $HOME/.bashrc </p><div class="fragment"><div class="line">echo &#39;export PATH=$HOME/bin:$PATH&#39; &gt;&gt; $HOME/.bashrc</div>
 <div class="line">source $HOME/.bashrc</div>
 </div><!-- fragment --><p>To enable bash completion </p><div class="fragment"><div class="line">echo &#39;source $HOME/.bazel/bin/bazel-complete.bash&#39; &gt;&gt; $HOME/.bashrc</div>
 <div class="line">source $HOME/.bashrc</div>
-</div><!-- fragment --><h1>Global install</h1>
+</div><!-- fragment --><h1>global install</h1>
 <p>Run the installer in root mode </p><div class="fragment"><div class="line">sudo ./bazel-5.0.0-installer-linux-x86_64.sh</div>
-</div><!-- fragment --><p>The bazel executable will be installed in /usr/local/bin. </p>
-</div></div><!-- contents -->
+</div><!-- fragment --><p>The bazel executable will be installed in /usr/local/bin.</p>
+<h1>bazelrc</h1>
+<p>Optionally, can set up some debugging defaults in <code>.bazelrc</code>, for example: </p><div class="fragment"><div class="line"># --compilation_mode=&lt;fastbuild, dbg or opt&gt; [-c] default: &quot;fastbuild&quot;</div>
+<div class="line">build --compilation_mode=dbg</div>
+<div class="line"> </div>
+<div class="line"># --[no]subcommands [-s] (true, pretty_print or false; default: &quot;false&quot;)</div>
+<div class="line">build --subcommands=true</div>
+<div class="line"> </div>
+<div class="line"># --[no]verbose_failures (a boolean; default: &quot;false&quot;)</div>
+<div class="line">build --verbose_failures</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
