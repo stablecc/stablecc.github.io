@@ -76,15 +76,16 @@ $(function() {
 </ul>
 <p>The library was should be compatible with many POSIX emulation environments such as <a href="https://www.cygwin.com/">cygwin</a>, but it was developed and tested primarily on Linux distributions with <a href="https://gcc.gnu.org">GCC</a> 9+. It was developed using Bazel 4.2+, but should be compatible with older versions of Bazel.</p>
 <p>An alternative <a href="make/">build system</a> using GNU make is available, for systems without Bazel.</p>
-<h2>quickstart</h2>
-<p><a class="el" href="de/d58/md_install_bazel.html">Install bazel</a> on your local system, download the source code, and run the following from the <code>scclib</code> directory: </p><div class="fragment"><div class="line">bazel clean --expunge</div>
+<h2>quick start</h2>
+<p>Install the <a class="el" href="d3/d21/md_dev_packages.html">build essentials and OpenSSL development packages</a>, <a class="el" href="de/d58/md_install_bazel.html">Install bazel</a>, download the source code, and run the following from the <code>scclib</code> directory: </p><div class="fragment"><div class="line">$ bazel clean --expunge</div>
 <div class="line">$ ./sanity.sh</div>
 </div><!-- fragment --><p>If you have Intel IPP and IPPCP on your system, try: </p><div class="fragment"><div class="line">$ ./sanity.sh ipp</div>
-</div><!-- fragment --><h2>full installation</h2>
+</div><!-- fragment --><h2>installation in a local workspace</h2>
 <ol type="1">
+<li>Make sure the <a class="el" href="d3/d21/md_dev_packages.html">build essentials and OpenSSL development packages</a> are installed and up-to-date.</li>
 <li><a class="el" href="de/d58/md_install_bazel.html">Install bazel</a> on your local system.</li>
 <li>Set up a workspace, either <a class="el" href="df/dfd/md_workspace_remote.html">remotely</a> or <a class="el" href="db/dbc/md_workspace_local.html">locally</a>.</li>
-<li>Run sanity tests to make sure things are working (using <a href="sanity.sh">sanity.sh</a>).</li>
+<li>Run the sanity tests to make sure things are working (using <a href="sanity.sh">sanity.sh</a>).</li>
 </ol>
 <h2>documentation</h2>
 <p>Current documentation is available on <a href="https://stablecc.github.io/scclib-doxygen/">stablecc.github.io</a>.</p>

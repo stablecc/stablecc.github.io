@@ -1,5 +1,4 @@
 #!/bin/bash
-set -o verbose
 set -x
 
 pushd ../scclib
@@ -20,6 +19,6 @@ cp -r ../scclib-sqlite/docs/html/* scclib-sqlite-doxygen/
 mkdir scclib-sqlite-doxygen/lic
 cp ../scclib-sqlite/lic/* scclib-sqlite-doxygen/lic/
 
-set -x
+set +x
 echo 'best bet is git add -u followed by git add *'
 printf '\xf0\x9f\x99\x82\n'

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['networking_20example_842',['networking example',['../da/d0d/md_examples_net_README.html',1,'']]],
-  ['networking_20scc_3a_3anet_843',['networking scc::net',['../db/d09/md_net_README.html',1,'']]]
+  ['installing_20bazel_843',['installing bazel',['../de/d58/md_install_bazel.html',1,'']]]
 ];
