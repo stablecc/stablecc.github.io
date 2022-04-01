@@ -171,7 +171,7 @@ $(function() {
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;TEST_F(SqliteTest, file_open)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    reopen(<span class="stringliteral">&quot;file:file?mode=rwc&quot;</span>);   <span class="comment">// open a read/write/create file backed connection</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    reopen(<span class="stringliteral">&quot;file:dbfile?mode=rwc&quot;</span>); <span class="comment">// open a read/write/create file backed connection</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">auto</span> fs = fs::scan_dir(<span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;filesystem:&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; d : fs)</div>
@@ -180,7 +180,7 @@ $(function() {
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    ASSERT_EQ(fs.size(), 1);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    system_error err;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    ASSERT_TRUE(fs::file_stat(<span class="stringliteral">&quot;file&quot;</span>, &amp;err).type == scc::util::FileType::reg);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    ASSERT_TRUE(fs::file_stat(<span class="stringliteral">&quot;dbfile&quot;</span>, &amp;err).type == scc::util::FileType::reg);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;TEST_F(SqliteTest, exec_select)</div>
@@ -224,7 +224,7 @@ $(function() {
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;TEST_F(SqliteTest, exec)</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    reopen(<span class="stringliteral">&quot;file:file?mode=rwc&quot;</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    reopen(<span class="stringliteral">&quot;file:dbfile?mode=rwc&quot;</span>);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="../../d7/df6/classscc_1_1sqld_1_1Req.html">Req</a> req(db);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    int64_t big = 1;</div>
@@ -269,7 +269,7 @@ $(function() {
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;TEST_F(SqliteTest, two_conns_xact)</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;{</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    reopen(<span class="stringliteral">&quot;file:file?mode=rwc&quot;</span>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    reopen(<span class="stringliteral">&quot;file:dbfile?mode=rwc&quot;</span>);     <span class="comment">// first connection is read/write/create</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="../../d7/df6/classscc_1_1sqld_1_1Req.html">Req</a> r(db);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
@@ -278,40 +278,43 @@ $(function() {
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="../../d2/d8b/classscc_1_1sqld_1_1Trans.html">Trans</a> x(db);</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    x.begin();                                      <span class="comment">// begin a transaction</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    r.clear();</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    r.sql() &lt;&lt; <span class="stringliteral">&quot;insert into t values(12345);&quot;</span>;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    r.exec();                                       <span class="comment">// insert a value</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="../../dd/d14/classscc_1_1sqld_1_1Conn.html">Conn</a> db2(<span class="stringliteral">&quot;file:file?mode=rwc&quot;</span>);     <span class="comment">// second connection</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="../../d7/df6/classscc_1_1sqld_1_1Req.html">Req</a> r2(db2);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    r2.sql() &lt;&lt; <span class="stringliteral">&quot;select * from t;&quot;</span>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    ASSERT_EQ(r2.exec_select(), 0);     <span class="comment">// cannot see the value yet</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    x.commit();                         <span class="comment">// first connection commits transaction</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    r2.reset();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    ASSERT_EQ(r2.exec_select(), 1);     <span class="comment">// now the value can be seen</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    x.begin();</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    r.clear();</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    r.sql() &lt;&lt; <span class="stringliteral">&quot;insert into t values(45678);&quot;</span>;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    r.exec();</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    x.abort();</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    r.clear();</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    r.sql() &lt;&lt; <span class="stringliteral">&quot;select * from t where a is 45678;&quot;</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    ASSERT_EQ(r.exec_select(), 0);                      <span class="comment">// it was rolled back</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    ASSERT_FALSE(x.is_active());</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    x.begin();                                      <span class="comment">// begin a transaction</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    ASSERT_TRUE(x.is_active());</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    r.clear();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    r.sql() &lt;&lt; <span class="stringliteral">&quot;insert into t values(12345);&quot;</span>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    r.exec();                                       <span class="comment">// insert a value</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="../../dd/d14/classscc_1_1sqld_1_1Conn.html">Conn</a> db2(<span class="stringliteral">&quot;file:dbfile?mode=ro&quot;</span>);        <span class="comment">// second connection is read-only</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="../../d7/df6/classscc_1_1sqld_1_1Req.html">Req</a> r2(db2);                        <span class="comment">// request on second connection</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    r2.sql() &lt;&lt; <span class="stringliteral">&quot;select * from t;&quot;</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    ASSERT_EQ(r2.exec_select(), 0);     <span class="comment">// cannot see the value yet</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    x.commit();                         <span class="comment">// first connection commits transaction</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    r2.reset();                         <span class="comment">// reuse the sql stream request</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    ASSERT_EQ(r2.exec_select(), 1);     <span class="comment">// now the value can be seen</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    x.begin();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    r.clear();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    r.sql() &lt;&lt; <span class="stringliteral">&quot;insert into t values(45678);&quot;</span>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    r.exec();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    x.abort();                          <span class="comment">// throw away this transaction</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    r.clear();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    r.sql() &lt;&lt; <span class="stringliteral">&quot;select * from t where a is 45678;&quot;</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    ASSERT_EQ(r.exec_select(), 0);                      <span class="comment">// it was rolled back</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="asqld_8h_html"><div class="ttname"><a href="../../d0/d34/sqld_8h.html">sqld.h</a></div><div class="ttdoc">File descriptor.</div></div>
 <div class="ttc" id="aclassscc_1_1sqld_1_1Conn_html"><div class="ttname"><a href="../../dd/d14/classscc_1_1sqld_1_1Conn.html">scc::sqld::Conn</a></div><div class="ttdoc">Database connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00061">sqld.h:61</a></div></div>
-<div class="ttc" id="aclassscc_1_1sqld_1_1Trans_html"><div class="ttname"><a href="../../d2/d8b/classscc_1_1sqld_1_1Trans.html">scc::sqld::Trans</a></div><div class="ttdoc">Database transaction helper.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00089">sqld.h:89</a></div></div>
-<div class="ttc" id="aclassscc_1_1sqld_1_1Req_html"><div class="ttname"><a href="../../d7/df6/classscc_1_1sqld_1_1Req.html">scc::sqld::Req</a></div><div class="ttdoc">Database request.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00111">sqld.h:111</a></div></div>
+<div class="ttc" id="aclassscc_1_1sqld_1_1Trans_html"><div class="ttname"><a href="../../d2/d8b/classscc_1_1sqld_1_1Trans.html">scc::sqld::Trans</a></div><div class="ttdoc">Database transaction.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00089">sqld.h:89</a></div></div>
+<div class="ttc" id="aclassscc_1_1sqld_1_1Req_html"><div class="ttname"><a href="../../d7/df6/classscc_1_1sqld_1_1Req.html">scc::sqld::Req</a></div><div class="ttdoc">Database request.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00128">sqld.h:128</a></div></div>
 <div class="ttc" id="aclassscc_1_1sqld_1_1Conn_html_a6eb0edbac598d7502a68b999ba1bd5da"><div class="ttname"><a href="../../dd/d14/classscc_1_1sqld_1_1Conn.html#a6eb0edbac598d7502a68b999ba1bd5da">scc::sqld::Conn::reopen</a></div><div class="ttdeci">void reopen(const std::string &amp;=&quot;file:mem?mode=memory&amp;cache=shared&quot;)</div><div class="ttdoc">Reopen the connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/sqld_8cc_source.html#l00069">sqld.cc:69</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

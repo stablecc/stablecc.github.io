@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sql_38',['sql',['../d7/df6/classscc_1_1sqld_1_1Req.html#a1ac6cad8a1126d44bf37ce4384c504e3',1,'scc::sqld::Req']]]
+  ['is_5factive_42',['is_active',['../d2/d8b/classscc_1_1sqld_1_1Trans.html#a69ae4ba277c8d569590721a1c00d0c4b',1,'scc::sqld::Trans']]]
 ];

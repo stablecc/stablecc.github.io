@@ -85,10 +85,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Req</b> (<a class="el" href="../../dd/d14/classscc_1_1sqld_1_1Conn.html">Conn</a> &amp;)</td></tr>
 <tr class="separator:abf1682ff5f775ff885646c2111c02528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a959c045ae35485bb7e2e7e942bf3c8e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/classscc_1_1sqld_1_1Req.html#a959c045ae35485bb7e2e7e942bf3c8e4">clear</a> ()</td></tr>
-<tr class="memdesc:a959c045ae35485bb7e2e7e942bf3c8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the request.  <a href="../../d7/df6/classscc_1_1sqld_1_1Req.html#a959c045ae35485bb7e2e7e942bf3c8e4">More...</a><br /></td></tr>
+<tr class="memdesc:a959c045ae35485bb7e2e7e942bf3c8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the request and the <a class="el" href="../../d7/df6/classscc_1_1sqld_1_1Req.html#a1ac6cad8a1126d44bf37ce4384c504e3" title="Sql streamer.">sql()</a> stream.  <a href="../../d7/df6/classscc_1_1sqld_1_1Req.html#a959c045ae35485bb7e2e7e942bf3c8e4">More...</a><br /></td></tr>
 <tr class="separator:a959c045ae35485bb7e2e7e942bf3c8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0f321d20b68c4ee67b6533b416296b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/classscc_1_1sqld_1_1Req.html#ac0f321d20b68c4ee67b6533b416296b3">reset</a> ()</td></tr>
-<tr class="memdesc:ac0f321d20b68c4ee67b6533b416296b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the request.  <a href="../../d7/df6/classscc_1_1sqld_1_1Req.html#ac0f321d20b68c4ee67b6533b416296b3">More...</a><br /></td></tr>
+<tr class="memdesc:ac0f321d20b68c4ee67b6533b416296b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the request without clearing the <a class="el" href="../../d7/df6/classscc_1_1sqld_1_1Req.html#a1ac6cad8a1126d44bf37ce4384c504e3" title="Sql streamer.">sql()</a> stream.  <a href="../../d7/df6/classscc_1_1sqld_1_1Req.html#ac0f321d20b68c4ee67b6533b416296b3">More...</a><br /></td></tr>
 <tr class="separator:ac0f321d20b68c4ee67b6533b416296b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88624f0e3f8d75083d7e4a6258cf22b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/classscc_1_1sqld_1_1Req.html#ab88624f0e3f8d75083d7e4a6258cf22b">exec_select</a> ()</td></tr>
 <tr class="memdesc:ab88624f0e3f8d75083d7e4a6258cf22b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes in select mode.  <a href="../../d7/df6/classscc_1_1sqld_1_1Req.html#ab88624f0e3f8d75083d7e4a6258cf22b">More...</a><br /></td></tr>
@@ -136,7 +136,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d1/d62/unittest_2sqld_8cc-example.html#_a1">unittest/sqld.cc</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d34/sqld_8h_source.html#l00111">111</a> of file <a class="el" href="../../d0/d34/sqld_8h_source.html">sqld.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d34/sqld_8h_source.html#l00128">128</a> of file <a class="el" href="../../d0/d34/sqld_8h_source.html">sqld.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a959c045ae35485bb7e2e7e942bf3c8e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a959c045ae35485bb7e2e7e942bf3c8e4">&#9670;&nbsp;</a></span>clear()</h2>
@@ -153,8 +153,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
       </table>
 </div><div class="memdoc">
 
-<p>Clear the request. </p>
-<p>After this call, the sql stream is set empty, and the request is initialized. </p>
+<p>Clear the request and the <a class="el" href="../../d7/df6/classscc_1_1sqld_1_1Req.html#a1ac6cad8a1126d44bf37ce4384c504e3" title="Sql streamer.">sql()</a> stream. </p>
+<p>After this call, the <a class="el" href="../../d7/df6/classscc_1_1sqld_1_1Req.html#a1ac6cad8a1126d44bf37ce4384c504e3" title="Sql streamer.">sql()</a> stream is set empty, and the request is initialized. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../df/df9/sqld_8cc_source.html#l00146">146</a> of file <a class="el" href="../../df/df9/sqld_8cc_source.html">sqld.cc</a>.</p>
 
@@ -476,8 +476,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
       </table>
 </div><div class="memdoc">
 
-<p>Reset the request. </p>
-<p>After this call, the sql stream is unchanged, and the request is initailized. </p>
+<p>Reset the request without clearing the <a class="el" href="../../d7/df6/classscc_1_1sqld_1_1Req.html#a1ac6cad8a1126d44bf37ce4384c504e3" title="Sql streamer.">sql()</a> stream. </p>
+<p>After this call, the <a class="el" href="../../d7/df6/classscc_1_1sqld_1_1Req.html#a1ac6cad8a1126d44bf37ce4384c504e3" title="Sql streamer.">sql()</a> stream is unchanged, and the request is initialized to start of stream. The sql stream can then be executed again. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../df/df9/sqld_8cc_source.html#l00155">155</a> of file <a class="el" href="../../df/df9/sqld_8cc_source.html">sqld.cc</a>.</p>
 
@@ -512,7 +512,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
   &lt;&lt; "insert into t values(1, 2);"
   &lt;&lt; "select * from t;";
 </pre> 
-<p class="definition">Definition at line <a class="el" href="../../d0/d34/sqld_8h_source.html#l00212">212</a> of file <a class="el" href="../../d0/d34/sqld_8h_source.html">sqld.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d34/sqld_8h_source.html#l00230">230</a> of file <a class="el" href="../../d0/d34/sqld_8h_source.html">sqld.h</a>.</p>
 
 </div>
 </div>

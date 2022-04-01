@@ -167,7 +167,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">TEST_F(SqliteTest, file_open)</div>
 <div class="line">{</div>
-<div class="line">    reopen(<span class="stringliteral">&quot;file:file?mode=rwc&quot;</span>);   <span class="comment">// open a read/write/create file backed connection</span></div>
+<div class="line">    reopen(<span class="stringliteral">&quot;file:dbfile?mode=rwc&quot;</span>); <span class="comment">// open a read/write/create file backed connection</span></div>
 <div class="line">    <span class="keyword">auto</span> fs = fs::scan_dir(<span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;filesystem:&quot;</span> &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; d : fs)</div>
@@ -176,7 +176,7 @@ $(function() {
 <div class="line">    }</div>
 <div class="line">    ASSERT_EQ(fs.size(), 1);</div>
 <div class="line">    system_error err;</div>
-<div class="line">    ASSERT_TRUE(fs::file_stat(<span class="stringliteral">&quot;file&quot;</span>, &amp;err).type == scc::util::FileType::reg);</div>
+<div class="line">    ASSERT_TRUE(fs::file_stat(<span class="stringliteral">&quot;dbfile&quot;</span>, &amp;err).type == scc::util::FileType::reg);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">TEST_F(SqliteTest, exec_select)</div>
@@ -220,7 +220,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">TEST_F(SqliteTest, exec)</div>
 <div class="line">{</div>
-<div class="line">    reopen(<span class="stringliteral">&quot;file:file?mode=rwc&quot;</span>);</div>
+<div class="line">    reopen(<span class="stringliteral">&quot;file:dbfile?mode=rwc&quot;</span>);</div>
 <div class="line">    Req req(db);</div>
 <div class="line"> </div>
 <div class="line">    int64_t big = 1;</div>
@@ -265,7 +265,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">TEST_F(SqliteTest, two_conns_xact)</div>
 <div class="line">{</div>
-<div class="line">    reopen(<span class="stringliteral">&quot;file:file?mode=rwc&quot;</span>);</div>
+<div class="line">    reopen(<span class="stringliteral">&quot;file:dbfile?mode=rwc&quot;</span>);     <span class="comment">// first connection is read/write/create</span></div>
 <div class="line">    </div>
 <div class="line">    Req r(db);</div>
 <div class="line"> </div>
@@ -274,14 +274,17 @@ $(function() {
 <div class="line"> </div>
 <div class="line">    Trans x(db);</div>
 <div class="line"> </div>
+<div class="line">    ASSERT_FALSE(x.is_active());</div>
+<div class="line"> </div>
 <div class="line">    x.begin();                                      <span class="comment">// begin a transaction</span></div>
+<div class="line">    ASSERT_TRUE(x.is_active());</div>
 <div class="line">    r.clear();</div>
 <div class="line">    r.sql() &lt;&lt; <span class="stringliteral">&quot;insert into t values(12345);&quot;</span>;</div>
 <div class="line">    r.exec();                                       <span class="comment">// insert a value</span></div>
 <div class="line"> </div>
-<div class="line">    Conn db2(<span class="stringliteral">&quot;file:file?mode=rwc&quot;</span>);     <span class="comment">// second connection</span></div>
+<div class="line">    Conn db2(<span class="stringliteral">&quot;file:dbfile?mode=ro&quot;</span>);        <span class="comment">// second connection is read-only</span></div>
 <div class="line"> </div>
-<div class="line">    Req r2(db2);</div>
+<div class="line">    Req r2(db2);                        <span class="comment">// request on second connection</span></div>
 <div class="line"> </div>
 <div class="line">    r2.sql() &lt;&lt; <span class="stringliteral">&quot;select * from t;&quot;</span>;</div>
 <div class="line"> </div>
@@ -289,7 +292,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">    x.commit();                         <span class="comment">// first connection commits transaction</span></div>
 <div class="line"> </div>
-<div class="line">    r2.reset();</div>
+<div class="line">    r2.reset();                         <span class="comment">// reuse the sql stream request</span></div>
 <div class="line"> </div>
 <div class="line">    ASSERT_EQ(r2.exec_select(), 1);     <span class="comment">// now the value can be seen</span></div>
 <div class="line"> </div>
@@ -297,7 +300,7 @@ $(function() {
 <div class="line">    r.clear();</div>
 <div class="line">    r.sql() &lt;&lt; <span class="stringliteral">&quot;insert into t values(45678);&quot;</span>;</div>
 <div class="line">    r.exec();</div>
-<div class="line">    x.abort();</div>
+<div class="line">    x.abort();                          <span class="comment">// throw away this transaction</span></div>
 <div class="line"> </div>
 <div class="line">    r.clear();</div>
 <div class="line">    r.sql() &lt;&lt; <span class="stringliteral">&quot;select * from t where a is 45678;&quot;</span>;</div>
@@ -306,8 +309,8 @@ $(function() {
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="asqld_8h_html"><div class="ttname"><a href="../../d0/d34/sqld_8h.html">sqld.h</a></div><div class="ttdoc">File descriptor.</div></div>
 <div class="ttc" id="aclassscc_1_1sqld_1_1Conn_html"><div class="ttname"><a href="../../dd/d14/classscc_1_1sqld_1_1Conn.html">scc::sqld::Conn</a></div><div class="ttdoc">Database connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00061">sqld.h:61</a></div></div>
-<div class="ttc" id="aclassscc_1_1sqld_1_1Trans_html"><div class="ttname"><a href="../../d2/d8b/classscc_1_1sqld_1_1Trans.html">scc::sqld::Trans</a></div><div class="ttdoc">Database transaction helper.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00089">sqld.h:89</a></div></div>
-<div class="ttc" id="aclassscc_1_1sqld_1_1Req_html"><div class="ttname"><a href="../../d7/df6/classscc_1_1sqld_1_1Req.html">scc::sqld::Req</a></div><div class="ttdoc">Database request.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00111">sqld.h:111</a></div></div>
+<div class="ttc" id="aclassscc_1_1sqld_1_1Trans_html"><div class="ttname"><a href="../../d2/d8b/classscc_1_1sqld_1_1Trans.html">scc::sqld::Trans</a></div><div class="ttdoc">Database transaction.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00089">sqld.h:89</a></div></div>
+<div class="ttc" id="aclassscc_1_1sqld_1_1Req_html"><div class="ttname"><a href="../../d7/df6/classscc_1_1sqld_1_1Req.html">scc::sqld::Req</a></div><div class="ttdoc">Database request.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00128">sqld.h:128</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

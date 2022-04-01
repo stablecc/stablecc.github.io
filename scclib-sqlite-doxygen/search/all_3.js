@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['reopen_11',['reopen',['../dd/d14/classscc_1_1sqld_1_1Conn.html#a6eb0edbac598d7502a68b999ba1bd5da',1,'scc::sqld::Conn']]],
-  ['req_12',['Req',['../d7/df6/classscc_1_1sqld_1_1Req.html',1,'scc::sqld']]],
-  ['reset_13',['reset',['../d7/df6/classscc_1_1sqld_1_1Req.html#ac0f321d20b68c4ee67b6533b416296b3',1,'scc::sqld::Req']]]
+  ['exec_11',['exec',['../d7/df6/classscc_1_1sqld_1_1Req.html#aba94a1a35c991c704928f220d77126cc',1,'scc::sqld::Req']]],
+  ['exec_5fselect_12',['exec_select',['../d7/df6/classscc_1_1sqld_1_1Req.html#ab88624f0e3f8d75083d7e4a6258cf22b',1,'scc::sqld::Req']]]
 ];
