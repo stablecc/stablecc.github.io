@@ -176,7 +176,7 @@ $(function() {
 <div class="line">    }</div>
 <div class="line">    ASSERT_EQ(fs.size(), 1);</div>
 <div class="line">    system_error err;</div>
-<div class="line">    ASSERT_TRUE(fs::file_stat(<span class="stringliteral">&quot;dbfile&quot;</span>, &amp;err).type == scc::util::FileType::reg);</div>
+<div class="line">    ASSERT_EQ(fs::file_stat(<span class="stringliteral">&quot;dbfile&quot;</span>, &amp;err).type, scc::util::FileType::reg);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">TEST_F(SqliteTest, exec_select)</div>
@@ -305,6 +305,11 @@ $(function() {
 <div class="line">    r.clear();</div>
 <div class="line">    r.sql() &lt;&lt; <span class="stringliteral">&quot;select * from t where a is 45678;&quot;</span>;</div>
 <div class="line">    ASSERT_EQ(r.exec_select(), 0);                      <span class="comment">// it was rolled back</span></div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    r2.clear();</div>
+<div class="line">    r2.sql()    &lt;&lt; <span class="stringliteral">&quot;insert into t values(45678);&quot;</span>;</div>
+<div class="line">    ASSERT_THROW(r2.exec(), runtime_error);             <span class="comment">// illegal for read-only db connection</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="asqld_8h_html"><div class="ttname"><a href="../../d0/d34/sqld_8h.html">sqld.h</a></div><div class="ttdoc">File descriptor.</div></div>

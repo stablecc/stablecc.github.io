@@ -180,7 +180,7 @@ $(function() {
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    ASSERT_EQ(fs.size(), 1);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    system_error err;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    ASSERT_TRUE(fs::file_stat(<span class="stringliteral">&quot;dbfile&quot;</span>, &amp;err).type == scc::util::FileType::reg);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    ASSERT_EQ(fs::file_stat(<span class="stringliteral">&quot;dbfile&quot;</span>, &amp;err).type, scc::util::FileType::reg);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;TEST_F(SqliteTest, exec_select)</div>
@@ -309,7 +309,12 @@ $(function() {
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    r.clear();</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    r.sql() &lt;&lt; <span class="stringliteral">&quot;select * from t where a is 45678;&quot;</span>;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    ASSERT_EQ(r.exec_select(), 0);                      <span class="comment">// it was rolled back</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    r2.clear();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    r2.sql()    &lt;&lt; <span class="stringliteral">&quot;insert into t values(45678);&quot;</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    ASSERT_THROW(r2.exec(), runtime_error);             <span class="comment">// illegal for read-only db connection</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="asqld_8h_html"><div class="ttname"><a href="../../d0/d34/sqld_8h.html">sqld.h</a></div><div class="ttdoc">File descriptor.</div></div>
 <div class="ttc" id="aclassscc_1_1sqld_1_1Conn_html"><div class="ttname"><a href="../../dd/d14/classscc_1_1sqld_1_1Conn.html">scc::sqld::Conn</a></div><div class="ttdoc">Database connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d34/sqld_8h_source.html#l00061">sqld.h:61</a></div></div>
