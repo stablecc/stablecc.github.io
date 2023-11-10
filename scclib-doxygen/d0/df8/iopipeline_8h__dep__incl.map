@@ -1,5 +1,0 @@
-<map id="util/pub/util/iopipeline.h" name="util/pub/util/iopipeline.h">
-<area shape="rect" id="node1" title="Input/output streaming pipeline." alt="" coords="64,5,240,32"/>
-<area shape="rect" id="node2" href="$d2/d3e/iostream_8cc.html" title="input/output stream utilities implementation" alt="" coords="5,80,128,107"/>
-<area shape="rect" id="node3" href="$de/d12/iohelper_8cc.html" title="Tests for input/output stream utilities." alt="" coords="152,80,323,107"/>
-</map>

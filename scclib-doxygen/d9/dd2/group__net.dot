@@ -1,0 +1,15 @@
+digraph "networking"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node4 [label="Low-level tcp and udp\l sockets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d15/group__net__sock.html",tooltip="Low-level socket interface."];
+  Node3 [label="Internet network interface\l utility",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d00/group__net__if.html",tooltip="Scans network interfaces and enumerates address types."];
+  Node5 [label="Unix domain tcp and\l udp networking",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d90/group__net__unix.html",tooltip="Local networking using socket files."];
+  Node1 [label="networking",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Utilities to support tcp and udp networking."];
+  Node2 [label="Internet tcp and udp\l networking",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d5e/group__net__inet.html",tooltip="Tcp/ip and udp/ip networking."];
+  Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+}

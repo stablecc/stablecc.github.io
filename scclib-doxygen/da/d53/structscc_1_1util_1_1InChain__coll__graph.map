@@ -1,8 +1,0 @@
-<map id="scc::util::InChain" name="scc::util::InChain">
-<area shape="rect" id="node1" title="Chain of readers base class." alt="" coords="1225,46,1355,73"/>
-<area shape="rect" id="node2" title=" " alt="" coords="869,5,1117,47"/>
-<area shape="rect" id="node3" title=" " alt="" coords="584,5,756,47"/>
-<area shape="rect" id="node4" href="$df/d03/structscc_1_1util_1_1PipelineReader.html" title="Pipeline reader to carry out processing in a pipeline (chain of readers)." alt="" coords="203,18,381,45"/>
-<area shape="rect" id="node5" href="$d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="5,51,132,78"/>
-<area shape="rect" id="node6" title=" " alt="" coords="405,61,560,103"/>
-</map>

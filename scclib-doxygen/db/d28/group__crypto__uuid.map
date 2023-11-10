@@ -1,4 +1,0 @@
-<map id="Universally unique identifier (uuid)" name="Universally unique identifier (uuid)">
-<area shape="rect" id="node1" href="$d5/dfc/group__crypto.html" title="Depends on general utilities and either OpenSSL or Intel ippcp." alt="" coords="5,13,113,38"/>
-<area shape="rect" id="node2" title="Provides a randomly generated UUID." alt="" coords="161,5,305,45"/>
-</map>

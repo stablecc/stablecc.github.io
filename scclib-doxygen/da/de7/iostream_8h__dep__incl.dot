@@ -1,0 +1,25 @@
+digraph "util/pub/util/iostream.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="util/pub/util/iostream.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base input/output stream classes."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="examples/net/netmain.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d77/netmain_8cc.html",tooltip="Networking example."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="net/unittest/inet.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8d/unittest_2inet_8cc.html",tooltip="Tests for Internet tcp and udp networking sockets."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="net/unittest/inet_stream.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d3a/inet__stream_8cc.html",tooltip="Tests for Internet tcp and udp networking streams."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="net/unittest/unix.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/dc1/unittest_2unix_8cc.html",tooltip="Tests for Unix domain tcp and udp networking."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="util/pub/util/iopipeline.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d09/iopipeline_8h.html",tooltip="Input/output streaming pipeline."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="util/iostream.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d3e/iostream_8cc.html",tooltip="input/output stream utilities implementation"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="util/unittest/iohelper.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d12/iohelper_8cc.html",tooltip="Tests for input/output stream utilities."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="util/unittest/iostream.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/df4/unittest_2iostream_8cc.html",tooltip="Tests for input/output stream utilities."];
+}

@@ -1,0 +1,19 @@
+digraph "scc::util::PipelineReader"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="scc::util::PipelineReader",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Pipeline reader to carry out processing in a pipeline (chain of readers)."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="scc::util::Reader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/de2/structscc_1_1util_1_1Reader.html",tooltip="Interface class for objects which can be read."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="scc::util::FlowThroughPipeline\lReader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d35/structscc_1_1util_1_1FlowThroughPipelineReader.html",tooltip="Pipeline reader which flows through all data."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="scc::util::ReadCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/ddd/classscc_1_1util_1_1ReadCounter.html",tooltip="Adds byte count to a read stream."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="scc::util::RwCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dc0/classscc_1_1util_1_1RwCounter.html",tooltip="Adds byte count to a read/write stream."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="scc::util::ReadTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d9e/classscc_1_1util_1_1ReadTimer.html",tooltip="Adds timer to a read stream."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="scc::util::RwTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d17/classscc_1_1util_1_1RwTimer.html",tooltip="Adds byte count to a read/write stream."];
+}

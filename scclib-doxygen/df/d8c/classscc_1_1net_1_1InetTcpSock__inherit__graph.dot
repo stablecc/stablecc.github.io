@@ -1,0 +1,15 @@
+digraph "scc::net::InetTcpSock"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="scc::net::InetTcpSock",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Internet transmission control protocol (tcp) socket."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="scc::net::TcpSocket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d36/classscc_1_1net_1_1TcpSocket.html",tooltip="Tcp socket base class."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="scc::net::SocketBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d14/classscc_1_1net_1_1SocketBase.html",tooltip="Socket base class."];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="scc::util::Reader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/de2/structscc_1_1util_1_1Reader.html",tooltip="Interface class for objects which can be read."];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="scc::util::Writer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d91/structscc_1_1util_1_1Writer.html",tooltip="Interface class for objects which can be written."];
+}

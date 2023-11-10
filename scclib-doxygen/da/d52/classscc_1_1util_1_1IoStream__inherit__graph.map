@@ -1,5 +1,0 @@
-<map id="scc::util::IoStream" name="scc::util::IoStream">
-<area shape="rect" id="node1" title="Input/output stream wrapper for reader/writer." alt="" coords="8,80,147,107"/>
-<area shape="rect" id="node3" href="$d1/db8/structscc_1_1util_1_1IoPipeline.html" title="Input/output stream with pipeline of readers and writers." alt="" coords="5,155,149,181"/>
-<area shape="rect" id="node2" title=" " alt="" coords="23,5,131,32"/>
-</map>

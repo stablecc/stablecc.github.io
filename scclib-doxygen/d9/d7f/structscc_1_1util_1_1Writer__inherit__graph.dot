@@ -1,0 +1,28 @@
+digraph "scc::util::Writer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="scc::util::Writer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Interface class for objects which can be written."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="scc::net::TcpSocket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d36/classscc_1_1net_1_1TcpSocket.html",tooltip="Tcp socket base class."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="scc::net::InetTcpSock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dcf/classscc_1_1net_1_1InetTcpSock.html",tooltip="Internet transmission control protocol (tcp) socket."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="scc::net::UnixTcpSock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d37/classscc_1_1net_1_1UnixTcpSock.html",tooltip="Unix domain tcp (stream) socket."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="scc::util::PipelineWriter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dea/structscc_1_1util_1_1PipelineWriter.html",tooltip="Pipeline writer to carry out processing in a pipeline (chain of writers)."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="scc::util::FlowThroughPipeline\lWriter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d70/structscc_1_1util_1_1FlowThroughPipelineWriter.html",tooltip="Pipeline writer which flows through all data."];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="scc::util::WriteCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d24/classscc_1_1util_1_1WriteCounter.html",tooltip="Adds byte count to a write stream."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="scc::util::RwCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dc0/classscc_1_1util_1_1RwCounter.html",tooltip="Adds byte count to a read/write stream."];
+  Node5 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="scc::util::WriteTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/df3/classscc_1_1util_1_1WriteTimer.html",tooltip="Adds timer to a write stream."];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="scc::util::RwTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d17/classscc_1_1util_1_1RwTimer.html",tooltip="Adds byte count to a read/write stream."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="scc::util::RwLoopBuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d4e/classscc_1_1util_1_1RwLoopBuffer.html",tooltip="Loopback read/write stream buffer."];
+}

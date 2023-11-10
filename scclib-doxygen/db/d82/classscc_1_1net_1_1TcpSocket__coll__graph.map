@@ -1,6 +1,0 @@
-<map id="scc::net::TcpSocket" name="scc::net::TcpSocket">
-<area shape="rect" id="node1" title="Tcp socket base class." alt="" coords="176,80,320,107"/>
-<area shape="rect" id="node2" href="$d9/d14/classscc_1_1net_1_1SocketBase.html" title="Socket base class." alt="" coords="5,5,160,32"/>
-<area shape="rect" id="node3" href="$d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="185,5,311,32"/>
-<area shape="rect" id="node4" href="$dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="336,5,456,32"/>
-</map>

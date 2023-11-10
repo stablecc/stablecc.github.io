@@ -1,7 +1,0 @@
-<map id="net/pub/net/net_if.h" name="net/pub/net/net_if.h">
-<area shape="rect" id="node1" title="Internet network interface utility." alt="" coords="266,5,414,32"/>
-<area shape="rect" id="node2" href="$de/d77/netmain_8cc.html" title="Networking example." alt="" coords="5,80,192,107"/>
-<area shape="rect" id="node3" href="$da/d64/net__if_8cc.html" title="Internet network interface utility implementation" alt="" coords="216,80,317,107"/>
-<area shape="rect" id="node4" href="$dd/d8d/unittest_2inet_8cc.html" title="Tests for Internet tcp and udp networking sockets." alt="" coords="341,80,485,107"/>
-<area shape="rect" id="node5" href="$de/d1f/unittest_2net__if_8cc.html" title="Tests for Internet network interface utility." alt="" coords="509,80,664,107"/>
-</map>

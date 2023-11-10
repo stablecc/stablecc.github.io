@@ -1,0 +1,11 @@
+digraph "net/pub/net" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_14332e37d872c09e8f101f48e3d63119 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="pub" fontname="Helvetica", fontsize="10", URL="dir_14332e37d872c09e8f101f48e3d63119.html"]
+  dir_6ad068894917bf87247fa9abc38337b1 [shape=box, label="net", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6ad068894917bf87247fa9abc38337b1.html"];
+  }
+  dir_23ec12649285f9fabf3a6b7380226c28 [shape=box label="util" fillcolor="white" style="filled" color="red" URL="dir_23ec12649285f9fabf3a6b7380226c28.html"];
+  dir_6ad068894917bf87247fa9abc38337b1->dir_23ec12649285f9fabf3a6b7380226c28 [headlabel="1", labeldistance=1.5 headhref="dir_000014_000010.html"];
+}

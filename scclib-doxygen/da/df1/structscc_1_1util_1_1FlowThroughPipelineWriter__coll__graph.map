@@ -1,6 +1,0 @@
-<map id="scc::util::FlowThroughPipelineWriter" name="scc::util::FlowThroughPipelineWriter">
-<area shape="rect" id="node1" title="Pipeline writer which flows through all data." alt="" coords="77,199,293,240"/>
-<area shape="rect" id="node2" href="$d5/dea/structscc_1_1util_1_1PipelineWriter.html" title="Pipeline writer to carry out processing in a pipeline (chain of writers)." alt="" coords="5,102,177,129"/>
-<area shape="rect" id="node3" href="$dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="125,5,245,32"/>
-<area shape="rect" id="node4" title=" " alt="" coords="202,95,357,136"/>
-</map>

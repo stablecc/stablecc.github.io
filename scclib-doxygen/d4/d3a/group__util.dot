@@ -1,0 +1,21 @@
+digraph "general utilities"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node8 [label="Signal-safe C library\l wrapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dff/group__util__safeclib.html",tooltip="Provides signal safe wrapper for commonly used C library APIs."];
+  Node2 [label="Signaling kernel event\l counter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8f/group__util__event.html",tooltip="A wrapper for Linux eventfd."];
+  Node1 [label="general utilities",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node6 [label="Thread safe logging",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9a/group__util__logger.html",tooltip="Logging utility which can share std::ostream objects between multiple threads."];
+  Node3 [label="File descriptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d7c/group__util__filedesc.html",tooltip="Wraps an open file descriptor, providing safe duplication and destruction."];
+  Node7 [label="Kernel file descriptor\l event notification poller",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d5f/group__util__poller.html",tooltip="Linux kernel file descriptor event notification, using Linux epoll."];
+  Node5 [label="input/output stream\l utilities",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d16/group__util__iostream.html",tooltip="Allows wrapping of generic streaming objects into std::iostream."];
+  Node4 [label="Common file system\l utilities",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dcc/group__util__fs.html",tooltip="File system utility common operations."];
+  Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+}

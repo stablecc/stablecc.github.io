@@ -1,8 +1,0 @@
-<map id="util/pub/util/rwloopbuf.h" name="util/pub/util/rwloopbuf.h">
-<area shape="rect" id="node1" title="Loopback read/write buffer." alt="" coords="77,5,253,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,68,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="93,80,151,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="175,80,242,107"/>
-<area shape="rect" id="node5" href="$d6/d65/iobase_8h.html" title="Input/output stream base reader/writer interface classes." alt="" coords="267,80,369,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="279,155,357,181"/>
-</map>

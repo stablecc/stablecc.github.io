@@ -1,0 +1,13 @@
+digraph "util/pub/util/rwloopbuf.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="util/pub/util/rwloopbuf.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Loopback read/write buffer."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="util/iostream.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d3e/iostream_8cc.html",tooltip="input/output stream utilities implementation"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="util/unittest/iohelper.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d12/iohelper_8cc.html",tooltip="Tests for input/output stream utilities."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="util/unittest/iostream.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/df4/unittest_2iostream_8cc.html",tooltip="Tests for input/output stream utilities."];
+}

@@ -1,0 +1,19 @@
+digraph "scc::util::RwTimer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="scc::util::RwTimer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Adds byte count to a read/write stream."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="scc::util::ReadTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d9e/classscc_1_1util_1_1ReadTimer.html",tooltip="Adds timer to a read stream."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="scc::util::PipelineReader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d03/structscc_1_1util_1_1PipelineReader.html",tooltip="Pipeline reader to carry out processing in a pipeline (chain of readers)."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="scc::util::Reader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/de2/structscc_1_1util_1_1Reader.html",tooltip="Interface class for objects which can be read."];
+  Node5 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="scc::util::WriteTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/df3/classscc_1_1util_1_1WriteTimer.html",tooltip="Adds timer to a write stream."];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="scc::util::PipelineWriter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dea/structscc_1_1util_1_1PipelineWriter.html",tooltip="Pipeline writer to carry out processing in a pipeline (chain of writers)."];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="scc::util::Writer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d91/structscc_1_1util_1_1Writer.html",tooltip="Interface class for objects which can be written."];
+}

@@ -1,0 +1,15 @@
+digraph "cryptography"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="cryptography",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Depends on general utilities and either OpenSSL or Intel ippcp."];
+  Node2 [label="Big number arithmetic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d2a/group__crypto__bignum.html",tooltip="Defines an arbitrary length big number for use in cryptographic applications."];
+  Node5 [label="Universally unique\l identifier (uuid)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d28/group__crypto__uuid.html",tooltip="Provides a randomly generated UUID."];
+  Node4 [label="Secure vector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/da1/group__crypto__secvec.html",tooltip="Secure (automatically erased) vector."];
+  Node3 [label="Random number generator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/df8/group__crypto__random.html",tooltip="Cryptographically secure random numbers using pseudorandom number generator."];
+  Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+}

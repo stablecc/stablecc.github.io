@@ -1,0 +1,15 @@
+digraph "net/pub/net/net_if.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="net/pub/net/net_if.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Internet network interface utility."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="examples/net/netmain.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d77/netmain_8cc.html",tooltip="Networking example."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="net/net_if.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d64/net__if_8cc.html",tooltip="Internet network interface utility implementation"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="net/unittest/inet.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d8d/unittest_2inet_8cc.html",tooltip="Tests for Internet tcp and udp networking sockets."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="net/unittest/net_if.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d1f/unittest_2net__if_8cc.html",tooltip="Tests for Internet network interface utility."];
+}

@@ -1,6 +1,0 @@
-<map id="scc::util::RwLoopBuffer" name="scc::util::RwLoopBuffer">
-<area shape="rect" id="node1" title="Loopback read/write stream buffer." alt="" coords="131,80,302,107"/>
-<area shape="rect" id="node2" href="$d5/de2/structscc_1_1util_1_1Reader.html" title="Interface class for objects which can be read." alt="" coords="5,5,132,32"/>
-<area shape="rect" id="node3" href="$dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="157,5,277,32"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="301,5,450,32"/>
-</map>

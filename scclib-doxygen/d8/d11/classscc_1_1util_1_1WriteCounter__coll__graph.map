@@ -1,5 +1,0 @@
-<map id="scc::util::WriteCounter" name="scc::util::WriteCounter">
-<area shape="rect" id="node1" title="Adds byte count to a write stream." alt="" coords="8,155,175,181"/>
-<area shape="rect" id="node2" href="$d5/dea/structscc_1_1util_1_1PipelineWriter.html" title="Pipeline writer to carry out processing in a pipeline (chain of writers)." alt="" coords="5,80,177,107"/>
-<area shape="rect" id="node3" href="$dc/d91/structscc_1_1util_1_1Writer.html" title="Interface class for objects which can be written." alt="" coords="31,5,151,32"/>
-</map>

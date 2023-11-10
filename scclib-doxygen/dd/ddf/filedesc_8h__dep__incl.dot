@@ -1,0 +1,15 @@
+digraph "util/pub/util/filedesc.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="util/pub/util/filedesc.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="File descriptor."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="net/net_if.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d64/net__if_8cc.html",tooltip="Internet network interface utility implementation"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="util/filedesc.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d4d/filedesc_8cc.html",tooltip="File descriptor implementation"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="util/unittest/filedesc.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d1a/unittest_2filedesc_8cc.html",tooltip="Tests for File descriptor."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="util/unittest/fs.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d2e/unittest_2fs_8cc.html",tooltip="Tests for Common file system utilities."];
+}
