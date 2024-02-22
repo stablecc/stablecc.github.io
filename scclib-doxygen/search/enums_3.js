@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['netifflag_766',['NetIfFlag',['../df/d00/group__net__if.html#gaf55d8adaea879f3e9e7562f3fa4c0fd1',1,'scc::net']]]
+  ['inetaddrflag_1283',['InetAddrFlag',['../d6/d5e/group__net__inet.html#gad09c529846f2804e903604f6df2c31b7',1,'scc::net']]]
 ];

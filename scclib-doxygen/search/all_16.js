@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7einetaddr_413',['~InetAddr',['../da/d56/classscc_1_1net_1_1InetAddr.html#a9f7d697ca218369f3b5d5c094839377d',1,'scc::net::InetAddr']]]
+  ['zero_690',['zero',['../d7/d71/classscc_1_1crypto_1_1Uuid.html#ae66555cf45e4eb18bff15f1a592d7cc6',1,'scc::crypto::Uuid']]]
 ];

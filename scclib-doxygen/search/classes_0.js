@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bignum_414',['Bignum',['../da/d2a/classscc_1_1crypto_1_1Bignum.html',1,'scc::crypto']]]
+  ['adler32_692',['Adler32',['../d1/da1/classscc_1_1encode_1_1Adler32.html',1,'scc::encode']]]
 ];

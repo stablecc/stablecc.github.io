@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inetaddrflag_765',['InetAddrFlag',['../d6/d5e/group__net__inet.html#gad09c529846f2804e903604f6df2c31b7',1,'scc::net']]]
+  ['filetype_1282',['FileType',['../d0/dcc/group__util__fs.html#ga2349db6f4bbd746c5b2e1e281e880269',1,'scc::util']]]
 ];

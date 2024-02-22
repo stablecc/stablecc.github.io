@@ -1,0 +1,40 @@
+digraph "scc::crypto::ExtAuthorityKeyIdentifier"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="scc::crypto::ExtAuthority\lKeyIdentifier",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Authority key identifier."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="scc::crypto::ExtBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d5b/structscc_1_1crypto_1_1ExtBase.html",tooltip="X.509 extensions."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" value" ,fontname="Helvetica"];
+  Node3 [label="std::shared_ptr\< DerBase \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" oid" ,fontname="Helvetica"];
+  Node4 [label="std::vector\< uint32_t \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" key_identifier" ,fontname="Helvetica"];
+  Node5 [label="std::vector\< char \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" authority_cert_serial\l_number" ,fontname="Helvetica"];
+  Node6 [label="scc::crypto::Bignum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d2a/classscc_1_1crypto_1_1Bignum.html",tooltip="Big number."];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" authority_cert_issuer" ,fontname="Helvetica"];
+  Node7 [label="std::vector\< scc::crypto\l::GeneralName \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node8 [label="scc::crypto::GeneralName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/db3/structscc_1_1crypto_1_1GeneralName.html",tooltip="General name."];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" name_val" ,fontname="Helvetica"];
+  Node9 [label="std::vector\< scc::crypto\l::RelativeDistinguishedName \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node10 [label="scc::crypto::RelativeDistinguishedName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d2d/structscc_1_1crypto_1_1RelativeDistinguishedName.html",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="std::set\< K \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" keys" ,fontname="Helvetica"];
+  Node12 [label="K",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" common_name\ncountry_name\ndn_qualifier\ndomain_component\nemail_address\ngeneration_qualifier\ngiven_name\nlocality_name\nname\norganization_id\n..." ,fontname="Helvetica"];
+  Node13 [label="std::vector\< T \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node14 [label="T",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" base" ,fontname="Helvetica"];
+  Node4 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" oid_val" ,fontname="Helvetica"];
+  Node15 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" string_val" ,fontname="Helvetica"];
+  Node15 [label="std::string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="std::basic_string\<\l Char \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

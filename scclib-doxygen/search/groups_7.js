@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['low_2dlevel_20tcp_20and_20udp_20sockets_832',['Low-level tcp and udp sockets',['../dd/d15/group__net__sock.html',1,'']]]
+  ['kernel_20file_20descriptor_20event_20notification_20poller_1397',['Kernel file descriptor event notification poller',['../d5/d5f/group__util__poller.html',1,'']]]
 ];

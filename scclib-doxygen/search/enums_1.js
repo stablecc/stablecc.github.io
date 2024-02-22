@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filetype_764',['FileType',['../d0/dcc/group__util__fs.html#ga2349db6f4bbd746c5b2e1e281e880269',1,'scc::util']]]
+  ['eventflag_1281',['EventFlag',['../db/d7d/classscc_1_1util_1_1Event.html#af745de611ee08f671beb83cfe02eabd8',1,'scc::util::Event']]]
 ];

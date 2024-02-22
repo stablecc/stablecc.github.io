@@ -1,0 +1,13 @@
+digraph "scc::crypto::DerSequence"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="scc::crypto::DerSequence",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="An ASN.1 SEQUENCE or SEQUENCE OF type."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="scc::crypto::DerContainerBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dc5/classscc_1_1crypto_1_1DerContainerBase.html",tooltip="Container base class."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="scc::crypto::DerBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d4f/classscc_1_1crypto_1_1DerBase.html",tooltip="ASN.1 base."];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="std::vector\< T \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

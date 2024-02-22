@@ -1,0 +1,9 @@
+digraph "Base 64 encoding"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node2 [label="Encoding utilities",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d46/group__encode.html",tooltip="Utilities to support data encoding."];
+  Node1 [label="Base 64 encoding",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base64 string encoding for binary data."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+}

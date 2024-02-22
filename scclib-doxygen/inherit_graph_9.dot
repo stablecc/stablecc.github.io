@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="scc::util::FileStat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dfc/structscc_1_1util_1_1FileStat.html",tooltip="File status structure."];
+  Node0 [label="scc::crypto::EcPrivateKeyCert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/de4/structscc_1_1crypto_1_1EcPrivateKeyCert.html",tooltip="Private key certificate utility."];
 }

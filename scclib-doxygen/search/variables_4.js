@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mod_5ftime_755',['mod_time',['../d2/dfc/structscc_1_1util_1_1FileStat.html#adf6c74987503dc5290a548ff4c6c5ff2',1,'scc::util::FileStat']]],
-  ['mode_756',['mode',['../d2/dfc/structscc_1_1util_1_1FileStat.html#ae34f7492991e9dccbb06032e6fe01b04',1,'scc::util::FileStat']]]
+  ['gid_1244',['gid',['../d2/dfc/structscc_1_1util_1_1FileStat.html#a2742a71e7a4d3f955e36806db5d534fd',1,'scc::util::FileStat']]]
 ];

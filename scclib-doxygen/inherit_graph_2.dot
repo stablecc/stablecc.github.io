@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="scc::crypto::RandomEngine\lLocker",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d94/classscc_1_1crypto_1_1RandomEngineLocker.html",tooltip="Helper to safely lock the engine."];
+  Node0 [label="scc::crypto::Cipher",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d52/classscc_1_1crypto_1_1Cipher.html",tooltip="Symmetric block cipher."];
 }

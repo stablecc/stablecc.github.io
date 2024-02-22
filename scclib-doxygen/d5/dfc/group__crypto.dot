@@ -4,12 +4,24 @@ digraph "cryptography"
   node [fontname="Helvetica",fontsize="10",shape=box];
   rankdir=LR;
   Node1 [label="cryptography",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Depends on general utilities and either OpenSSL or Intel ippcp."];
+  Node5 [label="Distinguished encoding\l rules (DER)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/de0/group__crypto__der.html",tooltip="DER (Distinguished Encoding Rules), is a subset of the binary packaging format ASN...."];
+  Node6 [label="Elliptic curve cryptography",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/da8/group__crypto__ecc.html",tooltip="Elliptic curve ciphers for use in PKI cryptography & TLS encryption."];
   Node2 [label="Big number arithmetic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d2a/group__crypto__bignum.html",tooltip="Defines an arbitrary length big number for use in cryptographic applications."];
-  Node5 [label="Universally unique\l identifier (uuid)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d28/group__crypto__uuid.html",tooltip="Provides a randomly generated UUID."];
-  Node4 [label="Secure vector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/da1/group__crypto__secvec.html",tooltip="Secure (automatically erased) vector."];
-  Node3 [label="Random number generator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/df8/group__crypto__random.html",tooltip="Cryptographically secure random numbers using pseudorandom number generator."];
+  Node11 [label="Universally unique\l identifier (uuid)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d28/group__crypto__uuid.html",tooltip="Provides a randomly generated UUID."];
+  Node10 [label="Secure vector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/da1/group__crypto__secvec.html",tooltip="Secure (automatically erased) vector."];
+  Node3 [label="X.509 and RSA certificates",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d75/group__crypto__cert.html",tooltip="Certificate encoding using PEM format: https://tools.ietf.org/html/rfc7468."];
+  Node8 [label="Random number generator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/df8/group__crypto__random.html",tooltip="Cryptographically secure random numbers using pseudorandom number generator."];
+  Node7 [label="One-way hashing and\l message digests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d37/group__crypto__hash.html",tooltip="Provides SHA, MD5, and message digest algorithms."];
+  Node9 [label="RSA public key cryptography",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/dc8/group__crypto__rsa.html",tooltip="Provides RSA public key cryptography, suitable for use in TLS encryption."];
+  Node4 [label="Symmetric block ciphers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/db2/group__crypto__cipher.html",tooltip="Symmetric block ciphers suitable for use in TLS encryption."];
   Node1->Node2 [shape=plaintext, dir="back", style="solid"];
   Node1->Node3 [shape=plaintext, dir="back", style="solid"];
   Node1->Node4 [shape=plaintext, dir="back", style="solid"];
   Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
 }

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['encoding_20utilities_824',['Encoding utilities',['../dc/d46/group__encode.html',1,'']]],
-  ['examples_825',['Examples',['../d7/d83/group__examples.html',1,'']]]
+  ['distinguished_20encoding_20rules_20_28der_29_1388',['Distinguished encoding rules (DER)',['../d8/de0/group__crypto__der.html',1,'']]]
 ];

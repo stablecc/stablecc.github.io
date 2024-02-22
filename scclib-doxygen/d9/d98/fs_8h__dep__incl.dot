@@ -13,5 +13,7 @@ digraph "util/pub/util/fs.h"
   Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="util/unittest/logger.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d89/unittest_2logger_8cc.html",tooltip="Tests for Thread safe logging."];
   Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="crypto/unittest/secvec.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dd9/unittest_2secvec_8cc.html",tooltip="Tests for Secure vector."];
+  Node6 [label="crypto/unittest/der.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d0c/unittest_2der_8cc.html",tooltip="Test file for Distinguished encoding rules (DER)."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="crypto/unittest/secvec.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dd9/unittest_2secvec_8cc.html",tooltip="Tests for Secure vector."];
 }

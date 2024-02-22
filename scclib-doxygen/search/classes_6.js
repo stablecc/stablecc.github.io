@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['netif_431',['NetIf',['../d6/df8/classscc_1_1net_1_1NetIf.html',1,'scc::net']]],
-  ['netifaddr_432',['NetIfAddr',['../d6/d0e/classscc_1_1net_1_1NetIfAddr.html',1,'scc::net']]]
+  ['generalname_741',['GeneralName',['../db/db3/structscc_1_1crypto_1_1GeneralName.html',1,'scc::crypto']]]
 ];

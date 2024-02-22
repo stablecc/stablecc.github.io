@@ -4,5 +4,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="scc::encode::Hex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/ddc/classscc_1_1encode_1_1Hex.html",tooltip=" "];
+  Node0 [label="scc::crypto::DerDocument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d26/classscc_1_1crypto_1_1DerDocument.html",tooltip="DER document."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="scc::crypto::PemDocument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/df7/classscc_1_1crypto_1_1PemDocument.html",tooltip="PEM formatted DER document."];
 }
